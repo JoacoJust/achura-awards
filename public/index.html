@@ -780,6 +780,9 @@
       document.getElementById('sub').textContent = `Categoría ${idx + 1} de ${categorias.length}`;
       progressFill.style.width = progress + '%';
 
+      // Mensaje si ya votó en esta categoría
+      const yaVoto = votadas.has(c.id);
+
       let ops = c.opciones.map((o) => `
         <div class="op">
           <div class="op-media">
@@ -801,6 +804,7 @@
           </div>
           <h2>${c.nombre}</h2>
           <p>${c.descripcion || ''}</p>
+          ${yaVoto ? '<p style="text-align:center;color:var(--gold);font-weight:600;margin:20px 0;">✓ Ya has votado en esta categoría</p>' : ''}
           <div class="grid">${ops}</div>
           <div class="nav">
             <button class="btn btn-secondary" ${idx === 0 ? 'disabled' : ''} onclick="idx--;render()">← Anterior</button>
