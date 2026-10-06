@@ -1,0 +1,1502 @@
+[
+  {
+    "id": "streamer-variedad",
+    "nombre": "Streamer Variedad",
+    "tipo": "video",
+    "nominados": [
+      {
+        "id": "n1",
+        "nombre": "Nominado 1",
+        "descripcion": "El mejor momento de Streamer Variedad este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder.mp4",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Streamer Variedad."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      },
+      {
+        "id": "n2",
+        "nombre": "Nominado 2",
+        "descripcion": "El mejor momento de Streamer Variedad este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder.mp4",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Streamer Variedad."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      },
+      {
+        "id": "n3",
+        "nombre": "Nominado 3",
+        "descripcion": "El mejor momento de Streamer Variedad este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder.mp4",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Streamer Variedad."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      },
+      {
+        "id": "n4",
+        "nombre": "Nominado 4",
+        "descripcion": "El mejor momento de Streamer Variedad este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder.mp4",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Streamer Variedad."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "youtuber-del-a-o",
+    "nombre": "Youtuber del Año",
+    "tipo": "story",
+    "nominados": [
+      {
+        "id": "n5",
+        "nombre": "Nominado 1",
+        "descripcion": "El mejor momento de Youtuber del Año este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder.mp4",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Youtuber del Año."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      },
+      {
+        "id": "n6",
+        "nombre": "Nominado 2",
+        "descripcion": "El mejor momento de Youtuber del Año este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder.mp4",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Youtuber del Año."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      },
+      {
+        "id": "n7",
+        "nombre": "Nominado 3",
+        "descripcion": "El mejor momento de Youtuber del Año este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder.mp4",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Youtuber del Año."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      },
+      {
+        "id": "n8",
+        "nombre": "Nominado 4",
+        "descripcion": "El mejor momento de Youtuber del Año este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder.mp4",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Youtuber del Año."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "streamer-cs2",
+    "nombre": "Streamer CS2",
+    "tipo": "video",
+    "nominados": [
+      {
+        "id": "n9",
+        "nombre": "Nominado 1",
+        "descripcion": "El mejor momento de Streamer CS2 este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder.mp4",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Streamer CS2."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      },
+      {
+        "id": "n10",
+        "nombre": "Nominado 2",
+        "descripcion": "El mejor momento de Streamer CS2 este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder.mp4",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Streamer CS2."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      },
+      {
+        "id": "n11",
+        "nombre": "Nominado 3",
+        "descripcion": "El mejor momento de Streamer CS2 este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder.mp4",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Streamer CS2."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      },
+      {
+        "id": "n12",
+        "nombre": "Nominado 4",
+        "descripcion": "El mejor momento de Streamer CS2 este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder.mp4",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Streamer CS2."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "streamer-fortnite",
+    "nombre": "Streamer Fortnite",
+    "tipo": "video",
+    "nominados": [
+      {
+        "id": "n13",
+        "nombre": "Nominado 1",
+        "descripcion": "El mejor momento de Streamer Fortnite este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder.mp4",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Streamer Fortnite."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      },
+      {
+        "id": "n14",
+        "nombre": "Nominado 2",
+        "descripcion": "El mejor momento de Streamer Fortnite este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder.mp4",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Streamer Fortnite."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      },
+      {
+        "id": "n15",
+        "nombre": "Nominado 3",
+        "descripcion": "El mejor momento de Streamer Fortnite este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder.mp4",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Streamer Fortnite."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      },
+      {
+        "id": "n16",
+        "nombre": "Nominado 4",
+        "descripcion": "El mejor momento de Streamer Fortnite este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder.mp4",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Streamer Fortnite."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "streamer-valorant",
+    "nombre": "Streamer Valorant",
+    "tipo": "imagen",
+    "nominados": [
+      {
+        "id": "n17",
+        "nombre": "Nominado 1",
+        "descripcion": "El mejor momento de Streamer Valorant este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder-img.jpg",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Streamer Valorant."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      },
+      {
+        "id": "n18",
+        "nombre": "Nominado 2",
+        "descripcion": "El mejor momento de Streamer Valorant este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder-img.jpg",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Streamer Valorant."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      },
+      {
+        "id": "n19",
+        "nombre": "Nominado 3",
+        "descripcion": "El mejor momento de Streamer Valorant este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder-img.jpg",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Streamer Valorant."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      },
+      {
+        "id": "n20",
+        "nombre": "Nominado 4",
+        "descripcion": "El mejor momento de Streamer Valorant este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder-img.jpg",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Streamer Valorant."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "streamer-lol",
+    "nombre": "Streamer LOL",
+    "tipo": "video",
+    "nominados": [
+      {
+        "id": "n21",
+        "nombre": "Nominado 1",
+        "descripcion": "El mejor momento de Streamer LOL este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder.mp4",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Streamer LOL."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      },
+      {
+        "id": "n22",
+        "nombre": "Nominado 2",
+        "descripcion": "El mejor momento de Streamer LOL este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder.mp4",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Streamer LOL."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      },
+      {
+        "id": "n23",
+        "nombre": "Nominado 3",
+        "descripcion": "El mejor momento de Streamer LOL este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder.mp4",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Streamer LOL."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      },
+      {
+        "id": "n24",
+        "nombre": "Nominado 4",
+        "descripcion": "El mejor momento de Streamer LOL este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder.mp4",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Streamer LOL."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "streamer-deportivo",
+    "nombre": "Streamer Deportivo",
+    "tipo": "imagen",
+    "nominados": [
+      {
+        "id": "n25",
+        "nombre": "Nominado 1",
+        "descripcion": "El mejor momento de Streamer Deportivo este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder-img.jpg",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Streamer Deportivo."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      },
+      {
+        "id": "n26",
+        "nombre": "Nominado 2",
+        "descripcion": "El mejor momento de Streamer Deportivo este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder-img.jpg",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Streamer Deportivo."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      },
+      {
+        "id": "n27",
+        "nombre": "Nominado 3",
+        "descripcion": "El mejor momento de Streamer Deportivo este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder-img.jpg",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Streamer Deportivo."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      },
+      {
+        "id": "n28",
+        "nombre": "Nominado 4",
+        "descripcion": "El mejor momento de Streamer Deportivo este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder-img.jpg",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Streamer Deportivo."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "streamer-irl",
+    "nombre": "Streamer IRL",
+    "tipo": "story",
+    "nominados": [
+      {
+        "id": "n29",
+        "nombre": "Nominado 1",
+        "descripcion": "El mejor momento de Streamer IRL este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder.mp4",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Streamer IRL."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      },
+      {
+        "id": "n30",
+        "nombre": "Nominado 2",
+        "descripcion": "El mejor momento de Streamer IRL este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder.mp4",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Streamer IRL."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      },
+      {
+        "id": "n31",
+        "nombre": "Nominado 3",
+        "descripcion": "El mejor momento de Streamer IRL este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder.mp4",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Streamer IRL."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      },
+      {
+        "id": "n32",
+        "nombre": "Nominado 4",
+        "descripcion": "El mejor momento de Streamer IRL este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder.mp4",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Streamer IRL."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "streamer-just-chatting",
+    "nombre": "Streamer Just Chatting",
+    "tipo": "video",
+    "nominados": [
+      {
+        "id": "n33",
+        "nombre": "Nominado 1",
+        "descripcion": "El mejor momento de Streamer Just Chatting este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder.mp4",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Streamer Just Chatting."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      },
+      {
+        "id": "n34",
+        "nombre": "Nominado 2",
+        "descripcion": "El mejor momento de Streamer Just Chatting este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder.mp4",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Streamer Just Chatting."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      },
+      {
+        "id": "n35",
+        "nombre": "Nominado 3",
+        "descripcion": "El mejor momento de Streamer Just Chatting este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder.mp4",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Streamer Just Chatting."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      },
+      {
+        "id": "n36",
+        "nombre": "Nominado 4",
+        "descripcion": "El mejor momento de Streamer Just Chatting este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder.mp4",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Streamer Just Chatting."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "mejor-clip",
+    "nombre": "Mejor Clip",
+    "tipo": "video",
+    "nominados": [
+      {
+        "id": "n37",
+        "nombre": "Nominado 1",
+        "descripcion": "El mejor momento de Mejor Clip este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder.mp4",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Mejor Clip."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      },
+      {
+        "id": "n38",
+        "nombre": "Nominado 2",
+        "descripcion": "El mejor momento de Mejor Clip este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder.mp4",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Mejor Clip."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      },
+      {
+        "id": "n39",
+        "nombre": "Nominado 3",
+        "descripcion": "El mejor momento de Mejor Clip este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder.mp4",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Mejor Clip."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      },
+      {
+        "id": "n40",
+        "nombre": "Nominado 4",
+        "descripcion": "El mejor momento de Mejor Clip este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder.mp4",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Mejor Clip."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "mejor-momento-del-a-o",
+    "nombre": "Mejor Momento del Año",
+    "tipo": "imagen",
+    "nominados": [
+      {
+        "id": "n41",
+        "nombre": "Nominado 1",
+        "descripcion": "El mejor momento de Mejor Momento del Año este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder-img.jpg",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Mejor Momento del Año."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      },
+      {
+        "id": "n42",
+        "nombre": "Nominado 2",
+        "descripcion": "El mejor momento de Mejor Momento del Año este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder-img.jpg",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Mejor Momento del Año."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      },
+      {
+        "id": "n43",
+        "nombre": "Nominado 3",
+        "descripcion": "El mejor momento de Mejor Momento del Año este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder-img.jpg",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Mejor Momento del Año."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      },
+      {
+        "id": "n44",
+        "nombre": "Nominado 4",
+        "descripcion": "El mejor momento de Mejor Momento del Año este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder-img.jpg",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Mejor Momento del Año."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "mejor-edit",
+    "nombre": "Mejor Edit",
+    "tipo": "video",
+    "nominados": [
+      {
+        "id": "n45",
+        "nombre": "Nominado 1",
+        "descripcion": "El mejor momento de Mejor Edit este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder.mp4",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Mejor Edit."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      },
+      {
+        "id": "n46",
+        "nombre": "Nominado 2",
+        "descripcion": "El mejor momento de Mejor Edit este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder.mp4",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Mejor Edit."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      },
+      {
+        "id": "n47",
+        "nombre": "Nominado 3",
+        "descripcion": "El mejor momento de Mejor Edit este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder.mp4",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Mejor Edit."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      },
+      {
+        "id": "n48",
+        "nombre": "Nominado 4",
+        "descripcion": "El mejor momento de Mejor Edit este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder.mp4",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Mejor Edit."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "revelaci-n",
+    "nombre": "Revelación",
+    "tipo": "story",
+    "nominados": [
+      {
+        "id": "n49",
+        "nombre": "Nominado 1",
+        "descripcion": "El mejor momento de Revelación este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder.mp4",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Revelación."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      },
+      {
+        "id": "n50",
+        "nombre": "Nominado 2",
+        "descripcion": "El mejor momento de Revelación este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder.mp4",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Revelación."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      },
+      {
+        "id": "n51",
+        "nombre": "Nominado 3",
+        "descripcion": "El mejor momento de Revelación este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder.mp4",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Revelación."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      },
+      {
+        "id": "n52",
+        "nombre": "Nominado 4",
+        "descripcion": "El mejor momento de Revelación este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder.mp4",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Revelación."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "achura-del-a-o",
+    "nombre": "Achura del Año",
+    "tipo": "imagen",
+    "nominados": [
+      {
+        "id": "n53",
+        "nombre": "Nominado 1",
+        "descripcion": "El mejor momento de Achura del Año este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder-img.jpg",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Achura del Año."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      },
+      {
+        "id": "n54",
+        "nombre": "Nominado 2",
+        "descripcion": "El mejor momento de Achura del Año este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder-img.jpg",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Achura del Año."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      },
+      {
+        "id": "n55",
+        "nombre": "Nominado 3",
+        "descripcion": "El mejor momento de Achura del Año este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder-img.jpg",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Achura del Año."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      },
+      {
+        "id": "n56",
+        "nombre": "Nominado 4",
+        "descripcion": "El mejor momento de Achura del Año este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder-img.jpg",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Achura del Año."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "streamer-revelaci-n",
+    "nombre": "Streamer Revelación",
+    "tipo": "video",
+    "nominados": [
+      {
+        "id": "n57",
+        "nombre": "Nominado 1",
+        "descripcion": "El mejor momento de Streamer Revelación este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder.mp4",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Streamer Revelación."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      },
+      {
+        "id": "n58",
+        "nombre": "Nominado 2",
+        "descripcion": "El mejor momento de Streamer Revelación este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder.mp4",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Streamer Revelación."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      },
+      {
+        "id": "n59",
+        "nombre": "Nominado 3",
+        "descripcion": "El mejor momento de Streamer Revelación este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder.mp4",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Streamer Revelación."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      },
+      {
+        "id": "n60",
+        "nombre": "Nominado 4",
+        "descripcion": "El mejor momento de Streamer Revelación este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder.mp4",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Streamer Revelación."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "jugador-de-f-tbol-del-a-o",
+    "nombre": "Jugador de Fútbol del Año",
+    "tipo": "imagen",
+    "nominados": [
+      {
+        "id": "n61",
+        "nombre": "Nominado 1",
+        "descripcion": "El mejor momento de Jugador de Fútbol del Año este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder-img.jpg",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Jugador de Fútbol del Año."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      },
+      {
+        "id": "n62",
+        "nombre": "Nominado 2",
+        "descripcion": "El mejor momento de Jugador de Fútbol del Año este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder-img.jpg",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Jugador de Fútbol del Año."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      },
+      {
+        "id": "n63",
+        "nombre": "Nominado 3",
+        "descripcion": "El mejor momento de Jugador de Fútbol del Año este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder-img.jpg",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Jugador de Fútbol del Año."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      },
+      {
+        "id": "n64",
+        "nombre": "Nominado 4",
+        "descripcion": "El mejor momento de Jugador de Fútbol del Año este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder-img.jpg",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Jugador de Fútbol del Año."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fail-del-a-o",
+    "nombre": "Fail del Año",
+    "tipo": "video",
+    "nominados": [
+      {
+        "id": "n65",
+        "nombre": "Nominado 1",
+        "descripcion": "El mejor momento de Fail del Año este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder.mp4",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Fail del Año."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      },
+      {
+        "id": "n66",
+        "nombre": "Nominado 2",
+        "descripcion": "El mejor momento de Fail del Año este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder.mp4",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Fail del Año."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      },
+      {
+        "id": "n67",
+        "nombre": "Nominado 3",
+        "descripcion": "El mejor momento de Fail del Año este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder.mp4",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Fail del Año."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      },
+      {
+        "id": "n68",
+        "nombre": "Nominado 4",
+        "descripcion": "El mejor momento de Fail del Año este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder.mp4",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Fail del Año."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tilteo-del-a-o",
+    "nombre": "Tilteo del Año",
+    "tipo": "video",
+    "nominados": [
+      {
+        "id": "n69",
+        "nombre": "Nominado 1",
+        "descripcion": "El mejor momento de Tilteo del Año este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder.mp4",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Tilteo del Año."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      },
+      {
+        "id": "n70",
+        "nombre": "Nominado 2",
+        "descripcion": "El mejor momento de Tilteo del Año este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder.mp4",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Tilteo del Año."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      },
+      {
+        "id": "n71",
+        "nombre": "Nominado 3",
+        "descripcion": "El mejor momento de Tilteo del Año este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder.mp4",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Tilteo del Año."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      },
+      {
+        "id": "n72",
+        "nombre": "Nominado 4",
+        "descripcion": "El mejor momento de Tilteo del Año este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder.mp4",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Tilteo del Año."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "dupla-del-a-o",
+    "nombre": "Dupla del Año",
+    "tipo": "story",
+    "nominados": [
+      {
+        "id": "n73",
+        "nombre": "Nominado 1",
+        "descripcion": "El mejor momento de Dupla del Año este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder.mp4",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Dupla del Año."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      },
+      {
+        "id": "n74",
+        "nombre": "Nominado 2",
+        "descripcion": "El mejor momento de Dupla del Año este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder.mp4",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Dupla del Año."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      },
+      {
+        "id": "n75",
+        "nombre": "Nominado 3",
+        "descripcion": "El mejor momento de Dupla del Año este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder.mp4",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Dupla del Año."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      },
+      {
+        "id": "n76",
+        "nombre": "Nominado 4",
+        "descripcion": "El mejor momento de Dupla del Año este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder.mp4",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Dupla del Año."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "achura-m-s-compa-ero",
+    "nombre": "Achura más Compañero",
+    "tipo": "imagen",
+    "nominados": [
+      {
+        "id": "n77",
+        "nombre": "Nominado 1",
+        "descripcion": "El mejor momento de Achura más Compañero este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder-img.jpg",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Achura más Compañero."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      },
+      {
+        "id": "n78",
+        "nombre": "Nominado 2",
+        "descripcion": "El mejor momento de Achura más Compañero este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder-img.jpg",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Achura más Compañero."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      },
+      {
+        "id": "n79",
+        "nombre": "Nominado 3",
+        "descripcion": "El mejor momento de Achura más Compañero este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder-img.jpg",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Achura más Compañero."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      },
+      {
+        "id": "n80",
+        "nombre": "Nominado 4",
+        "descripcion": "El mejor momento de Achura más Compañero este año. Placeholder, editar en categories.json.",
+        "media": "/placeholder-img.jpg",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Achura más Compañero."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Mejor momento del año. Reemplazar con contenido real."
+          }
+        ]
+      }
+    ]
+  }
+]
