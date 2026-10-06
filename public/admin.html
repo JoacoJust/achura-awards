@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Achura Awards — Admin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', system-ui, sans-serif; }
+  :root {
+    --bg: #0a0a0a; --panel: #111111; --panel2: #161616;
+    --border: #262626; --border2: #333;
+    --text: #ededed; --muted: #8b8b8b;
+    --accent: #10b981; --accent-h: #34d399;
+  }
+  body { background: var(--bg); color: var(--text); min-height: 100vh; padding: 32px 16px 60px; -webkit-font-smoothing: antialiased; }
+  header { text-align: center; margin-bottom: 6px; }
+  header img { width: 72px; height: 72px; object-fit: cover; border-radius: 16px; border: 1px solid var(--border2); }
+  h1 { color: var(--text); text-align: center; font-size: 1.4rem; font-weight: 800; margin: 14px 0 20px; letter-spacing: -.5px; }
+  .card { background: var(--panel); border: 1px solid var(--border); border-radius: 14px; padding: 20px; margin: 16px auto; max-width: 960px; }
+  .card h3 { font-weight: 700; margin-bottom: 12px; font-size: 1rem; }
+  input, select { padding: 11px 12px; margin: 6px 4px; border-radius: 10px; border: 1px solid var(--border2); background: var(--panel2); color: var(--text); font-size: .9rem; }
+  input:focus { outline: none; border-color: var(--accent); }
+  button { background: var(--accent); color: #04120c; border: none; padding: 11px 18px; border-radius: 10px; font-weight: 600; cursor: pointer; margin: 4px; font-size: .9rem; transition: background .15s, transform .1s; }
+  button:hover { background: var(--accent-h); transform: translateY(-1px); }
+  button.sec { background: var(--panel2); color: var(--text); border: 1px solid var(--border2); }
+  button.sec:hover { border-color: var(--accent); }
+  table { width: 100%; border-collapse: collapse; }
+  th, td { padding: 9px 8px; border-bottom: 1px solid var(--border); text-align: left; font-size: .88rem; }
+  th { color: var(--muted); text-transform: uppercase; font-size: .72rem; letter-spacing: 1px; }
+  .fila { margin: 12px 0; }
+  .barra { height: 10px; background: var(--panel2); border: 1px solid var(--border); border-radius: 6px; overflow: hidden; }
+  .barra div { height: 100%; background: var(--accent); transition: width .6s; }
+  .metricas { display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; margin: 10px 0; }
+  .metrica { background: var(--panel); border-radius: 14px; padding: 20px 30px; text-align: center; border: 1px solid var(--border); min-width: 160px; }
+  .metrica b { font-size: 2rem; color: var(--accent); display: block; }
+  small { color: var(--muted); }
+  hr { border: none; border-top: 1px solid var(--border); margin: 14px 0; }
+  footer { text-align: center; color: #555; margin-top: 30px; font-size: .8rem; }
+</style>
+</head>
+<body>
+  <header><img src="/img/logo.jpg" alt="Achura Awards" /></header>
+  <h1>Admin — Achura Awards</h1>
+
+  <div id="login" class="card" style="max-width:420px">
+    <h3>Iniciar sesión</h3>
+    <input id="aemail" placeholder="Email admin" style="width:100%" />
+    <input id="apass" type="password" placeholder="Contraseña" style="width:100%" />
+    <button onclick="hacerLogin()" style="width:100%">Ingresar</button>
+    <p id="lerr" style="color:#f87171;margin-top:8px"></p>
+  </div>
+
+  <div id="panel" style="display:none">
+    <div class="metricas" id="metricas"></div>
+
+    <div class="card">
+      <h3>Resultados en vivo</h3>
+      <div id="resultados"></div>
+      <button onclick="descargar()">Descargar CSV</button>
+      <button class="sec" onclick="cargarTodo()">Refrescar</button>
+    </div>
+
+    <div class="card">
+      <h3>Votantes</h3>
+      <div style="overflow-x:auto"><table id="votantes"></table></div>
+    </div>
+
+    <div class="card">
+      <h3>Categorías</h3>
+      <input id="cn" placeholder="Nombre categoría" /><input id="cd" placeholder="Descripción" /><input id="cp" type="number" placeholder="Posición" />
+      <button onclick="crearCategoria()">+ Nueva categoría</button>
+      <hr />
+      <input id="oid" placeholder="ID categoría" /><input id="on" placeholder="Nombre opción" /><input id="op2" type="number" placeholder="Posición" />
+      <button onclick="crearOpcion()">+ Nueva opción</button>
+      <hr />
+      <div id="lista-cats"></div>
+      <hr />
+      <h3>Subir media a opción</h3>
+      <input id="up-oid" placeholder="ID opción" />
+      <select id="up-tipo"><option value="imagen">imagen</option><option value="video">video</option></select>
+      <input id="up-file" type="file" />
+      <button onclick="subirMedia()">Subir</button>
+    </div>
+  </div>
+
+  <footer>Achura Awards · El Lucho de Oro</footer>
+
+<script>
+let token = localStorage.getItem('achura_admin_token');
+const H = () => ({ Authorization: 'Bearer ' + token, 'Content-Type': 'application/json' });
+const el = (id) => document.getElementById(id);
+
+async function hacerLogin() {
+  const r = await fetch('/api/admin/login', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ email: el('aemail').value, password: el('apass').value }) });
+  const d = await r.json();
+  if (d.success) { token = d.token; localStorage.setItem('achura_admin_token', token); mostrarPanel(); }
+  else el('lerr').textContent = d.error;
+}
+
+function mostrarPanel() { el('login').style.display = 'none'; el('panel').style.display = 'block'; cargarTodo(); }
+
+async function cargarTodo() {
+  const d = await (await fetch('/api/admin/dashboard', { headers: H() })).json();
+  el('metricas').innerHTML = `
+    <div class="metrica"><b>${d.data.total_votos}</b>Total votos</div>
+    <div class="metrica"><b>${d.data.total_votantes}</b>Votantes</div>
+    <div class="metrica"><b>${d.data.categorias_activas}</b>Categorías</div>`;
+
+  const r = await (await fetch('/api/admin/resultados', { headers: H() })).json();
+  el('resultados').innerHTML = r.data.map(c => `
+    <div class="fila"><b>${c.categoria_nombre}</b> ${c.activa ? '' : '<small>(inactiva)</small>'} — ${c.total_votos} votos
+      ${c.opciones.map(o => `
+        <div style="margin:8px 0">
+          <div style="display:flex;justify-content:space-between;margin-bottom:4px"><span>${o.nombre}</span><span><b>${o.votos}</b> (${o.porcentaje}%)</span></div>
+          <div class="barra"><div style="width:${o.porcentaje}%"></div></div>
+        </div>`).join('')}
+    </div><hr />`).join('');
+
+  const v = await (await fetch('/api/admin/votantes?page=1&limit=50', { headers: H() })).json();
+  el('votantes').innerHTML = '<tr><th>Email</th><th>Verificado</th><th>IP</th><th>Votos</th></tr>' +
+    v.data.map(u => `<tr><td>${u.email}</td><td>${u.fecha_verificacion ? new Date(u.fecha_verificacion).toLocaleString() : '-'}</td><td>${u.ip_address || '-'}</td><td>${u.total_votos}</td></tr>`).join('');
+
+  el('lista-cats').innerHTML = r.data.map(c => `
+    <div style="margin:8px 0;display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+      <span><b>${c.categoria_nombre}</b> <small>${c.categoria_id}</small></span>
+      <button class="sec" onclick="toggleCat('${c.categoria_id}', ${!c.activa})">${c.activa ? 'Desactivar' : 'Activar'}</button>
+    </div>`).join('');
+}
+
+async function crearCategoria() {
+  const r = await fetch('/api/admin/categorias', { method: 'POST', headers: H(), body: JSON.stringify({ nombre: el('cn').value, descripcion: el('cd').value, posicion: Number(el('cp').value) }) });
+  const d = await r.json(); alert(d.success ? 'Creada' : d.error); cargarTodo();
+}
+async function crearOpcion() {
+  const r = await fetch('/api/admin/opciones', { method: 'POST', headers: H(), body: JSON.stringify({ categoria_id: el('oid').value, nombre: el('on').value, posicion: Number(el('op2').value) }) });
+  const d = await r.json(); alert(d.success ? 'Creada' : d.error); cargarTodo();
+}
+async function toggleCat(id, activa) {
+  await fetch(`/api/admin/categorias/${id}/toggle`, { method: 'PUT', headers: H(), body: JSON.stringify({ activa }) }); cargarTodo();
+}
+async function subirMedia() {
+  const fd = new FormData();
+  fd.append('file', el('up-file').files[0]);
+  fd.append('opcion_id', el('up-oid').value);
+  fd.append('tipo', el('up-tipo').value);
+  const r = await fetch('/api/admin/upload-media', { method: 'POST', headers: { Authorization: 'Bearer ' + token }, body: fd });
+  const d = await r.json(); alert(d.success ? 'Subido: ' + d.data.url : d.error);
+}
+async function descargar() {
+  const r = await fetch('/api/admin/reporte', { headers: { Authorization: 'Bearer ' + token } });
+  const blob = await r.blob();
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'achura_reporte.csv';
+  a.click();
+}
+if (token) mostrarPanel();
+</script>
+</body>
+</html>
