@@ -9,18 +9,24 @@
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', system-ui, sans-serif; }
   :root {
-    --bg: #0a0a0a; --panel: #111111; --panel2: #161616;
-    --border: #262626; --border2: #333;
-    --text: #ededed; --muted: #8b8b8b;
+    --bg: #070d1a; --panel: #101a30; --panel2: #15213d;
+    --border: #233456; --border2: #2e4470;
+    --text: #f2f5fb; --muted: #94a3c0;
     --accent: #10b981; --accent-h: #34d399;
   }
-  body { background: var(--bg); color: var(--text); min-height: 100vh; padding: 32px 16px 60px; -webkit-font-smoothing: antialiased; }
+  body {
+    background: radial-gradient(circle at 50% -10%, #1b2c52 0%, #070d1a 55%);
+    color: var(--text); min-height: 100vh; padding: 32px 16px 60px; -webkit-font-smoothing: antialiased;
+  }
   header { text-align: center; margin-bottom: 8px; }
   header img { width: 96px; height: 96px; object-fit: cover; border-radius: 20px; border: 1px solid var(--border2); }
-  header h1 { font-size: 1.6rem; font-weight: 800; letter-spacing: -.5px; margin-top: 16px; }
+  header h1 { font-size: 2rem; font-weight: 800; letter-spacing: 3px; margin-top: 16px; text-transform: uppercase; }
+  header p.ternas { font-size: 1.4rem; letter-spacing: 6px; color: var(--muted); text-transform: uppercase; margin-top: 4px; font-weight: 600; }
   .sub { text-align: center; color: var(--muted); margin-bottom: 24px; font-size: .9rem; }
   .card { background: var(--panel); border: 1px solid var(--border); border-radius: 14px; padding: 24px; margin: 16px auto; max-width: 820px; }
-  .card h2, .card h3 { font-weight: 700; margin-bottom: 8px; font-size: 1.1rem; }
+  .card h2 { font-weight: 700; margin-bottom: 8px; font-size: 1.3rem; text-transform: uppercase; letter-spacing: 3px; text-align: center; }
+  .card h2::before, .card h2::after { content: "🌿"; margin: 0 10px; font-size: 1rem; }
+  .card h3 { font-weight: 700; margin-bottom: 8px; font-size: 1.1rem; }
   .card p { color: var(--muted); font-size: .9rem; line-height: 1.5; }
   input { width: 100%; padding: 12px 14px; margin: 8px 0; border-radius: 10px; border: 1px solid var(--border2); background: var(--panel2); color: var(--text); font-size: .95rem; transition: border-color .15s; }
   input:focus { outline: none; border-color: var(--accent); }
@@ -49,7 +55,8 @@
 <body>
   <header>
     <img src="/img/logo.jpg" alt="Achura Awards" />
-    <h1>Achura Awards 2026</h1>
+    <h1>ACHURA AWARDS 2026</h1>
+    <p class="ternas">Ternas</p>
     <p class="sub">El Lucho de Oro — los premios del año</p>
   </header>
 
