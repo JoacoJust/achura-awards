@@ -789,7 +789,7 @@
             <span class="scissor-icon">✂️</span>
             <h4>${o.nombre}</h4>
             <p>${o.descripcion || ''}</p>
-            ${votadas.has(c.id) ? '' : `<button class="btn" onclick="votar('${c.id}','${o.id}','${o.nombre}')">Votar</button>`}
+            ${votadas.has(c.id) ? '<button class="btn" disabled>Ya votado</button>' : `<button class="btn" onclick="votar('${c.id}','${o.id}','${o.nombre}')">Votar</button>`}
           </div>
         </div>`).join('');
 
