@@ -5,7 +5,8 @@
   "main": "src/server.js",
   "scripts": {
     "start": "node src/server.js",
-    "seed": "node src/seed.js"
+    "seed": "node src/seed.js",
+    "build": "cd web && npm install && npm run build"
   },
   "engines": { "node": ">=20" },
   "dependencies": {
