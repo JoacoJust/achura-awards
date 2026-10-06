@@ -37,7 +37,7 @@ export default function App() {
         {todas ? (
           <motion.div key="fin" initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="max-w-xl mx-auto text-center py-24 px-6">
             <h1 className="font-serif text-4xl mb-4">¡Gracias por votar!</h1>
-            <p className="text-white/70">Completaste las {total} ternas. Los premios más picantes… 🚬</p>
+            <p className="text-white/70">Completaste las {total} ternas. Los luchos de oro…</p>
             <button className="mt-8 border border-white/40 px-6 py-3 rounded" onClick={() => { localStorage.removeItem(STORAGE); setVotos({}); setCat(null) }}>Reiniciar votos</button>
           </motion.div>
         ) : !cat ? (
@@ -45,7 +45,7 @@ export default function App() {
             <header className="text-center py-14">
               <h1 className="font-serif text-5xl tracking-[.2em]">ACHURA AWARDS</h1>
               <p className="font-serif tracking-[.4em] text-gold mt-2">TERNAS</p>
-              <p className="text-white/60 mt-2 italic">Los premios más <em className="font-serif">Picantes</em>…</p>
+              <p className="text-white/60 mt-2 italic">Los luchos de oro…</p>
             </header>
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8 max-w-6xl mx-auto px-6 pb-20">
               {categories.map((c) => (
@@ -74,11 +74,9 @@ export default function App() {
                 {cat.nominados.map((n) => (
                   <div key={n.id} className="bg-white/5 border border-white/10 rounded-xl p-4 flex flex-col items-center gap-3">
                     <button onClick={() => setOpenMedia({ cat, nom: n })} aria-label={`Ver ${cat.tipo} de ${n.nombre}`}>
-                      {cat.tipo === 'imagen' ? (
-                        <img src={n.media} alt={n.nombre} className="rounded-lg w-full h-40 object-cover" />
-                      ) : (
-                        <video src={n.media} poster={n.poster} muted loop playsInline className="rounded-lg w-full h-40 object-cover hover:opacity-80 transition" onMouseEnter={(e) => e.currentTarget.play()} onMouseLeave={(e) => e.currentTarget.pause()} />
-                      )}
+                      {cat.tipo === 'imagen' && <img src={n.media} alt={n.nombre} className="rounded-lg w-full h-40 object-cover" />}
+                      {cat.tipo === 'video' && <video src={n.media} poster={n.poster} muted loop playsInline className="rounded-lg w-full h-40 object-cover hover:opacity-80 transition" onMouseEnter={(e) => e.currentTarget.play()} onMouseLeave={(e) => e.currentTarget.pause()} />}
+                      {cat.tipo === 'story' && <div className="rounded-lg w-full h-40 bg-white/5 flex items-center p-4 text-left text-sm text-white/80 overflow-hidden">{n.story?.[0]?.contenido || 'Historia sin registrar'}</div>}
                     </button>
                     <h3 className="font-semibold">{n.nombre}</h3>
                     <p className="text-xs text-white/60 text-center">{n.descripcion}</p>
