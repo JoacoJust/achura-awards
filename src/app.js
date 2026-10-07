@@ -12,15 +12,18 @@ const { notFoundHandler, errorHandler } = require('./core/errores');
 const { globalLimiter } = require('./middlewares/rateLimits');
 
 const app = express();
+app.set('trust proxy', 1);
 app.use(cors({ origin: process.env.CORS_ORIGIN || '*' }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(globalLimiter);
+// Sesión de los 10 usuarios: requiere login explícito
 app.use(session({
   secret: process.env.SESSION_SECRET || 'achura-secret-2026',
   resave: false,
   saveUninitialized: false,
-  cookie: { httpOnly: true, sameSite: 'lax', secure: process.env.NODE_ENV === 'production' },
+  proxy: true,
+  cookie: { httpOnly: true, sameSite: 'lax', secure: 'auto' },
 }));
 
 // Guard: todo requiere sesión salvo /login, /logout, /api/admin auth, /uploads estáticos de login
@@ -44,7 +47,9 @@ app.post('/login', rateLimit({ windowMs: 15 * 60 * 1000, max: 10, message: { err
     return res.status(401).json({ error: 'Email o contraseña incorrectos' });
   }
   req.session.userId = u._id;
-  res.json({ ok: true, nombre: u.nombre });
+  req.session.save(() => {
+    res.json({ ok: true, nombre: u.nombre });
+  });
 });
 app.post('/logout', (req, res) => { req.session.destroy(() => {}); res.json({ ok: true }); });
 app.get('/api/me', (req, res) => {
