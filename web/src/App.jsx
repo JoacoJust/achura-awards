@@ -3,7 +3,6 @@ import { motion, AnimatePresence } from 'framer-motion'
 import Emblem from './components/Emblem.jsx'
 import categories from './data/categories.json'
 import miembros from './data/miembros.json'
-import menciones from './data/menciones.json'
 
 const STORAGE = 'achura_votos_v1'
 const getVotos = () => { try { return JSON.parse(localStorage.getItem(STORAGE)) || {} } catch { return {} } }
@@ -52,8 +51,8 @@ export default function App() {
               <p className="text-white/60 mt-2 italic">Los luchos de oro…</p>
             </header>
             <nav className="flex justify-center gap-6 text-xs tracking-[.2em] uppercase text-white/60 mb-6">
-              {['ternas', 'achuras', 'menciones'].map((t) => (
-                <button key={t} onClick={() => setTab(t)} className={`pb-1 border-b ${tab === t ? 'text-gold border-gold' : 'border-transparent hover:text-white'}`}>{t === 'ternas' ? 'Ternas' : t === 'achuras' ? 'Los Achuras' : 'Menciones'}</button>
+              {['ternas', 'achuras'].map((t) => (
+                <button key={t} onClick={() => setTab(t)} className={`pb-1 border-b ${tab === t ? 'text-gold border-gold' : 'border-transparent hover:text-white'}`}>{t === 'ternas' ? 'Ternas' : 'Los Achuras'}</button>
               ))}
             </nav>
 
@@ -76,33 +75,21 @@ export default function App() {
                 <h2 className="font-serif text-2xl tracking-[.2em] text-center mb-8 uppercase">Los Achuras</h2>
                 <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
                   {miembros.map((m, i) => (
-                    <button key={i} onClick={() => setAchuraOpen(i)} className="group flex flex-col items-center gap-2 text-center">
-                      <img src={m.imagen} alt={m.nombre} loading="lazy" className="rounded-full w-24 h-24 object-cover border-2 border-white/20 group-hover:border-gold transition" onError={(e) => { e.currentTarget.style.display = 'none' }} />
-                      <span className="font-semibold text-sm">{m.nombre}</span>
-                      <div className="flex flex-wrap gap-1 justify-center">
+                    <button key={i} onClick={() => setAchuraOpen(i)} className="group flex flex-col bg-white/5 border border-white/10 rounded-xl p-4 text-center hover:border-gold/50 transition">
+                      <img src={m.imagen} alt={m.nombre} loading="lazy" className="rounded-lg w-full aspect-[4/5] object-cover border-2 border-white/20 group-hover:border-gold transition" onError={(e) => { e.currentTarget.style.display = 'none' }} />
+                      <span className="mt-3 font-serif text-sm font-semibold text-gold">{m.nombre}</span>
+                      <div className="mt-2 flex flex-wrap gap-1 justify-center">
                         {m.apodos.slice(0, 3).map((a, j) => (
                           <span key={j} className="border border-white/20 rounded-full px-2 py-0.5 text-[10px] text-white/60 uppercase">{a}</span>
                         ))}
                       </div>
+                      <p className="mt-2 text-xs text-white/70 italic">{m.descripcion}</p>
                     </button>
                   ))}
                 </div>
               </div>
             )}
 
-            {tab === 'menciones' && (
-              <div className="max-w-4xl mx-auto px-6 pb-20">
-                <h2 className="font-serif text-2xl tracking-[.2em] text-center mb-8 uppercase">Menciones honoríficas</h2>
-                <div className="space-y-4">
-                  {menciones.map((m, i) => (
-                    <div key={i} className="bg-white/5 border border-gold/40 rounded-xl p-5">
-                      <h3 className="font-serif text-lg text-gold">🎖 {m.titulo}</h3>
-                      <p className="text-sm text-white/70 mt-1">{m.descripcion}</p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )}
           </motion.div>
         ) : (
           <motion.div key={cat.id} initial={{ opacity: 0, scale: 1.05 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0 }} className="max-w-5xl mx-auto px-6 py-12">
@@ -131,6 +118,12 @@ export default function App() {
                 ))}
               </div>
             )}
+
+            {/* Mención honorífica de la terna */}
+            <div className="mt-10 bg-white/5 border border-gold/40 rounded-xl p-5 max-w-3xl mx-auto">
+              <h3 className="font-serif text-lg text-gold text-center">🎖 Mención honorífica</h3>
+              <p className="text-sm text-white/70 mt-2 text-center">{cat.mencion || 'No hay mención honorífica cargada para esta terna.'}</p>
+            </div>
           </motion.div>
         )}
       </AnimatePresence>

@@ -56,7 +56,8 @@
           }
         ]
       }
-    ]
+    ],
+    "mencion": "Mencion honorifica placeholder para Achura del Año ([EDITAR] texto)."
   },
   {
     "id": "achura-revelaci-n",
@@ -115,7 +116,8 @@
           }
         ]
       }
-    ]
+    ],
+    "mencion": "Mencion honorifica placeholder para Achura Revelación ([EDITAR] texto)."
   },
   {
     "id": "achura-promesa",
@@ -174,7 +176,8 @@
           }
         ]
       }
-    ]
+    ],
+    "mencion": "Mencion honorifica placeholder para Achura Promesa ([EDITAR] texto)."
   },
   {
     "id": "achura-deportista-del-a-o",
@@ -233,7 +236,8 @@
           }
         ]
       }
-    ]
+    ],
+    "mencion": "Mencion honorifica placeholder para Achura Deportista del Año ([EDITAR] texto)."
   },
   {
     "id": "achura-gamer-del-a-o",
@@ -292,7 +296,8 @@
           }
         ]
       }
-    ]
+    ],
+    "mencion": "Mencion honorifica placeholder para Achura Gamer del Año ([EDITAR] texto)."
   },
   {
     "id": "mejor-jugador-de-cs",
@@ -351,7 +356,8 @@
           }
         ]
       }
-    ]
+    ],
+    "mencion": "Mencion honorifica placeholder para Mejor Jugador de CS ([EDITAR] texto)."
   },
   {
     "id": "achura-m-s-gay-del-a-o",
@@ -410,7 +416,8 @@
           }
         ]
       }
-    ]
+    ],
+    "mencion": "Mencion honorifica placeholder para Achura más Gay del Año ([EDITAR] texto)."
   },
   {
     "id": "achura-m-s-fachero",
@@ -469,7 +476,8 @@
           }
         ]
       }
-    ]
+    ],
+    "mencion": "Mencion honorifica placeholder para Achura más Fachero ([EDITAR] texto)."
   },
   {
     "id": "achura-m-s-compa-ero",
@@ -528,7 +536,8 @@
           }
         ]
       }
-    ]
+    ],
+    "mencion": "Mencion honorifica placeholder para Achura más Compañero ([EDITAR] texto)."
   },
   {
     "id": "dupla-del-a-o",
@@ -587,7 +596,8 @@
           }
         ]
       }
-    ]
+    ],
+    "mencion": "Mencion honorifica placeholder para Dupla del Año ([EDITAR] texto)."
   },
   {
     "id": "clip-del-a-o",
@@ -646,7 +656,8 @@
           }
         ]
       }
-    ]
+    ],
+    "mencion": "Mencion honorifica placeholder para Clip del Año ([EDITAR] texto)."
   },
   {
     "id": "tilteo-del-a-o",
@@ -705,7 +716,8 @@
           }
         ]
       }
-    ]
+    ],
+    "mencion": "Mencion honorifica placeholder para Tilteo del Año ([EDITAR] texto)."
   },
   {
     "id": "mejor-outfit-del-a-o",
@@ -764,7 +776,8 @@
           }
         ]
       }
-    ]
+    ],
+    "mencion": "Mencion honorifica placeholder para Mejor Outfit del Año ([EDITAR] texto)."
   },
   {
     "id": "achura-m-s-bardero",
@@ -823,7 +836,8 @@
           }
         ]
       }
-    ]
+    ],
+    "mencion": "Mencion honorifica placeholder para Achura más Bardero ([EDITAR] texto)."
   },
   {
     "id": "fail-del-a-o",
@@ -882,7 +896,8 @@
           }
         ]
       }
-    ]
+    ],
+    "mencion": "Mencion honorifica placeholder para Fail del Año ([EDITAR] texto)."
   },
   {
     "id": "jugador-de-f-tbol-del-a-o",
@@ -941,7 +956,8 @@
           }
         ]
       }
-    ]
+    ],
+    "mencion": "Mencion honorifica placeholder para Jugador de Fútbol del Año ([EDITAR] texto)."
   },
   {
     "id": "secuencia-del-a-o",
@@ -1000,7 +1016,8 @@
           }
         ]
       }
-    ]
+    ],
+    "mencion": "Mencion honorifica placeholder para Secuencia del Año ([EDITAR] texto)."
   },
   {
     "id": "achura-mas-quebrado",
@@ -1059,6 +1076,7 @@
           }
         ]
       }
-    ]
+    ],
+    "mencion": "Mencion honorifica placeholder para Achura más quebrado ([EDITAR] texto)."
   }
 ]
