@@ -1,1082 +1,1202 @@
 [
   {
     "id": "achura-del-a-o",
-    "nombre": "Achura del Año",
-    "tipo": "story",
+    "nombre": "Achura del año",
+    "tipo": "imagen",
+    "mencion": "Mencion honorifica placeholder para Achura del año ([EDITAR]).",
     "nominados": [
       {
         "id": "n1",
         "nombre": "Nominado 1",
-        "descripcion": "Mejor momento de Achura del Año. Placeholder, editar en categories.json.",
-        "media": "/placeholder.mp4",
+        "descripcion": "Mejor momento de Achura del año. Placeholder.",
+        "media": "/placeholder-img.jpg",
         "poster": "/placeholder-img.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Achura del Año — mejor momento del año."
+            "contenido": "Historia placeholder de Achura del año."
           }
         ]
       },
       {
         "id": "n2",
         "nombre": "Nominado 2",
-        "descripcion": "Mejor momento de Achura del Año. Placeholder, editar en categories.json.",
-        "media": "/placeholder.mp4",
+        "descripcion": "Mejor momento de Achura del año. Placeholder.",
+        "media": "/placeholder-img.jpg",
         "poster": "/placeholder-img.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Achura del Año — mejor momento del año."
+            "contenido": "Historia placeholder de Achura del año."
           }
         ]
       },
       {
         "id": "n3",
         "nombre": "Nominado 3",
-        "descripcion": "Mejor momento de Achura del Año. Placeholder, editar en categories.json.",
-        "media": "/placeholder.mp4",
+        "descripcion": "Mejor momento de Achura del año. Placeholder.",
+        "media": "/placeholder-img.jpg",
         "poster": "/placeholder-img.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Achura del Año — mejor momento del año."
+            "contenido": "Historia placeholder de Achura del año."
           }
         ]
       },
       {
         "id": "n4",
         "nombre": "Nominado 4",
-        "descripcion": "Mejor momento de Achura del Año. Placeholder, editar en categories.json.",
-        "media": "/placeholder.mp4",
+        "descripcion": "Mejor momento de Achura del año. Placeholder.",
+        "media": "/placeholder-img.jpg",
         "poster": "/placeholder-img.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Achura del Año — mejor momento del año."
+            "contenido": "Historia placeholder de Achura del año."
           }
         ]
       }
-    ],
-    "mencion": "Mencion honorifica placeholder para Achura del Año ([EDITAR] texto)."
+    ]
   },
   {
-    "id": "achura-revelaci-n",
-    "nombre": "Achura Revelación",
-    "tipo": "story",
+    "id": "achura-revelacion",
+    "nombre": "Achura revelacion",
+    "tipo": "imagen",
+    "mencion": "Mencion honorifica placeholder para Achura revelacion ([EDITAR]).",
     "nominados": [
       {
         "id": "n5",
         "nombre": "Nominado 1",
-        "descripcion": "Mejor momento de Achura Revelación. Placeholder, editar en categories.json.",
-        "media": "/placeholder.mp4",
+        "descripcion": "Mejor momento de Achura revelacion. Placeholder.",
+        "media": "/placeholder-img.jpg",
         "poster": "/placeholder-img.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Achura Revelación — mejor momento del año."
+            "contenido": "Historia placeholder de Achura revelacion."
           }
         ]
       },
       {
         "id": "n6",
         "nombre": "Nominado 2",
-        "descripcion": "Mejor momento de Achura Revelación. Placeholder, editar en categories.json.",
-        "media": "/placeholder.mp4",
+        "descripcion": "Mejor momento de Achura revelacion. Placeholder.",
+        "media": "/placeholder-img.jpg",
         "poster": "/placeholder-img.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Achura Revelación — mejor momento del año."
+            "contenido": "Historia placeholder de Achura revelacion."
           }
         ]
       },
       {
         "id": "n7",
         "nombre": "Nominado 3",
-        "descripcion": "Mejor momento de Achura Revelación. Placeholder, editar en categories.json.",
-        "media": "/placeholder.mp4",
+        "descripcion": "Mejor momento de Achura revelacion. Placeholder.",
+        "media": "/placeholder-img.jpg",
         "poster": "/placeholder-img.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Achura Revelación — mejor momento del año."
+            "contenido": "Historia placeholder de Achura revelacion."
           }
         ]
       },
       {
         "id": "n8",
         "nombre": "Nominado 4",
-        "descripcion": "Mejor momento de Achura Revelación. Placeholder, editar en categories.json.",
-        "media": "/placeholder.mp4",
+        "descripcion": "Mejor momento de Achura revelacion. Placeholder.",
+        "media": "/placeholder-img.jpg",
         "poster": "/placeholder-img.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Achura Revelación — mejor momento del año."
+            "contenido": "Historia placeholder de Achura revelacion."
           }
         ]
       }
-    ],
-    "mencion": "Mencion honorifica placeholder para Achura Revelación ([EDITAR] texto)."
+    ]
   },
   {
-    "id": "achura-promesa",
-    "nombre": "Achura Promesa",
-    "tipo": "story",
+    "id": "achura-promesa-fuera-de-achura-",
+    "nombre": "Achura promesa (fuera de Achura)",
+    "tipo": "imagen",
+    "mencion": "Mencion honorifica placeholder para Achura promesa (fuera de Achura) ([EDITAR]).",
     "nominados": [
       {
         "id": "n9",
         "nombre": "Nominado 1",
-        "descripcion": "Mejor momento de Achura Promesa. Placeholder, editar en categories.json.",
-        "media": "/placeholder.mp4",
+        "descripcion": "Mejor momento de Achura promesa (fuera de Achura). Placeholder.",
+        "media": "/placeholder-img.jpg",
         "poster": "/placeholder-img.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Achura Promesa — mejor momento del año."
+            "contenido": "Historia placeholder de Achura promesa (fuera de Achura)."
           }
         ]
       },
       {
         "id": "n10",
         "nombre": "Nominado 2",
-        "descripcion": "Mejor momento de Achura Promesa. Placeholder, editar en categories.json.",
-        "media": "/placeholder.mp4",
+        "descripcion": "Mejor momento de Achura promesa (fuera de Achura). Placeholder.",
+        "media": "/placeholder-img.jpg",
         "poster": "/placeholder-img.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Achura Promesa — mejor momento del año."
+            "contenido": "Historia placeholder de Achura promesa (fuera de Achura)."
           }
         ]
       },
       {
         "id": "n11",
         "nombre": "Nominado 3",
-        "descripcion": "Mejor momento de Achura Promesa. Placeholder, editar en categories.json.",
-        "media": "/placeholder.mp4",
+        "descripcion": "Mejor momento de Achura promesa (fuera de Achura). Placeholder.",
+        "media": "/placeholder-img.jpg",
         "poster": "/placeholder-img.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Achura Promesa — mejor momento del año."
+            "contenido": "Historia placeholder de Achura promesa (fuera de Achura)."
           }
         ]
       },
       {
         "id": "n12",
         "nombre": "Nominado 4",
-        "descripcion": "Mejor momento de Achura Promesa. Placeholder, editar en categories.json.",
-        "media": "/placeholder.mp4",
-        "poster": "/placeholder-img.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Achura Promesa — mejor momento del año."
-          }
-        ]
-      }
-    ],
-    "mencion": "Mencion honorifica placeholder para Achura Promesa ([EDITAR] texto)."
-  },
-  {
-    "id": "achura-deportista-del-a-o",
-    "nombre": "Achura Deportista del Año",
-    "tipo": "imagen",
-    "nominados": [
-      {
-        "id": "n13",
-        "nombre": "Nominado 1",
-        "descripcion": "Mejor momento de Achura Deportista del Año. Placeholder, editar en categories.json.",
+        "descripcion": "Mejor momento de Achura promesa (fuera de Achura). Placeholder.",
         "media": "/placeholder-img.jpg",
         "poster": "/placeholder-img.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Achura Deportista del Año — mejor momento del año."
+            "contenido": "Historia placeholder de Achura promesa (fuera de Achura)."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "achura-gamer-del-a-o",
+    "nombre": "Achura gamer del año",
+    "tipo": "video",
+    "mencion": "Mencion honorifica placeholder para Achura gamer del año ([EDITAR]).",
+    "nominados": [
+      {
+        "id": "n13",
+        "nombre": "Nominado 1",
+        "descripcion": "Mejor momento de Achura gamer del año. Placeholder.",
+        "media": "/placeholder.mp4",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Achura gamer del año."
           }
         ]
       },
       {
         "id": "n14",
         "nombre": "Nominado 2",
-        "descripcion": "Mejor momento de Achura Deportista del Año. Placeholder, editar en categories.json.",
-        "media": "/placeholder-img.jpg",
+        "descripcion": "Mejor momento de Achura gamer del año. Placeholder.",
+        "media": "/placeholder.mp4",
         "poster": "/placeholder-img.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Achura Deportista del Año — mejor momento del año."
+            "contenido": "Historia placeholder de Achura gamer del año."
           }
         ]
       },
       {
         "id": "n15",
         "nombre": "Nominado 3",
-        "descripcion": "Mejor momento de Achura Deportista del Año. Placeholder, editar en categories.json.",
-        "media": "/placeholder-img.jpg",
+        "descripcion": "Mejor momento de Achura gamer del año. Placeholder.",
+        "media": "/placeholder.mp4",
         "poster": "/placeholder-img.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Achura Deportista del Año — mejor momento del año."
+            "contenido": "Historia placeholder de Achura gamer del año."
           }
         ]
       },
       {
         "id": "n16",
         "nombre": "Nominado 4",
-        "descripcion": "Mejor momento de Achura Deportista del Año. Placeholder, editar en categories.json.",
-        "media": "/placeholder-img.jpg",
-        "poster": "/placeholder-img.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Achura Deportista del Año — mejor momento del año."
-          }
-        ]
-      }
-    ],
-    "mencion": "Mencion honorifica placeholder para Achura Deportista del Año ([EDITAR] texto)."
-  },
-  {
-    "id": "achura-gamer-del-a-o",
-    "nombre": "Achura Gamer del Año",
-    "tipo": "video",
-    "nominados": [
-      {
-        "id": "n17",
-        "nombre": "Nominado 1",
-        "descripcion": "Mejor momento de Achura Gamer del Año. Placeholder, editar en categories.json.",
+        "descripcion": "Mejor momento de Achura gamer del año. Placeholder.",
         "media": "/placeholder.mp4",
         "poster": "/placeholder-img.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Achura Gamer del Año — mejor momento del año."
+            "contenido": "Historia placeholder de Achura gamer del año."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "jugador-de-cs-del-a-o",
+    "nombre": "Jugador de CS del año",
+    "tipo": "video",
+    "mencion": "Mencion honorifica placeholder para Jugador de CS del año ([EDITAR]).",
+    "nominados": [
+      {
+        "id": "n17",
+        "nombre": "Nominado 1",
+        "descripcion": "Mejor momento de Jugador de CS del año. Placeholder.",
+        "media": "/placeholder.mp4",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Jugador de CS del año."
           }
         ]
       },
       {
         "id": "n18",
         "nombre": "Nominado 2",
-        "descripcion": "Mejor momento de Achura Gamer del Año. Placeholder, editar en categories.json.",
+        "descripcion": "Mejor momento de Jugador de CS del año. Placeholder.",
         "media": "/placeholder.mp4",
         "poster": "/placeholder-img.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Achura Gamer del Año — mejor momento del año."
+            "contenido": "Historia placeholder de Jugador de CS del año."
           }
         ]
       },
       {
         "id": "n19",
         "nombre": "Nominado 3",
-        "descripcion": "Mejor momento de Achura Gamer del Año. Placeholder, editar en categories.json.",
+        "descripcion": "Mejor momento de Jugador de CS del año. Placeholder.",
         "media": "/placeholder.mp4",
         "poster": "/placeholder-img.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Achura Gamer del Año — mejor momento del año."
+            "contenido": "Historia placeholder de Jugador de CS del año."
           }
         ]
       },
       {
         "id": "n20",
         "nombre": "Nominado 4",
-        "descripcion": "Mejor momento de Achura Gamer del Año. Placeholder, editar en categories.json.",
+        "descripcion": "Mejor momento de Jugador de CS del año. Placeholder.",
         "media": "/placeholder.mp4",
         "poster": "/placeholder-img.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Achura Gamer del Año — mejor momento del año."
+            "contenido": "Historia placeholder de Jugador de CS del año."
           }
         ]
       }
-    ],
-    "mencion": "Mencion honorifica placeholder para Achura Gamer del Año ([EDITAR] texto)."
+    ]
   },
   {
-    "id": "mejor-jugador-de-cs",
-    "nombre": "Mejor Jugador de CS",
-    "tipo": "video",
+    "id": "achura-mas-gay-del-a-o",
+    "nombre": "Achura mas gay del año",
+    "tipo": "imagen",
+    "mencion": "Mencion honorifica placeholder para Achura mas gay del año ([EDITAR]).",
     "nominados": [
       {
         "id": "n21",
         "nombre": "Nominado 1",
-        "descripcion": "Mejor momento de Mejor Jugador de CS. Placeholder, editar en categories.json.",
-        "media": "/placeholder.mp4",
+        "descripcion": "Mejor momento de Achura mas gay del año. Placeholder.",
+        "media": "/placeholder-img.jpg",
         "poster": "/placeholder-img.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Mejor Jugador de CS — mejor momento del año."
+            "contenido": "Historia placeholder de Achura mas gay del año."
           }
         ]
       },
       {
         "id": "n22",
         "nombre": "Nominado 2",
-        "descripcion": "Mejor momento de Mejor Jugador de CS. Placeholder, editar en categories.json.",
-        "media": "/placeholder.mp4",
+        "descripcion": "Mejor momento de Achura mas gay del año. Placeholder.",
+        "media": "/placeholder-img.jpg",
         "poster": "/placeholder-img.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Mejor Jugador de CS — mejor momento del año."
+            "contenido": "Historia placeholder de Achura mas gay del año."
           }
         ]
       },
       {
         "id": "n23",
         "nombre": "Nominado 3",
-        "descripcion": "Mejor momento de Mejor Jugador de CS. Placeholder, editar en categories.json.",
-        "media": "/placeholder.mp4",
+        "descripcion": "Mejor momento de Achura mas gay del año. Placeholder.",
+        "media": "/placeholder-img.jpg",
         "poster": "/placeholder-img.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Mejor Jugador de CS — mejor momento del año."
+            "contenido": "Historia placeholder de Achura mas gay del año."
           }
         ]
       },
       {
         "id": "n24",
         "nombre": "Nominado 4",
-        "descripcion": "Mejor momento de Mejor Jugador de CS. Placeholder, editar en categories.json.",
-        "media": "/placeholder.mp4",
-        "poster": "/placeholder-img.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Mejor Jugador de CS — mejor momento del año."
-          }
-        ]
-      }
-    ],
-    "mencion": "Mencion honorifica placeholder para Mejor Jugador de CS ([EDITAR] texto)."
-  },
-  {
-    "id": "achura-m-s-gay-del-a-o",
-    "nombre": "Achura más Gay del Año",
-    "tipo": "imagen",
-    "nominados": [
-      {
-        "id": "n25",
-        "nombre": "Nominado 1",
-        "descripcion": "Mejor momento de Achura más Gay del Año. Placeholder, editar en categories.json.",
+        "descripcion": "Mejor momento de Achura mas gay del año. Placeholder.",
         "media": "/placeholder-img.jpg",
         "poster": "/placeholder-img.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Achura más Gay del Año — mejor momento del año."
+            "contenido": "Historia placeholder de Achura mas gay del año."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "mejor-outfit-del-d-a",
+    "nombre": "Mejor outfit del día",
+    "tipo": "imagen",
+    "mencion": "Mencion honorifica placeholder para Mejor outfit del día ([EDITAR]).",
+    "nominados": [
+      {
+        "id": "n25",
+        "nombre": "Nominado 1",
+        "descripcion": "Mejor momento de Mejor outfit del día. Placeholder.",
+        "media": "/placeholder-img.jpg",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Mejor outfit del día."
           }
         ]
       },
       {
         "id": "n26",
         "nombre": "Nominado 2",
-        "descripcion": "Mejor momento de Achura más Gay del Año. Placeholder, editar en categories.json.",
+        "descripcion": "Mejor momento de Mejor outfit del día. Placeholder.",
         "media": "/placeholder-img.jpg",
         "poster": "/placeholder-img.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Achura más Gay del Año — mejor momento del año."
+            "contenido": "Historia placeholder de Mejor outfit del día."
           }
         ]
       },
       {
         "id": "n27",
         "nombre": "Nominado 3",
-        "descripcion": "Mejor momento de Achura más Gay del Año. Placeholder, editar en categories.json.",
+        "descripcion": "Mejor momento de Mejor outfit del día. Placeholder.",
         "media": "/placeholder-img.jpg",
         "poster": "/placeholder-img.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Achura más Gay del Año — mejor momento del año."
+            "contenido": "Historia placeholder de Mejor outfit del día."
           }
         ]
       },
       {
         "id": "n28",
         "nombre": "Nominado 4",
-        "descripcion": "Mejor momento de Achura más Gay del Año. Placeholder, editar en categories.json.",
+        "descripcion": "Mejor momento de Mejor outfit del día. Placeholder.",
         "media": "/placeholder-img.jpg",
         "poster": "/placeholder-img.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Achura más Gay del Año — mejor momento del año."
+            "contenido": "Historia placeholder de Mejor outfit del día."
           }
         ]
       }
-    ],
-    "mencion": "Mencion honorifica placeholder para Achura más Gay del Año ([EDITAR] texto)."
+    ]
   },
   {
-    "id": "achura-m-s-fachero",
-    "nombre": "Achura más Fachero",
+    "id": "mejor-outfit-del-a-o-con-foto-",
+    "nombre": "Mejor outfit del Año (con foto)",
     "tipo": "imagen",
+    "mencion": "Mencion honorifica placeholder para Mejor outfit del Año (con foto) ([EDITAR]).",
     "nominados": [
       {
         "id": "n29",
         "nombre": "Nominado 1",
-        "descripcion": "Mejor momento de Achura más Fachero. Placeholder, editar en categories.json.",
+        "descripcion": "Mejor momento de Mejor outfit del Año (con foto). Placeholder.",
         "media": "/placeholder-img.jpg",
         "poster": "/placeholder-img.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Achura más Fachero — mejor momento del año."
+            "contenido": "Historia placeholder de Mejor outfit del Año (con foto)."
           }
         ]
       },
       {
         "id": "n30",
         "nombre": "Nominado 2",
-        "descripcion": "Mejor momento de Achura más Fachero. Placeholder, editar en categories.json.",
+        "descripcion": "Mejor momento de Mejor outfit del Año (con foto). Placeholder.",
         "media": "/placeholder-img.jpg",
         "poster": "/placeholder-img.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Achura más Fachero — mejor momento del año."
+            "contenido": "Historia placeholder de Mejor outfit del Año (con foto)."
           }
         ]
       },
       {
         "id": "n31",
         "nombre": "Nominado 3",
-        "descripcion": "Mejor momento de Achura más Fachero. Placeholder, editar en categories.json.",
+        "descripcion": "Mejor momento de Mejor outfit del Año (con foto). Placeholder.",
         "media": "/placeholder-img.jpg",
         "poster": "/placeholder-img.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Achura más Fachero — mejor momento del año."
+            "contenido": "Historia placeholder de Mejor outfit del Año (con foto)."
           }
         ]
       },
       {
         "id": "n32",
         "nombre": "Nominado 4",
-        "descripcion": "Mejor momento de Achura más Fachero. Placeholder, editar en categories.json.",
+        "descripcion": "Mejor momento de Mejor outfit del Año (con foto). Placeholder.",
         "media": "/placeholder-img.jpg",
         "poster": "/placeholder-img.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Achura más Fachero — mejor momento del año."
+            "contenido": "Historia placeholder de Mejor outfit del Año (con foto)."
           }
         ]
       }
-    ],
-    "mencion": "Mencion honorifica placeholder para Achura más Fachero ([EDITAR] texto)."
+    ]
   },
   {
-    "id": "achura-m-s-compa-ero",
-    "nombre": "Achura más Compañero",
-    "tipo": "story",
+    "id": "achura-mas-compa-ero",
+    "nombre": "Achura mas compañero",
+    "tipo": "imagen",
+    "mencion": "Mencion honorifica placeholder para Achura mas compañero ([EDITAR]).",
     "nominados": [
       {
         "id": "n33",
         "nombre": "Nominado 1",
-        "descripcion": "Mejor momento de Achura más Compañero. Placeholder, editar en categories.json.",
-        "media": "/placeholder.mp4",
+        "descripcion": "Mejor momento de Achura mas compañero. Placeholder.",
+        "media": "/placeholder-img.jpg",
         "poster": "/placeholder-img.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Achura más Compañero — mejor momento del año."
+            "contenido": "Historia placeholder de Achura mas compañero."
           }
         ]
       },
       {
         "id": "n34",
         "nombre": "Nominado 2",
-        "descripcion": "Mejor momento de Achura más Compañero. Placeholder, editar en categories.json.",
-        "media": "/placeholder.mp4",
+        "descripcion": "Mejor momento de Achura mas compañero. Placeholder.",
+        "media": "/placeholder-img.jpg",
         "poster": "/placeholder-img.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Achura más Compañero — mejor momento del año."
+            "contenido": "Historia placeholder de Achura mas compañero."
           }
         ]
       },
       {
         "id": "n35",
         "nombre": "Nominado 3",
-        "descripcion": "Mejor momento de Achura más Compañero. Placeholder, editar en categories.json.",
-        "media": "/placeholder.mp4",
+        "descripcion": "Mejor momento de Achura mas compañero. Placeholder.",
+        "media": "/placeholder-img.jpg",
         "poster": "/placeholder-img.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Achura más Compañero — mejor momento del año."
+            "contenido": "Historia placeholder de Achura mas compañero."
           }
         ]
       },
       {
         "id": "n36",
         "nombre": "Nominado 4",
-        "descripcion": "Mejor momento de Achura más Compañero. Placeholder, editar en categories.json.",
-        "media": "/placeholder.mp4",
+        "descripcion": "Mejor momento de Achura mas compañero. Placeholder.",
+        "media": "/placeholder-img.jpg",
         "poster": "/placeholder-img.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Achura más Compañero — mejor momento del año."
+            "contenido": "Historia placeholder de Achura mas compañero."
           }
         ]
       }
-    ],
-    "mencion": "Mencion honorifica placeholder para Achura más Compañero ([EDITAR] texto)."
+    ]
   },
   {
     "id": "dupla-del-a-o",
-    "nombre": "Dupla del Año",
+    "nombre": "Dupla del año",
     "tipo": "video",
+    "mencion": "Mencion honorifica placeholder para Dupla del año ([EDITAR]).",
     "nominados": [
       {
         "id": "n37",
         "nombre": "Nominado 1",
-        "descripcion": "Mejor momento de Dupla del Año. Placeholder, editar en categories.json.",
+        "descripcion": "Mejor momento de Dupla del año. Placeholder.",
         "media": "/placeholder.mp4",
         "poster": "/placeholder-img.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Dupla del Año — mejor momento del año."
+            "contenido": "Historia placeholder de Dupla del año."
           }
         ]
       },
       {
         "id": "n38",
         "nombre": "Nominado 2",
-        "descripcion": "Mejor momento de Dupla del Año. Placeholder, editar en categories.json.",
+        "descripcion": "Mejor momento de Dupla del año. Placeholder.",
         "media": "/placeholder.mp4",
         "poster": "/placeholder-img.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Dupla del Año — mejor momento del año."
+            "contenido": "Historia placeholder de Dupla del año."
           }
         ]
       },
       {
         "id": "n39",
         "nombre": "Nominado 3",
-        "descripcion": "Mejor momento de Dupla del Año. Placeholder, editar en categories.json.",
+        "descripcion": "Mejor momento de Dupla del año. Placeholder.",
         "media": "/placeholder.mp4",
         "poster": "/placeholder-img.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Dupla del Año — mejor momento del año."
+            "contenido": "Historia placeholder de Dupla del año."
           }
         ]
       },
       {
         "id": "n40",
         "nombre": "Nominado 4",
-        "descripcion": "Mejor momento de Dupla del Año. Placeholder, editar en categories.json.",
+        "descripcion": "Mejor momento de Dupla del año. Placeholder.",
         "media": "/placeholder.mp4",
         "poster": "/placeholder-img.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Dupla del Año — mejor momento del año."
+            "contenido": "Historia placeholder de Dupla del año."
           }
         ]
       }
-    ],
-    "mencion": "Mencion honorifica placeholder para Dupla del Año ([EDITAR] texto)."
+    ]
   },
   {
-    "id": "clip-del-a-o",
-    "nombre": "Clip del Año",
-    "tipo": "video",
+    "id": "jugador-de-futbol-del-a-o",
+    "nombre": "Jugador de futbol del año",
+    "tipo": "imagen",
+    "mencion": "Mencion honorifica placeholder para Jugador de futbol del año ([EDITAR]).",
     "nominados": [
       {
         "id": "n41",
         "nombre": "Nominado 1",
-        "descripcion": "Mejor momento de Clip del Año. Placeholder, editar en categories.json.",
-        "media": "/placeholder.mp4",
+        "descripcion": "Mejor momento de Jugador de futbol del año. Placeholder.",
+        "media": "/placeholder-img.jpg",
         "poster": "/placeholder-img.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Clip del Año — mejor momento del año."
+            "contenido": "Historia placeholder de Jugador de futbol del año."
           }
         ]
       },
       {
         "id": "n42",
         "nombre": "Nominado 2",
-        "descripcion": "Mejor momento de Clip del Año. Placeholder, editar en categories.json.",
-        "media": "/placeholder.mp4",
+        "descripcion": "Mejor momento de Jugador de futbol del año. Placeholder.",
+        "media": "/placeholder-img.jpg",
         "poster": "/placeholder-img.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Clip del Año — mejor momento del año."
+            "contenido": "Historia placeholder de Jugador de futbol del año."
           }
         ]
       },
       {
         "id": "n43",
         "nombre": "Nominado 3",
-        "descripcion": "Mejor momento de Clip del Año. Placeholder, editar en categories.json.",
-        "media": "/placeholder.mp4",
+        "descripcion": "Mejor momento de Jugador de futbol del año. Placeholder.",
+        "media": "/placeholder-img.jpg",
         "poster": "/placeholder-img.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Clip del Año — mejor momento del año."
+            "contenido": "Historia placeholder de Jugador de futbol del año."
           }
         ]
       },
       {
         "id": "n44",
         "nombre": "Nominado 4",
-        "descripcion": "Mejor momento de Clip del Año. Placeholder, editar en categories.json.",
-        "media": "/placeholder.mp4",
+        "descripcion": "Mejor momento de Jugador de futbol del año. Placeholder.",
+        "media": "/placeholder-img.jpg",
         "poster": "/placeholder-img.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Clip del Año — mejor momento del año."
+            "contenido": "Historia placeholder de Jugador de futbol del año."
           }
         ]
       }
-    ],
-    "mencion": "Mencion honorifica placeholder para Clip del Año ([EDITAR] texto)."
+    ]
   },
   {
-    "id": "tilteo-del-a-o",
-    "nombre": "Tilteo del Año",
-    "tipo": "video",
+    "id": "secuencia-del-a-o",
+    "nombre": "Secuencia del año",
+    "tipo": "story",
+    "mencion": "Mencion honorifica placeholder para Secuencia del año ([EDITAR]).",
     "nominados": [
       {
         "id": "n45",
         "nombre": "Nominado 1",
-        "descripcion": "Mejor momento de Tilteo del Año. Placeholder, editar en categories.json.",
+        "descripcion": "Mejor momento de Secuencia del año. Placeholder.",
         "media": "/placeholder.mp4",
         "poster": "/placeholder-img.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Tilteo del Año — mejor momento del año."
+            "contenido": "Historia placeholder de Secuencia del año."
           }
         ]
       },
       {
         "id": "n46",
         "nombre": "Nominado 2",
-        "descripcion": "Mejor momento de Tilteo del Año. Placeholder, editar en categories.json.",
+        "descripcion": "Mejor momento de Secuencia del año. Placeholder.",
         "media": "/placeholder.mp4",
         "poster": "/placeholder-img.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Tilteo del Año — mejor momento del año."
+            "contenido": "Historia placeholder de Secuencia del año."
           }
         ]
       },
       {
         "id": "n47",
         "nombre": "Nominado 3",
-        "descripcion": "Mejor momento de Tilteo del Año. Placeholder, editar en categories.json.",
+        "descripcion": "Mejor momento de Secuencia del año. Placeholder.",
         "media": "/placeholder.mp4",
         "poster": "/placeholder-img.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Tilteo del Año — mejor momento del año."
+            "contenido": "Historia placeholder de Secuencia del año."
           }
         ]
       },
       {
         "id": "n48",
         "nombre": "Nominado 4",
-        "descripcion": "Mejor momento de Tilteo del Año. Placeholder, editar en categories.json.",
+        "descripcion": "Mejor momento de Secuencia del año. Placeholder.",
         "media": "/placeholder.mp4",
         "poster": "/placeholder-img.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Tilteo del Año — mejor momento del año."
+            "contenido": "Historia placeholder de Secuencia del año."
           }
         ]
       }
-    ],
-    "mencion": "Mencion honorifica placeholder para Tilteo del Año ([EDITAR] texto)."
+    ]
   },
   {
-    "id": "mejor-outfit-del-a-o",
-    "nombre": "Mejor Outfit del Año",
-    "tipo": "imagen",
+    "id": "achura-mas-quebrado",
+    "nombre": "Achura mas quebrado",
+    "tipo": "video",
+    "mencion": "Mencion honorifica placeholder para Achura mas quebrado ([EDITAR]).",
     "nominados": [
       {
         "id": "n49",
         "nombre": "Nominado 1",
-        "descripcion": "Mejor momento de Mejor Outfit del Año. Placeholder, editar en categories.json.",
-        "media": "/placeholder-img.jpg",
+        "descripcion": "Mejor momento de Achura mas quebrado. Placeholder.",
+        "media": "/placeholder.mp4",
         "poster": "/placeholder-img.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Mejor Outfit del Año — mejor momento del año."
+            "contenido": "Historia placeholder de Achura mas quebrado."
           }
         ]
       },
       {
         "id": "n50",
         "nombre": "Nominado 2",
-        "descripcion": "Mejor momento de Mejor Outfit del Año. Placeholder, editar en categories.json.",
-        "media": "/placeholder-img.jpg",
+        "descripcion": "Mejor momento de Achura mas quebrado. Placeholder.",
+        "media": "/placeholder.mp4",
         "poster": "/placeholder-img.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Mejor Outfit del Año — mejor momento del año."
+            "contenido": "Historia placeholder de Achura mas quebrado."
           }
         ]
       },
       {
         "id": "n51",
         "nombre": "Nominado 3",
-        "descripcion": "Mejor momento de Mejor Outfit del Año. Placeholder, editar en categories.json.",
-        "media": "/placeholder-img.jpg",
+        "descripcion": "Mejor momento de Achura mas quebrado. Placeholder.",
+        "media": "/placeholder.mp4",
         "poster": "/placeholder-img.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Mejor Outfit del Año — mejor momento del año."
+            "contenido": "Historia placeholder de Achura mas quebrado."
           }
         ]
       },
       {
         "id": "n52",
         "nombre": "Nominado 4",
-        "descripcion": "Mejor momento de Mejor Outfit del Año. Placeholder, editar en categories.json.",
-        "media": "/placeholder-img.jpg",
+        "descripcion": "Mejor momento de Achura mas quebrado. Placeholder.",
+        "media": "/placeholder.mp4",
         "poster": "/placeholder-img.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Mejor Outfit del Año — mejor momento del año."
+            "contenido": "Historia placeholder de Achura mas quebrado."
           }
         ]
       }
-    ],
-    "mencion": "Mencion honorifica placeholder para Mejor Outfit del Año ([EDITAR] texto)."
+    ]
   },
   {
-    "id": "achura-m-s-bardero",
-    "nombre": "Achura más Bardero",
-    "tipo": "imagen",
+    "id": "fail-del-a-o",
+    "nombre": "Fail del año",
+    "tipo": "video",
+    "mencion": "Mencion honorifica placeholder para Fail del año ([EDITAR]).",
     "nominados": [
       {
         "id": "n53",
         "nombre": "Nominado 1",
-        "descripcion": "Mejor momento de Achura más Bardero. Placeholder, editar en categories.json.",
-        "media": "/placeholder-img.jpg",
+        "descripcion": "Mejor momento de Fail del año. Placeholder.",
+        "media": "/placeholder.mp4",
         "poster": "/placeholder-img.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Achura más Bardero — mejor momento del año."
+            "contenido": "Historia placeholder de Fail del año."
           }
         ]
       },
       {
         "id": "n54",
         "nombre": "Nominado 2",
-        "descripcion": "Mejor momento de Achura más Bardero. Placeholder, editar en categories.json.",
-        "media": "/placeholder-img.jpg",
+        "descripcion": "Mejor momento de Fail del año. Placeholder.",
+        "media": "/placeholder.mp4",
         "poster": "/placeholder-img.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Achura más Bardero — mejor momento del año."
+            "contenido": "Historia placeholder de Fail del año."
           }
         ]
       },
       {
         "id": "n55",
         "nombre": "Nominado 3",
-        "descripcion": "Mejor momento de Achura más Bardero. Placeholder, editar en categories.json.",
-        "media": "/placeholder-img.jpg",
+        "descripcion": "Mejor momento de Fail del año. Placeholder.",
+        "media": "/placeholder.mp4",
         "poster": "/placeholder-img.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Achura más Bardero — mejor momento del año."
+            "contenido": "Historia placeholder de Fail del año."
           }
         ]
       },
       {
         "id": "n56",
         "nombre": "Nominado 4",
-        "descripcion": "Mejor momento de Achura más Bardero. Placeholder, editar en categories.json.",
-        "media": "/placeholder-img.jpg",
-        "poster": "/placeholder-img.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Achura más Bardero — mejor momento del año."
-          }
-        ]
-      }
-    ],
-    "mencion": "Mencion honorifica placeholder para Achura más Bardero ([EDITAR] texto)."
-  },
-  {
-    "id": "fail-del-a-o",
-    "nombre": "Fail del Año",
-    "tipo": "video",
-    "nominados": [
-      {
-        "id": "n57",
-        "nombre": "Nominado 1",
-        "descripcion": "Mejor momento de Fail del Año. Placeholder, editar en categories.json.",
+        "descripcion": "Mejor momento de Fail del año. Placeholder.",
         "media": "/placeholder.mp4",
         "poster": "/placeholder-img.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Fail del Año — mejor momento del año."
+            "contenido": "Historia placeholder de Fail del año."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "achura-mas-gobernado",
+    "nombre": "Achura mas gobernado",
+    "tipo": "imagen",
+    "mencion": "Mencion honorifica placeholder para Achura mas gobernado ([EDITAR]).",
+    "nominados": [
+      {
+        "id": "n57",
+        "nombre": "Nominado 1",
+        "descripcion": "Mejor momento de Achura mas gobernado. Placeholder.",
+        "media": "/placeholder-img.jpg",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Achura mas gobernado."
           }
         ]
       },
       {
         "id": "n58",
         "nombre": "Nominado 2",
-        "descripcion": "Mejor momento de Fail del Año. Placeholder, editar en categories.json.",
-        "media": "/placeholder.mp4",
+        "descripcion": "Mejor momento de Achura mas gobernado. Placeholder.",
+        "media": "/placeholder-img.jpg",
         "poster": "/placeholder-img.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Fail del Año — mejor momento del año."
+            "contenido": "Historia placeholder de Achura mas gobernado."
           }
         ]
       },
       {
         "id": "n59",
         "nombre": "Nominado 3",
-        "descripcion": "Mejor momento de Fail del Año. Placeholder, editar en categories.json.",
-        "media": "/placeholder.mp4",
+        "descripcion": "Mejor momento de Achura mas gobernado. Placeholder.",
+        "media": "/placeholder-img.jpg",
         "poster": "/placeholder-img.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Fail del Año — mejor momento del año."
+            "contenido": "Historia placeholder de Achura mas gobernado."
           }
         ]
       },
       {
         "id": "n60",
         "nombre": "Nominado 4",
-        "descripcion": "Mejor momento de Fail del Año. Placeholder, editar en categories.json.",
-        "media": "/placeholder.mp4",
-        "poster": "/placeholder-img.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Fail del Año — mejor momento del año."
-          }
-        ]
-      }
-    ],
-    "mencion": "Mencion honorifica placeholder para Fail del Año ([EDITAR] texto)."
-  },
-  {
-    "id": "jugador-de-f-tbol-del-a-o",
-    "nombre": "Jugador de Fútbol del Año",
-    "tipo": "imagen",
-    "nominados": [
-      {
-        "id": "n61",
-        "nombre": "Nominado 1",
-        "descripcion": "Mejor momento de Jugador de Fútbol del Año. Placeholder, editar en categories.json.",
+        "descripcion": "Mejor momento de Achura mas gobernado. Placeholder.",
         "media": "/placeholder-img.jpg",
         "poster": "/placeholder-img.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Jugador de Fútbol del Año — mejor momento del año."
+            "contenido": "Historia placeholder de Achura mas gobernado."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cumplea-os-del-a-o",
+    "nombre": "Cumpleaños del año",
+    "tipo": "imagen",
+    "mencion": "Mencion honorifica placeholder para Cumpleaños del año ([EDITAR]).",
+    "nominados": [
+      {
+        "id": "n61",
+        "nombre": "Nominado 1",
+        "descripcion": "Mejor momento de Cumpleaños del año. Placeholder.",
+        "media": "/placeholder-img.jpg",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Cumpleaños del año."
           }
         ]
       },
       {
         "id": "n62",
         "nombre": "Nominado 2",
-        "descripcion": "Mejor momento de Jugador de Fútbol del Año. Placeholder, editar en categories.json.",
+        "descripcion": "Mejor momento de Cumpleaños del año. Placeholder.",
         "media": "/placeholder-img.jpg",
         "poster": "/placeholder-img.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Jugador de Fútbol del Año — mejor momento del año."
+            "contenido": "Historia placeholder de Cumpleaños del año."
           }
         ]
       },
       {
         "id": "n63",
         "nombre": "Nominado 3",
-        "descripcion": "Mejor momento de Jugador de Fútbol del Año. Placeholder, editar en categories.json.",
+        "descripcion": "Mejor momento de Cumpleaños del año. Placeholder.",
         "media": "/placeholder-img.jpg",
         "poster": "/placeholder-img.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Jugador de Fútbol del Año — mejor momento del año."
+            "contenido": "Historia placeholder de Cumpleaños del año."
           }
         ]
       },
       {
         "id": "n64",
         "nombre": "Nominado 4",
-        "descripcion": "Mejor momento de Jugador de Fútbol del Año. Placeholder, editar en categories.json.",
+        "descripcion": "Mejor momento de Cumpleaños del año. Placeholder.",
         "media": "/placeholder-img.jpg",
         "poster": "/placeholder-img.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Jugador de Fútbol del Año — mejor momento del año."
+            "contenido": "Historia placeholder de Cumpleaños del año."
           }
         ]
       }
-    ],
-    "mencion": "Mencion honorifica placeholder para Jugador de Fútbol del Año ([EDITAR] texto)."
+    ]
   },
   {
-    "id": "secuencia-del-a-o",
-    "nombre": "Secuencia del Año",
-    "tipo": "video",
+    "id": "menci-n-honorificas",
+    "nombre": "Mención Honorificas",
+    "tipo": "imagen",
+    "mencion": "El tute por la idea. Pablo por desaparecido.",
     "nominados": [
       {
         "id": "n65",
         "nombre": "Nominado 1",
-        "descripcion": "Mejor momento de Secuencia del Año. Placeholder, editar en categories.json.",
-        "media": "/placeholder.mp4",
+        "descripcion": "Mejor momento de Mención Honorificas. Placeholder.",
+        "media": "/placeholder-img.jpg",
         "poster": "/placeholder-img.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Secuencia del Año — mejor momento del año."
+            "contenido": "Historia placeholder de Mención Honorificas."
           }
         ]
       },
       {
         "id": "n66",
         "nombre": "Nominado 2",
-        "descripcion": "Mejor momento de Secuencia del Año. Placeholder, editar en categories.json.",
-        "media": "/placeholder.mp4",
+        "descripcion": "Mejor momento de Mención Honorificas. Placeholder.",
+        "media": "/placeholder-img.jpg",
         "poster": "/placeholder-img.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Secuencia del Año — mejor momento del año."
+            "contenido": "Historia placeholder de Mención Honorificas."
           }
         ]
       },
       {
         "id": "n67",
         "nombre": "Nominado 3",
-        "descripcion": "Mejor momento de Secuencia del Año. Placeholder, editar en categories.json.",
-        "media": "/placeholder.mp4",
+        "descripcion": "Mejor momento de Mención Honorificas. Placeholder.",
+        "media": "/placeholder-img.jpg",
         "poster": "/placeholder-img.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Secuencia del Año — mejor momento del año."
+            "contenido": "Historia placeholder de Mención Honorificas."
           }
         ]
       },
       {
         "id": "n68",
         "nombre": "Nominado 4",
-        "descripcion": "Mejor momento de Secuencia del Año. Placeholder, editar en categories.json.",
-        "media": "/placeholder.mp4",
+        "descripcion": "Mejor momento de Mención Honorificas. Placeholder.",
+        "media": "/placeholder-img.jpg",
         "poster": "/placeholder-img.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Secuencia del Año — mejor momento del año."
+            "contenido": "Historia placeholder de Mención Honorificas."
           }
         ]
       }
-    ],
-    "mencion": "Mencion honorifica placeholder para Secuencia del Año ([EDITAR] texto)."
+    ]
   },
   {
-    "id": "achura-mas-quebrado",
-    "nombre": "Achura más quebrado",
+    "id": "gordiada-del-a-o",
+    "nombre": "Gordiada del año",
     "tipo": "story",
+    "mencion": "Mencion honorifica placeholder para Gordiada del año ([EDITAR]).",
     "nominados": [
       {
         "id": "n69",
         "nombre": "Nominado 1",
-        "descripcion": "Mejor momento de Achura más quebrado. Placeholder, editar en categories.json.",
+        "descripcion": "Mejor momento de Gordiada del año. Placeholder.",
         "media": "/placeholder.mp4",
         "poster": "/placeholder-img.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Achura más quebrado."
+            "contenido": "Historia placeholder de Gordiada del año."
           }
         ]
       },
       {
         "id": "n70",
         "nombre": "Nominado 2",
-        "descripcion": "Mejor momento de Achura más quebrado. Placeholder, editar en categories.json.",
+        "descripcion": "Mejor momento de Gordiada del año. Placeholder.",
         "media": "/placeholder.mp4",
         "poster": "/placeholder-img.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Achura más quebrado."
+            "contenido": "Historia placeholder de Gordiada del año."
           }
         ]
       },
       {
         "id": "n71",
         "nombre": "Nominado 3",
-        "descripcion": "Mejor momento de Achura más quebrado. Placeholder, editar en categories.json.",
+        "descripcion": "Mejor momento de Gordiada del año. Placeholder.",
         "media": "/placeholder.mp4",
         "poster": "/placeholder-img.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Achura más quebrado."
+            "contenido": "Historia placeholder de Gordiada del año."
           }
         ]
       },
       {
         "id": "n72",
         "nombre": "Nominado 4",
-        "descripcion": "Mejor momento de Achura más quebrado. Placeholder, editar en categories.json.",
+        "descripcion": "Mejor momento de Gordiada del año. Placeholder.",
         "media": "/placeholder.mp4",
         "poster": "/placeholder-img.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Achura más quebrado."
+            "contenido": "Historia placeholder de Gordiada del año."
           }
         ]
       }
-    ],
-    "mencion": "Mencion honorifica placeholder para Achura más quebrado ([EDITAR] texto)."
+    ]
+  },
+  {
+    "id": "mejor-momento-mdt",
+    "nombre": "Mejor momento MDT",
+    "tipo": "story",
+    "mencion": "Mencion honorifica placeholder para Mejor momento MDT ([EDITAR]).",
+    "nominados": [
+      {
+        "id": "n73",
+        "nombre": "Nominado 1",
+        "descripcion": "Mejor momento de Mejor momento MDT. Placeholder.",
+        "media": "/placeholder.mp4",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Mejor momento MDT."
+          }
+        ]
+      },
+      {
+        "id": "n74",
+        "nombre": "Nominado 2",
+        "descripcion": "Mejor momento de Mejor momento MDT. Placeholder.",
+        "media": "/placeholder.mp4",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Mejor momento MDT."
+          }
+        ]
+      },
+      {
+        "id": "n75",
+        "nombre": "Nominado 3",
+        "descripcion": "Mejor momento de Mejor momento MDT. Placeholder.",
+        "media": "/placeholder.mp4",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Mejor momento MDT."
+          }
+        ]
+      },
+      {
+        "id": "n76",
+        "nombre": "Nominado 4",
+        "descripcion": "Mejor momento de Mejor momento MDT. Placeholder.",
+        "media": "/placeholder.mp4",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Mejor momento MDT."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "mejor-momento-pad-10",
+    "nombre": "Mejor momento PAD 10",
+    "tipo": "video",
+    "mencion": "Mencion honorifica placeholder para Mejor momento PAD 10 ([EDITAR]).",
+    "nominados": [
+      {
+        "id": "n77",
+        "nombre": "Nominado 1",
+        "descripcion": "Mejor momento de Mejor momento PAD 10. Placeholder.",
+        "media": "/placeholder.mp4",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Mejor momento PAD 10."
+          }
+        ]
+      },
+      {
+        "id": "n78",
+        "nombre": "Nominado 2",
+        "descripcion": "Mejor momento de Mejor momento PAD 10. Placeholder.",
+        "media": "/placeholder.mp4",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Mejor momento PAD 10."
+          }
+        ]
+      },
+      {
+        "id": "n79",
+        "nombre": "Nominado 3",
+        "descripcion": "Mejor momento de Mejor momento PAD 10. Placeholder.",
+        "media": "/placeholder.mp4",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Mejor momento PAD 10."
+          }
+        ]
+      },
+      {
+        "id": "n80",
+        "nombre": "Nominado 4",
+        "descripcion": "Mejor momento de Mejor momento PAD 10. Placeholder.",
+        "media": "/placeholder.mp4",
+        "poster": "/placeholder-img.jpg",
+        "story": [
+          {
+            "tipo": "texto",
+            "contenido": "Historia placeholder de Mejor momento PAD 10."
+          }
+        ]
+      }
+    ]
   }
 ]
