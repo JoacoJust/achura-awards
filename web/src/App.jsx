@@ -15,6 +15,8 @@ export default function App() {
   const [openMedia, setOpenMedia] = useState(null) // nominado abierto en modal
   const [confirm, setConfirm] = useState(null) // {catId, nom}
   const [hecho, setHecho] = useState(null) // {catId, nom}
+  const [tab, setTab] = useState('ternas') // pestaña: ternas | achuras | menciones
+  const [achuraOpen, setAchuraOpen] = useState(null) // índice del modal de integrante
 
   const votadas = Object.keys(votos).length
   const total = categories.length
@@ -49,7 +51,14 @@ export default function App() {
               <p className="font-serif tracking-[.4em] text-gold mt-2">TERNAS</p>
               <p className="text-white/60 mt-2 italic">Los luchos de oro…</p>
             </header>
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8 max-w-6xl mx-auto px-6 pb-10">
+            <nav className="flex justify-center gap-6 text-xs tracking-[.2em] uppercase text-white/60 mb-6">
+              {['ternas', 'achuras', 'menciones'].map((t) => (
+                <button key={t} onClick={() => setTab(t)} className={`pb-1 border-b ${tab === t ? 'text-gold border-gold' : 'border-transparent hover:text-white'}`}>{t === 'ternas' ? 'Ternas' : t === 'achuras' ? 'Los Achuras' : 'Menciones'}</button>
+              ))}
+            </nav>
+
+            {tab === 'ternas' && (
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8 max-w-6xl mx-auto px-6 pb-20">
               {categories.map((c) => (
                 <button key={c.id} onClick={() => setCat(c)} className="group flex flex-col items-center gap-3 text-center focus:outline-none" aria-label={`Abrir ${c.nombre}`}>
                   <span className="transition-transform duration-300 group-hover:scale-105 group-hover:drop-shadow-[0_0_18px_rgba(212,175,55,.5)]">
@@ -60,33 +69,40 @@ export default function App() {
                 </button>
               ))}
             </div>
+            )}
 
-            {/* Integrantes */}
-            <section className="max-w-6xl mx-auto px-6 pb-10">
-              <h2 className="font-serif text-2xl tracking-[.2em] text-center mb-8 uppercase">Integrantes</h2>
-              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
-                {miembros.map((m, i) => (
-                  <div key={i} className="text-center">
-                    <img src={m.foto} alt={m.nombre} className="rounded-full w-28 h-28 object-cover mx-auto border-2 border-white/20" />
-                    <p className="mt-2 font-semibold">{m.nombre}</p>
-                    <p className="text-xs text-white/60">{m.descripcion}</p>
-                  </div>
-                ))}
+            {tab === 'achuras' && (
+              <div className="max-w-6xl mx-auto px-6 pb-20">
+                <h2 className="font-serif text-2xl tracking-[.2em] text-center mb-8 uppercase">Los Achuras</h2>
+                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
+                  {miembros.map((m, i) => (
+                    <button key={i} onClick={() => setAchuraOpen(i)} className="group flex flex-col items-center gap-2 text-center">
+                      <img src={m.imagen} alt={m.nombre} loading="lazy" className="rounded-full w-24 h-24 object-cover border-2 border-white/20 group-hover:border-gold transition" onError={(e) => { e.currentTarget.style.display = 'none' }} />
+                      <span className="font-semibold text-sm">{m.nombre}</span>
+                      <div className="flex flex-wrap gap-1 justify-center">
+                        {m.apodos.slice(0, 3).map((a, j) => (
+                          <span key={j} className="border border-white/20 rounded-full px-2 py-0.5 text-[10px] text-white/60 uppercase">{a}</span>
+                        ))}
+                      </div>
+                    </button>
+                  ))}
+                </div>
               </div>
-            </section>
+            )}
 
-            {/* Menciones honoríficas */}
-            <section className="max-w-4xl mx-auto px-6 pb-20">
-              <h2 className="font-serif text-2xl tracking-[.2em] text-center mb-8 uppercase">Menciones honoríficas</h2>
-              <div className="space-y-4">
-                {menciones.map((m, i) => (
-                  <div key={i} className="bg-white/5 border border-gold/40 rounded-xl p-5">
-                    <h3 className="font-serif text-lg text-gold">🎖 {m.titulo}</h3>
-                    <p className="text-sm text-white/70 mt-1">{m.descripcion}</p>
-                  </div>
-                ))}
+            {tab === 'menciones' && (
+              <div className="max-w-4xl mx-auto px-6 pb-20">
+                <h2 className="font-serif text-2xl tracking-[.2em] text-center mb-8 uppercase">Menciones honoríficas</h2>
+                <div className="space-y-4">
+                  {menciones.map((m, i) => (
+                    <div key={i} className="bg-white/5 border border-gold/40 rounded-xl p-5">
+                      <h3 className="font-serif text-lg text-gold">🎖 {m.titulo}</h3>
+                      <p className="text-sm text-white/70 mt-1">{m.descripcion}</p>
+                    </div>
+                  ))}
+                </div>
               </div>
-            </section>
+            )}
           </motion.div>
         ) : (
           <motion.div key={cat.id} initial={{ opacity: 0, scale: 1.05 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0 }} className="max-w-5xl mx-auto px-6 py-12">
@@ -134,6 +150,27 @@ export default function App() {
                 </div>
               )}
               <button onClick={() => { setConfirm({ catId: openMedia.cat.id, nom: openMedia.nom }); setOpenMedia(null) }} className="mt-4 bg-gold text-black px-6 py-3 rounded-full font-semibold">VOTAR</button>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* Modal integrante */}
+      <AnimatePresence>
+        {achuraOpen !== null && miembros[achuraOpen] && (
+          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={() => setAchuraOpen(null)} className="fixed inset-0 z-30 bg-black/90 flex items-center justify-center p-6">
+            <div className="bg-black/80 border border-white/20 rounded-2xl p-8 max-w-lg w-full text-center" onClick={(e) => e.stopPropagation()}>
+              <button className="absolute top-4 right-6 text-2xl" onClick={() => setAchuraOpen(null)}>✕</button>
+              <img src={miembros[achuraOpen].imagen} alt={miembros[achuraOpen].nombre} className="w-full max-h-80 object-cover rounded-xl" onError={(e) => { e.currentTarget.style.display = 'none' }} />
+              <h3 className="font-serif text-2xl mt-4">{miembros[achuraOpen].nombre}</h3>
+              <div className="flex flex-wrap gap-2 justify-center mt-3">
+                {miembros[achuraOpen].apodos.map((a, j) => <span key={j} className="border border-gold/50 text-gold rounded-full px-3 py-1 text-xs uppercase">{a}</span>)}
+              </div>
+              <p className="mt-4 text-white/80">{miembros[achuraOpen].descripcion}</p>
+              <div className="mt-6 flex justify-between">
+                <button className="border border-white/30 px-4 py-2 rounded" onClick={() => setAchuraOpen((i) => (i - 1 + miembros.length) % miembros.length)}>← Anterior</button>
+                <button className="border border-white/30 px-4 py-2 rounded" onClick={() => setAchuraOpen((i) => (i + 1) % miembros.length)}>Siguiente →</button>
+              </div>
             </div>
           </motion.div>
         )}

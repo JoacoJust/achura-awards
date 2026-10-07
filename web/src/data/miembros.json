@@ -1,52 +1,12 @@
 [
-  {
-    "nombre": "Integrante 1",
-    "descripcion": "Descripcion placeholder.",
-    "foto": "/placeholder-img.jpg"
-  },
-  {
-    "nombre": "Integrante 2",
-    "descripcion": "Descripcion placeholder.",
-    "foto": "/placeholder-img.jpg"
-  },
-  {
-    "nombre": "Integrante 3",
-    "descripcion": "Descripcion placeholder.",
-    "foto": "/placeholder-img.jpg"
-  },
-  {
-    "nombre": "Integrante 4",
-    "descripcion": "Descripcion placeholder.",
-    "foto": "/placeholder-img.jpg"
-  },
-  {
-    "nombre": "Integrante 5",
-    "descripcion": "Descripcion placeholder.",
-    "foto": "/placeholder-img.jpg"
-  },
-  {
-    "nombre": "Integrante 6",
-    "descripcion": "Descripcion placeholder.",
-    "foto": "/placeholder-img.jpg"
-  },
-  {
-    "nombre": "Integrante 7",
-    "descripcion": "Descripcion placeholder.",
-    "foto": "/placeholder-img.jpg"
-  },
-  {
-    "nombre": "Integrante 8",
-    "descripcion": "Descripcion placeholder.",
-    "foto": "/placeholder-img.jpg"
-  },
-  {
-    "nombre": "Integrante 9",
-    "descripcion": "Descripcion placeholder.",
-    "foto": "/placeholder-img.jpg"
-  },
-  {
-    "nombre": "Integrante 10",
-    "descripcion": "Descripcion placeholder.",
-    "foto": "/placeholder-img.jpg"
-  }
+  { "id": "pablo-damino", "nombre": "Pablo Agustín Damino", "apodos": ["Evil Pablo", "Paul", "Coco", "CoK.O", "Damino I", "Agustín", "Pablo"], "descripcion": "[EDITAR] Texto placeholder gracioso del integrante.", "imagen": "/img/integrantes/pablo-damino.jpg" },
+  { "id": "nicolas-tiscornia", "nombre": "Nicolás Tiscornia", "apodos": ["Tisco", "Nike", "Niquin", "Nico"], "descripcion": "[EDITAR] Texto placeholder gracioso del integrante.", "imagen": "/img/integrantes/nicolas-tiscornia.jpg" },
+  { "id": "franco-bernardi", "nombre": "Franco Bernardi", "apodos": ["Gordo", "Gordi", "Whale", "Ballena", "Boya", "Olla", "Joya", "Zurdo", "iFrank", "Panza"], "descripcion": "[EDITAR] Texto placeholder gracioso del integrante.", "imagen": "/img/integrantes/franco-bernardi.jpg" },
+  { "id": "guido-olmo", "nombre": "Guido Olmo", "apodos": ["Guido", "Guicho", "Golmo", "Guiso"], "descripcion": "[EDITAR] Texto placeholder gracioso del integrante.", "imagen": "/img/integrantes/guido-olmo.jpg" },
+  { "id": "mateo-guagliardi", "nombre": "Mateo Guagliardi", "apodos": ["Tute", "Ovo", "Gilardi", "Guliardi", "Gaylardi"], "descripcion": "[EDITAR] Texto placeholder gracioso del integrante.", "imagen": "/img/integrantes/mateo-guagliardi.jpg" },
+  { "id": "juan-martin-leyes", "nombre": "Juan Martín Leyes", "apodos": ["Marto", "Di Lollo"], "descripcion": "[EDITAR] Texto placeholder gracioso del integrante.", "imagen": "/img/integrantes/juan-martin-leyes.jpg" },
+  { "id": "jesus-quiero", "nombre": "Jesús Ignacio Quiero", "apodos": ["Jesu", "Chucho", "Moski"], "descripcion": "[EDITAR] Texto placeholder gracioso del integrante.", "imagen": "/img/integrantes/jesus-quiero.jpg" },
+  { "id": "ramiro-dominguez", "nombre": "Ramiro Domínguez", "apodos": ["Pengui", "Pingüino", "Gay", "Rami"], "descripcion": "[EDITAR] Texto placeholder gracioso del integrante.", "imagen": "/img/integrantes/ramiro-dominguez.jpg" },
+  { "id": "joaquin-just", "nombre": "Joaquín Just", "apodos": ["Jota", "Joaco"], "descripcion": "[EDITAR] Texto placeholder gracioso del integrante.", "imagen": "/img/integrantes/joaquin-just.jpg" },
+  { "id": "franco-da-resurreicao", "nombre": "Franco Da Resurreição", "apodos": ["Tata", "Tati", "Viejo"], "descripcion": "[EDITAR] Texto placeholder gracioso del integrante.", "imagen": "/img/integrantes/franco-da-resurreicao.jpg" }
 ]
