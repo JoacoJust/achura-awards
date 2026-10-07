@@ -2,15 +2,10 @@ const mongoose = require('mongoose');
 
 const UsuarioSchema = new mongoose.Schema(
   {
-    email: { type: String, required: true, unique: true, lowercase: true, trim: true, index: true },
-    codigo_verificacion: { type: String },
-    codigo_expira: { type: Date },
-    codigo_verificado: { type: Boolean, default: false },
-    fecha_verificacion: { type: Date },
-    has_votado: { type: Boolean, default: false },
-    fecha_primer_voto: { type: Date },
-    ip_address: { type: String },
-    user_agent: { type: String },
+    nombre: { type: String, required: true },
+    email: { type: String, required: true, unique: true, lowercase: true },
+    password_hash: { type: String, required: true },
+    is_admin: { type: Boolean, default: false },
   },
   { timestamps: true }
 );
