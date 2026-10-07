@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import Emblem from './components/Emblem.jsx'
 import categories from './data/categories.json'
+import miembros from './data/miembros.json'
+import menciones from './data/menciones.json'
 
 const STORAGE = 'achura_votos_v1'
 const getVotos = () => { try { return JSON.parse(localStorage.getItem(STORAGE)) || {} } catch { return {} } }
@@ -47,7 +49,7 @@ export default function App() {
               <p className="font-serif tracking-[.4em] text-gold mt-2">TERNAS</p>
               <p className="text-white/60 mt-2 italic">Los luchos de oro…</p>
             </header>
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8 max-w-6xl mx-auto px-6 pb-20">
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8 max-w-6xl mx-auto px-6 pb-10">
               {categories.map((c) => (
                 <button key={c.id} onClick={() => setCat(c)} className="group flex flex-col items-center gap-3 text-center focus:outline-none" aria-label={`Abrir ${c.nombre}`}>
                   <span className="transition-transform duration-300 group-hover:scale-105 group-hover:drop-shadow-[0_0_18px_rgba(212,175,55,.5)]">
@@ -58,6 +60,33 @@ export default function App() {
                 </button>
               ))}
             </div>
+
+            {/* Integrantes */}
+            <section className="max-w-6xl mx-auto px-6 pb-10">
+              <h2 className="font-serif text-2xl tracking-[.2em] text-center mb-8 uppercase">Integrantes</h2>
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
+                {miembros.map((m, i) => (
+                  <div key={i} className="text-center">
+                    <img src={m.foto} alt={m.nombre} className="rounded-full w-28 h-28 object-cover mx-auto border-2 border-white/20" />
+                    <p className="mt-2 font-semibold">{m.nombre}</p>
+                    <p className="text-xs text-white/60">{m.descripcion}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
+
+            {/* Menciones honoríficas */}
+            <section className="max-w-4xl mx-auto px-6 pb-20">
+              <h2 className="font-serif text-2xl tracking-[.2em] text-center mb-8 uppercase">Menciones honoríficas</h2>
+              <div className="space-y-4">
+                {menciones.map((m, i) => (
+                  <div key={i} className="bg-white/5 border border-gold/40 rounded-xl p-5">
+                    <h3 className="font-serif text-lg text-gold">🎖 {m.titulo}</h3>
+                    <p className="text-sm text-white/70 mt-1">{m.descripcion}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
           </motion.div>
         ) : (
           <motion.div key={cat.id} initial={{ opacity: 0, scale: 1.05 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0 }} className="max-w-5xl mx-auto px-6 py-12">

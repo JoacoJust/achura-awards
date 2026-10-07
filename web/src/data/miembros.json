@@ -1,0 +1,52 @@
+[
+  {
+    "nombre": "Integrante 1",
+    "descripcion": "Descripcion placeholder.",
+    "foto": "/placeholder-img.jpg"
+  },
+  {
+    "nombre": "Integrante 2",
+    "descripcion": "Descripcion placeholder.",
+    "foto": "/placeholder-img.jpg"
+  },
+  {
+    "nombre": "Integrante 3",
+    "descripcion": "Descripcion placeholder.",
+    "foto": "/placeholder-img.jpg"
+  },
+  {
+    "nombre": "Integrante 4",
+    "descripcion": "Descripcion placeholder.",
+    "foto": "/placeholder-img.jpg"
+  },
+  {
+    "nombre": "Integrante 5",
+    "descripcion": "Descripcion placeholder.",
+    "foto": "/placeholder-img.jpg"
+  },
+  {
+    "nombre": "Integrante 6",
+    "descripcion": "Descripcion placeholder.",
+    "foto": "/placeholder-img.jpg"
+  },
+  {
+    "nombre": "Integrante 7",
+    "descripcion": "Descripcion placeholder.",
+    "foto": "/placeholder-img.jpg"
+  },
+  {
+    "nombre": "Integrante 8",
+    "descripcion": "Descripcion placeholder.",
+    "foto": "/placeholder-img.jpg"
+  },
+  {
+    "nombre": "Integrante 9",
+    "descripcion": "Descripcion placeholder.",
+    "foto": "/placeholder-img.jpg"
+  },
+  {
+    "nombre": "Integrante 10",
+    "descripcion": "Descripcion placeholder.",
+    "foto": "/placeholder-img.jpg"
+  }
+]
