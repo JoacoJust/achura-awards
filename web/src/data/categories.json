@@ -966,54 +966,28 @@
     "mencion": "El tute por la idea. Pablo por desaparecido.",
     "nominados": [
       {
-        "id": "n65",
-        "nombre": "Nominado 1",
-        "descripcion": "Mejor momento de Mención Honorificas. Placeholder.",
+        "id": "n_m1",
+        "nombre": "El tute por la idea",
+        "descripcion": "Mención honorífica.",
         "media": "/placeholder-img.jpg",
         "poster": "/placeholder-img.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Mención Honorificas."
+            "contenido": "Mención honorífica: El tute por la idea."
           }
         ]
       },
       {
-        "id": "n66",
-        "nombre": "Nominado 2",
-        "descripcion": "Mejor momento de Mención Honorificas. Placeholder.",
+        "id": "n_m2",
+        "nombre": "Pablo por desaparecido",
+        "descripcion": "Mención honorífica.",
         "media": "/placeholder-img.jpg",
         "poster": "/placeholder-img.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Mención Honorificas."
-          }
-        ]
-      },
-      {
-        "id": "n67",
-        "nombre": "Nominado 3",
-        "descripcion": "Mejor momento de Mención Honorificas. Placeholder.",
-        "media": "/placeholder-img.jpg",
-        "poster": "/placeholder-img.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Mención Honorificas."
-          }
-        ]
-      },
-      {
-        "id": "n68",
-        "nombre": "Nominado 4",
-        "descripcion": "Mejor momento de Mención Honorificas. Placeholder.",
-        "media": "/placeholder-img.jpg",
-        "poster": "/placeholder-img.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Mención Honorificas."
+            "contenido": "Mención honorífica: Pablo por desaparecido."
           }
         ]
       }
@@ -1141,7 +1115,7 @@
   },
   {
     "id": "mejor-momento-pad-10",
-    "nombre": "Mejor momento PAD 10",
+    "nombre": "Mejor momento PAD",
     "tipo": "video",
     "mencion": "Mencion honorifica placeholder para Mejor momento PAD 10 ([EDITAR]).",
     "nominados": [
