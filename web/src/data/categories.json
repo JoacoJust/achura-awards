@@ -1120,56 +1120,12 @@
     "mencion": "Mencion honorifica placeholder para Mejor momento PAD 10 ([EDITAR]).",
     "nominados": [
       {
-        "id": "n77",
-        "nombre": "Nominado 1",
-        "descripcion": "Mejor momento de Mejor momento PAD 10. Placeholder.",
+        "id": "pad1",
+        "nombre": "Video editado",
+        "descripcion": "Mejor momento PAD",
         "media": "/placeholder.mp4",
         "poster": "/placeholder-img.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Mejor momento PAD 10."
-          }
-        ]
-      },
-      {
-        "id": "n78",
-        "nombre": "Nominado 2",
-        "descripcion": "Mejor momento de Mejor momento PAD 10. Placeholder.",
-        "media": "/placeholder.mp4",
-        "poster": "/placeholder-img.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Mejor momento PAD 10."
-          }
-        ]
-      },
-      {
-        "id": "n79",
-        "nombre": "Nominado 3",
-        "descripcion": "Mejor momento de Mejor momento PAD 10. Placeholder.",
-        "media": "/placeholder.mp4",
-        "poster": "/placeholder-img.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Mejor momento PAD 10."
-          }
-        ]
-      },
-      {
-        "id": "n80",
-        "nombre": "Nominado 4",
-        "descripcion": "Mejor momento de Mejor momento PAD 10. Placeholder.",
-        "media": "/placeholder.mp4",
-        "poster": "/placeholder-img.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Mejor momento PAD 10."
-          }
-        ]
+        "story": []
       }
     ]
   }
