@@ -37,8 +37,8 @@ app.use((req, res, next) => {
 
 app.get('/login', (req, res) => res.sendFile(path.join(__dirname, '../public/login.html')));
 app.post('/login', rateLimit({ windowMs: 15 * 60 * 1000, max: 10, message: { error: 'Demasiados intentos' } }), async (req, res) => {
-  const email = String(req.body.email || '').toLowerCase();
-  const password = String(req.body.password || '');
+  const email = String(req.body.email || '').trim().toLowerCase();
+  const password = String(req.body.password || '').trim();
   const u = await Usuario.findOne({ email });
   if (!u || !bcrypt.compareSync(password, u.password_hash)) {
     return res.status(401).json({ error: 'Email o contraseña incorrectos' });
