@@ -52,7 +52,7 @@ export default function App() {
             </header>
             <nav className="flex justify-center gap-6 text-xs tracking-[.2em] uppercase text-white/60 mb-6">
               {['ternas', 'achuras'].map((t) => (
-                <button key={t} onClick={() => setTab(t)} className={`pb-1 border-b ${tab === t ? 'text-gold border-gold' : 'border-transparent hover:text-white'}`}>{t === 'ternas' ? 'Ternas' : 'Los Achuras'}</button>
+                <button key={t} onClick={() => setTab(t)} className={`pb-1 border-b ${tab === t ? 'text-gold border-gold' : 'border-transparent hover:text-white'}`}>{t === 'ternas' ? 'Ternas' : 'Achura FC'}</button>
               ))}
             </nav>
 
@@ -72,7 +72,7 @@ export default function App() {
 
             {tab === 'achuras' && (
               <div className="max-w-6xl mx-auto px-6 pb-20">
-                <h2 className="font-serif text-2xl tracking-[.2em] text-center mb-8 uppercase">Los Achuras</h2>
+                <h2 className="font-serif text-2xl tracking-[.2em] text-center mb-8 uppercase">Achura FC</h2>
                 <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
                   {miembros.map((m, i) => (
                     <button key={i} onClick={() => setAchuraOpen(i)} className="group flex flex-col bg-white/5 border border-white/10 rounded-xl p-4 text-center hover:border-gold/50 transition">
