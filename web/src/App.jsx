@@ -113,7 +113,11 @@ export default function App() {
                     <h3 className="font-semibold">{n.nombre}</h3>
                     <p className="text-xs text-white/60 text-center">{n.descripcion}</p>
                     {cat.tipo === 'story' && <button className="text-xs underline text-white/70" onClick={() => setOpenMedia({ cat, nom: n })}>Ver historia</button>}
-                    <button onClick={() => setConfirm({ catId: cat.id, nom: n })} className="mt-auto bg-gold text-black px-5 py-2 rounded-full font-semibold">VOTAR</button>
+                    {cat.nominados.length === 1 && cat.tipo === 'video' ? (
+                      <button onClick={() => setOpenMedia({ cat, nom: n })} className="mt-auto bg-gold text-black px-5 py-2 rounded-full font-semibold">▶ Reproducir</button>
+                    ) : (
+                      <button onClick={() => setConfirm({ catId: cat.id, nom: n })} className="mt-auto bg-gold text-black px-5 py-2 rounded-full font-semibold">VOTAR</button>
+                    )}
                   </div>
                 ))}
               </div>
@@ -142,7 +146,7 @@ export default function App() {
                   {openMedia.nom.story?.map((b, i) => <p key={i}>{b.contenido}</p>)}
                 </div>
               )}
-              <button onClick={() => { setConfirm({ catId: openMedia.cat.id, nom: openMedia.nom }); setOpenMedia(null) }} className="mt-4 bg-gold text-black px-6 py-3 rounded-full font-semibold">VOTAR</button>
+              {openMedia.cat.nominados.length === 1 && openMedia.cat.tipo === 'video' ? null : <button onClick={() => { setConfirm({ catId: openMedia.cat.id, nom: openMedia.nom }); setOpenMedia(null) }} className="mt-4 bg-gold text-black px-6 py-3 rounded-full font-semibold">VOTAR</button>}
             </div>
           </motion.div>
         )}
