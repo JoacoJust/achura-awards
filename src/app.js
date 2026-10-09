@@ -28,7 +28,7 @@ app.use(session({
 
 // Guard: todo requiere sesión salvo /login, /logout, /api/admin auth, /uploads estáticos de login
 app.use((req, res, next) => {
-  const exentas = ['/login', '/logout', '/api/me', '/api/auth/enviar-codigo', '/api/auth/verificar-codigo'];
+  const exentas = ['/login', '/logout', '/api/me', '/api/auth/enviar-codigo', '/api/auth/verificar-codigo', '/media'];
   if (exentas.includes(req.path)) return next();
   if (req.path.startsWith('/api/admin')) return next(); // admin usa JWT propio
   if (!req.session.userId) {
