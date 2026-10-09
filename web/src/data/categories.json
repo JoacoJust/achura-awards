@@ -308,52 +308,52 @@
       {
         "id": "n21",
         "nombre": "Nominado 1",
-        "descripcion": "Mejor momento de Achura mas gay del año. Placeholder.",
-        "media": "/placeholder-img.jpg",
-        "poster": "/placeholder-img.jpg",
+        "descripcion": "Mejor momento de Achura mas gay del año.",
+        "media": "/media/gay-del-ano.jpg",
+        "poster": "/media/gay-del-ano.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Achura mas gay del año."
+            "contenido": "Historia de Achura mas gay del año."
           }
         ]
       },
       {
         "id": "n22",
         "nombre": "Nominado 2",
-        "descripcion": "Mejor momento de Achura mas gay del año. Placeholder.",
-        "media": "/placeholder-img.jpg",
-        "poster": "/placeholder-img.jpg",
+        "descripcion": "Mejor momento de Achura mas gay del año.",
+        "media": "/media/gay-del-ano.jpg",
+        "poster": "/media/gay-del-ano.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Achura mas gay del año."
+            "contenido": "Historia de Achura mas gay del año."
           }
         ]
       },
       {
         "id": "n23",
         "nombre": "Nominado 3",
-        "descripcion": "Mejor momento de Achura mas gay del año. Placeholder.",
-        "media": "/placeholder-img.jpg",
-        "poster": "/placeholder-img.jpg",
+        "descripcion": "Mejor momento de Achura mas gay del año.",
+        "media": "/media/gay-del-ano.jpg",
+        "poster": "/media/gay-del-ano.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Achura mas gay del año."
+            "contenido": "Historia de Achura mas gay del año."
           }
         ]
       },
       {
         "id": "n24",
         "nombre": "Nominado 4",
-        "descripcion": "Mejor momento de Achura mas gay del año. Placeholder.",
-        "media": "/placeholder-img.jpg",
-        "poster": "/placeholder-img.jpg",
+        "descripcion": "Mejor momento de Achura mas gay del año.",
+        "media": "/media/gay-del-ano.jpg",
+        "poster": "/media/gay-del-ano.jpg",
         "story": [
           {
             "tipo": "texto",
-            "contenido": "Historia placeholder de Achura mas gay del año."
+            "contenido": "Historia de Achura mas gay del año."
           }
         ]
       }
@@ -1116,15 +1116,15 @@
   {
     "id": "mejor-momento-pad-10",
     "nombre": "Mejor momento PAD",
-    "tipo": "video",
+    "tipo": "imagen",
     "mencion": "Mencion honorifica placeholder para Mejor momento PAD 10 ([EDITAR]).",
     "nominados": [
       {
         "id": "pad1",
-        "nombre": "Video editado",
-        "descripcion": "Mejor momento PAD",
-        "media": "/placeholder.mp4",
-        "poster": "/placeholder-img.jpg",
+        "nombre": "Chico durmiendo",
+        "descripcion": "Mejor momento PAD - chico durmiendo",
+        "media": "/media/chico-dormiendo.jpg",
+        "poster": "/media/chico-dormiendo.jpg",
         "story": []
       }
     ]
