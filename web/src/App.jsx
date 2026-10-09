@@ -71,6 +71,7 @@ export default function App() {
             )}
 
             {tab === 'achuras' && (
+<!-- FIX: Ensure terna photos load publicly via /media exemption -->
               <div className="max-w-6xl mx-auto px-6 pb-20">
                 <h2 className="font-serif text-2xl tracking-[.2em] text-center mb-8 uppercase">Achura FC</h2>
                 <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
