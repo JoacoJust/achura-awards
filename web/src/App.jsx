@@ -110,8 +110,8 @@ export default function App() {
                       {cat.tipo === 'video' && <video src={n.media} poster={n.poster} muted loop playsInline className="rounded-lg w-full h-40 object-cover hover:opacity-80 transition" onMouseEnter={(e) => e.currentTarget.play()} onMouseLeave={(e) => e.currentTarget.pause()} />}
                       {cat.tipo === 'story' && <div className="rounded-lg w-full h-40 bg-white/5 flex items-center p-4 text-left text-sm text-white/80 overflow-hidden">{n.story?.[0]?.contenido || 'Historia sin registrar'}</div>}
                     </button>
-                    <h3 className="font-semibold">{n.nombre}</h3>
-                    <p className="text-xs text-white/60 text-center">{n.descripcion}</p>
+                    <h3 className="font-semibold text-center">{n.nombre}</h3>
+                    <p className="text-xs text-white/60 text-center line-clamp-2">{n.descripcion}</p>
                     {cat.tipo === 'story' && <button className="text-xs underline text-white/70" onClick={() => setOpenMedia({ cat, nom: n })}>Ver historia</button>}
                     {cat.nominados.length === 1 && cat.tipo === 'video' ? (
                       <button onClick={() => setOpenMedia({ cat, nom: n })} className="mt-auto bg-gold text-black px-5 py-2 rounded-full font-semibold">▶ Reproducir</button>
