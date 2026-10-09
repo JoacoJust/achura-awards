@@ -114,6 +114,22 @@ exports.uploadMedia = asyncHandler(async (req, res) => {
   res.json({ success: true, data: { url, tipo, size: req.file.size, opcion_id } });
 });
 
+exports.actualizarOpcion = asyncHandler(async (req, res) => {
+  const { opcion_id, nombre, descripcion, imagen_url, video_url } = req.body;
+  if (!opcion_id) throw badRequest('opcion_id es obligatorio');
+  
+  const opcion = await Opcion.findById(opcion_id);
+  if (!opcion) throw notFound('Opción no encontrada');
+  
+  if (nombre !== undefined) opcion.nombre = nombre;
+  if (descripcion !== undefined) opcion.descripcion = descripcion;
+  if (imagen_url !== undefined) opcion.imagen_url = imagen_url;
+  if (video_url !== undefined) opcion.video_url = video_url;
+  
+  await opcion.save();
+  res.json({ success: true, data: opcion });
+});
+
 exports.reporte = asyncHandler(async (req, res) => {
   const filtro = req.query.categoria_id ? { _id: req.query.categoria_id } : {};
   const categorias = await Categoria.find(filtro).sort('posicion').lean();

@@ -22,6 +22,7 @@ router.get('/resultados', authAdmin, adminController.resultados);
 router.get('/votantes', authAdmin, adminController.votantes);
 router.post('/categorias', authAdmin, adminController.crearCategoria);
 router.post('/opciones', authAdmin, adminController.crearOpcion);
+router.put('/opciones', authAdmin, adminController.actualizarOpcion);
 router.put('/categorias/:id/toggle', authAdmin, adminController.toggleCategoria);
 router.post('/upload-media', authAdmin, upload.single('file'), adminController.uploadMedia);
 router.get('/reporte', authAdmin, adminController.reporte);
