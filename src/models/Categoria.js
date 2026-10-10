@@ -8,6 +8,8 @@ const CategoriaSchema = new mongoose.Schema(
     descripcion: { type: String, default: '' },
     tipo_media: { type: String, enum: ['video', 'imagen', 'story', 'ambos'], default: 'ambos' },
     mencion: { type: String, default: '' },
+    // permite_votar: false = terna de presentación (video/photo wall) sin votación
+    permite_votar: { type: Boolean, default: true },
     activa: { type: Boolean, default: true },
     posicion: { type: Number, required: true },
   },

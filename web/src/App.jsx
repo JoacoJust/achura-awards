@@ -39,6 +39,7 @@ function aUI(c) {
     nombre: c.nombre,
     tipo: c.tipo === 'ambos' ? 'imagen' : c.tipo,
     mencion: c.mencion,
+    votable: c.permite_votar !== false,
     nominados: c.opciones.map((o) => ({
       id: o.id,
       nombre: o.nombre,
@@ -92,7 +93,7 @@ export default function App() {
   useEffect(() => { cargar() }, [cargar])
 
   const votadas = Object.keys(votos).length
-  const total = categorias.length
+  const total = categorias.filter((c) => c.votable).length
   const todas = total > 0 && votadas === total
 
   const cerrarSesion = async () => {
@@ -197,6 +198,7 @@ export default function App() {
                     </span>
                     <span className="font-serif text-sm tracking-widest uppercase">{c.nombre}</span>
                     {votos[c.id] && <span className="text-gold text-xs">✓ Votado</span>}
+                    {!c.votable && <span className="text-white/50 text-xs">▶ Solo video</span>}
                   </button>
                 ))}
               </div>
@@ -254,10 +256,12 @@ export default function App() {
                     </button>
                     <h3 className="font-semibold text-center">{n.nombre}</h3>
                     <p className="text-xs text-white/60 text-center line-clamp-2">{n.descripcion}</p>
-                    {cat.nominados.length === 1 && cat.tipo === 'video' ? (
-                      <button onClick={() => setOpenMedia({ cat, nom: n })} className="mt-auto bg-white/10 border border-white/30 text-white px-5 py-2 rounded-full font-semibold">▶ Ver video</button>
+                    {!cat.votable || (cat.nominados.length === 1 && cat.tipo === 'video') ? (
+                      <button onClick={() => setOpenMedia({ cat, nom: n })} className="mt-auto bg-white/10 border border-white/30 text-white px-5 py-2 rounded-full font-semibold">▶ Reproducir</button>
                     ) : null}
-                    <button onClick={() => setConfirm({ catId: cat.id, nom: n })} className="mt-auto bg-gold text-black px-5 py-2 rounded-full font-semibold">VOTAR</button>
+                    {cat.votable && (
+                      <button onClick={() => setConfirm({ catId: cat.id, nom: n })} className="mt-auto bg-gold text-black px-5 py-2 rounded-full font-semibold">VOTAR</button>
+                    )}
                   </div>
                 ))}
               </div>
@@ -288,7 +292,7 @@ export default function App() {
                   {openMedia.nom.story?.map((b, i) => <p key={i}>{b.contenido}</p>)}
                 </div>
               )}
-              <button onClick={() => { setConfirm({ catId: openMedia.cat.id, nom: openMedia.nom }); setOpenMedia(null) }} className="mt-4 bg-gold text-black px-6 py-3 rounded-full font-semibold">VOTAR</button>
+              {openMedia.cat.votable && <button onClick={() => { setConfirm({ catId: openMedia.cat.id, nom: openMedia.nom }); setOpenMedia(null) }} className="mt-4 bg-gold text-black px-6 py-3 rounded-full font-semibold">VOTAR</button>}
             </div>
           </motion.div>
         )}

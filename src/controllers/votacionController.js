@@ -17,6 +17,7 @@ exports.getCategorias = asyncHandler(async (req, res) => {
     posicion: c.posicion,
     tipo: c.tipo_media,
     mencion: c.mencion || '',
+    permite_votar: c.permite_votar !== false,
     ya_voto: votoPorCategoria.has(String(c._id)),
     opcion_elegida: votoPorCategoria.get(String(c._id)) || null,
     opciones: opciones.filter((o) => String(o.categoria) === String(c._id)).map((o) => ({
@@ -45,6 +46,7 @@ exports.votar = asyncHandler(async (req, res) => {
 
   const categoria = await Categoria.findOne({ _id: categoria_id, activa: true });
   if (!categoria) throw notFound('Categoría no encontrada o inactiva');
+  if (categoria.permite_votar === false) throw badRequest('Esta terna es de presentación, no se vota');
   const opcion = await Opcion.findOne({ _id: opcion_id, categoria: categoria_id });
   if (!opcion) throw notFound('Opción no encontrada en esa categoría');
 
