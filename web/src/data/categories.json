@@ -369,6 +369,7 @@
     "id": "mejor-outfit-del-d-a",
     "nombre": "Mejor outfit del día",
     "tipo": "imagen",
+    "poster": "/media/outfit-del-dia.jpg",
     "mencion": "Mencion honorifica placeholder para Mejor outfit del día ([EDITAR]).",
     "nominados": [
       {
