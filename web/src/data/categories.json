@@ -186,6 +186,7 @@
     "id": "achura-gamer-del-a-o",
     "nombre": "Achura gamer del año",
     "tipo": "video",
+    "poster": "/media/achura-gamer.jpg",
     "mencion": "Mencion honorifica placeholder para Achura gamer del año ([EDITAR]).",
     "nominados": [
       {
