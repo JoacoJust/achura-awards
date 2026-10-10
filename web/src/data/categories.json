@@ -491,6 +491,7 @@
     "id": "achura-mas-compa-ero",
     "nombre": "Achura mas compañero",
     "tipo": "imagen",
+    "poster": "/media/companero-del-ano.jpg",
     "mencion": "Mencion honorifica placeholder para Achura mas compañero ([EDITAR]).",
     "nominados": [
       {
@@ -734,6 +735,7 @@
     "id": "achura-mas-quebrado",
     "nombre": "Achura mas quebrado",
     "tipo": "video",
+    "poster": "/media/quebrado-del-ano.jpg",
     "mencion": "Mencion honorifica placeholder para Achura mas quebrado ([EDITAR]).",
     "nominados": [
       {
@@ -794,6 +796,7 @@
     "id": "fail-del-a-o",
     "nombre": "Fail del año",
     "tipo": "video",
+    "poster": "/media/fail-del-ano.jpg",
     "mencion": "Mencion honorifica placeholder para Fail del año ([EDITAR]).",
     "nominados": [
       {
