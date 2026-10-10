@@ -4,3 +4,8 @@ node_modules/
 # scripts de mantenimiento locales
 limpiar-votos.js
 revisar-votos.js
+
+# scripts y extracciones locales
+ver-db.js
+buscar-img.js
+extraer-img.js
