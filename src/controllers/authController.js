@@ -5,6 +5,18 @@ const { badRequest, unauthorized, asyncHandler } = require('../core/errores');
 
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
+// Intercambia la sesión de login (email + contraseña) por un JWT de votante.
+// Así el frontend React vota contra la API sin repetir el código por email.
+exports.sessionToken = asyncHandler(async (req, res) => {
+  const u = await Usuario.findById(req.session.userId);
+  if (!u) throw unauthorized('Sesión inválida, iniciá sesión de nuevo');
+
+  const token = jwt.sign({ id: u._id, email: u.email, nombre: u.nombre, rol: 'votante' }, process.env.JWT_SECRET, {
+    expiresIn: process.env.JWT_EXPIRATION || '24h',
+  });
+  res.json({ success: true, token, usuario: { id: u._id, nombre: u.nombre, email: u.email } });
+});
+
 exports.enviarCodigo = asyncHandler(async (req, res) => {
   const { email } = req.body;
   if (!email || !EMAIL_REGEX.test(email)) throw badRequest('Email inválido');

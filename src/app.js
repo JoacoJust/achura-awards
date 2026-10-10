@@ -43,7 +43,7 @@ app.post('/login', rateLimit({ windowMs: 15 * 60 * 1000, max: 10, message: { err
   const email = String(req.body.email || '').trim().toLowerCase();
   const password = String(req.body.password || '').trim();
   const u = await Usuario.findOne({ email });
-  if (!u || !bcrypt.compareSync(password, u.password_hash)) {
+  if (!u || !u.password_hash || !bcrypt.compareSync(password, u.password_hash)) {
     return res.status(401).json({ error: 'Email o contraseña incorrectos' });
   }
   req.session.userId = u._id;
@@ -59,6 +59,8 @@ app.get('/api/me', (req, res) => {
 
 // Serve frontend React (protegido por el guard)
 app.use(express.static(path.join(__dirname, '../web/dist')));
+// Multimedia subida desde el admin (multer la guarda en public/uploads)
+app.use('/uploads', express.static(path.join(__dirname, '../public/uploads')));
 app.get('/AchuraAwards', (req, res) => res.sendFile(path.join(__dirname, '../web/dist/index.html')));
 app.use('/admin', express.static(path.join(__dirname, '../public')));
 app.get('/AchuraAwards/admin', (req, res) => res.sendFile(path.join(__dirname, '../public/admin.html')));

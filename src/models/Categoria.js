@@ -2,9 +2,12 @@ const mongoose = require('mongoose');
 
 const CategoriaSchema = new mongoose.Schema(
   {
+    // id_web: identificador estable que trae categories.json del frontend (para poder re-sincronizar)
+    id_web: { type: String, default: null, index: true },
     nombre: { type: String, required: true, trim: true },
     descripcion: { type: String, default: '' },
-    tipo_media: { type: String, enum: ['video', 'imagen', 'ambos'], default: 'ambos' },
+    tipo_media: { type: String, enum: ['video', 'imagen', 'story', 'ambos'], default: 'ambos' },
+    mencion: { type: String, default: '' },
     activa: { type: Boolean, default: true },
     posicion: { type: Number, required: true },
   },
