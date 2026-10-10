@@ -3,6 +3,7 @@
     "id": "achura-del-a-o",
     "nombre": "Achura del año",
     "tipo": "imagen",
+    "poster": "/media/grupo-achura.jpg",
     "mencion": "Mencion honorifica placeholder para Achura del año ([EDITAR]).",
     "nominados": [
       {
@@ -243,6 +244,7 @@
     "id": "jugador-de-cs-del-a-o",
     "nombre": "Jugador de CS del año",
     "tipo": "video",
+    "poster": "/media/cs-logo.webp",
     "mencion": "Mencion honorifica placeholder para Jugador de CS del año ([EDITAR]).",
     "nominados": [
       {
@@ -303,6 +305,7 @@
     "id": "achura-mas-gay-del-a-o",
     "nombre": "Achura mas gay del año",
     "tipo": "imagen",
+    "poster": "/media/bandera-gay.png",
     "mencion": "Mencion honorifica placeholder para Achura mas gay del año ([EDITAR]).",
     "nominados": [
       {

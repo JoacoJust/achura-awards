@@ -10,6 +10,8 @@ const CategoriaSchema = new mongoose.Schema(
     mencion: { type: String, default: '' },
     // permite_votar: false = terna de presentación (video/photo wall) sin votación
     permite_votar: { type: Boolean, default: true },
+    // foto de perfil de la terna (círculo de la home); si falta, se usa la del primer nominado
+    poster_url: { type: String, default: null },
     activa: { type: Boolean, default: true },
     posicion: { type: Number, required: true },
   },

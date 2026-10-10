@@ -18,6 +18,7 @@ exports.getCategorias = asyncHandler(async (req, res) => {
     tipo: c.tipo_media,
     mencion: c.mencion || '',
     permite_votar: c.permite_votar !== false,
+    poster_url: c.poster_url || null,
     ya_voto: votoPorCategoria.has(String(c._id)),
     opcion_elegida: votoPorCategoria.get(String(c._id)) || null,
     opciones: opciones.filter((o) => String(o.categoria) === String(c._id)).map((o) => ({

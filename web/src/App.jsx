@@ -40,6 +40,7 @@ function aUI(c) {
     tipo: c.tipo === 'ambos' ? 'imagen' : c.tipo,
     mencion: c.mencion,
     votable: c.permite_votar !== false,
+    poster_url: c.poster_url || null,
     nominados: c.opciones.map((o) => ({
       id: o.id,
       nombre: o.nombre,
@@ -52,8 +53,8 @@ function aUI(c) {
       story: o.story || [],
     })),
   }
-  // La foto del círculo de la terna en la home: la del primer nominado
-  r.portada = r.nominados.find((n) => n.portada)?.portada || null
+  // La foto del círculo de la terna en la home: la de la terna si tiene, si no la del primer nominado
+  r.portada = r.poster_url || r.nominados.find((n) => n.portada)?.portada || null
   return r
 }
 
