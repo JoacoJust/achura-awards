@@ -978,6 +978,7 @@
     "id": "menci-n-honorificas",
     "nombre": "Mención Honorificas",
     "tipo": "imagen",
+    "poster": "/media/mencion-honorifica.jpg",
     "mencion": "El tute por la idea. Pablo por desaparecido.",
     "nominados": [
       {
@@ -1073,7 +1074,7 @@
     "id": "mejor-momento-mdt",
     "nombre": "Mejor momento MDT",
     "tipo": "story",
-    "poster": "/media/momento-mdt.png",
+    "poster": "/media/momento-mdt.jpg",
     "mencion": "Mencion honorifica placeholder para Mejor momento MDT ([EDITAR]).",
     "nominados": [
       {
