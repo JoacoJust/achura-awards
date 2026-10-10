@@ -25,11 +25,12 @@ exports.login = asyncHandler(async (req, res) => {
 });
 
 exports.dashboard = asyncHandler(async (req, res) => {
-  const [total_votos, total_votantes, categorias_activas] = await Promise.all([
+  const [total_votos, votantes, categorias_activas] = await Promise.all([
     Voto.countDocuments(),
-    Usuario.countDocuments({ has_votado: true }),
+    Voto.distinct('usuario'),
     Categoria.countDocuments({ activa: true }),
   ]);
+  const total_votantes = votantes.length;
   res.json({ success: true, data: { total_votos, total_votantes, categorias_activas, ultima_actualizacion: new Date() } });
 });
 
