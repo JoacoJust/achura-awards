@@ -610,6 +610,7 @@
     "id": "jugador-de-futbol-del-a-o",
     "nombre": "Jugador de futbol del año",
     "tipo": "imagen",
+    "poster": "/media/futbol-del-ano.jpg",
     "mencion": "Mencion honorifica placeholder para Jugador de futbol del año ([EDITAR]).",
     "nominados": [
       {
@@ -670,6 +671,7 @@
     "id": "secuencia-del-a-o",
     "nombre": "Secuencia del año",
     "tipo": "story",
+    "poster": "/media/secuencia-del-ano.jpg",
     "mencion": "Mencion honorifica placeholder para Secuencia del año ([EDITAR]).",
     "nominados": [
       {
@@ -850,6 +852,7 @@
     "id": "achura-mas-gobernado",
     "nombre": "Achura mas gobernado",
     "tipo": "imagen",
+    "poster": "/media/achura-mas-gobernado.webp",
     "mencion": "Mencion honorifica placeholder para Achura mas gobernado ([EDITAR]).",
     "nominados": [
       {
