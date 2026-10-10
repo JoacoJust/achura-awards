@@ -549,6 +549,7 @@
     "id": "dupla-del-a-o",
     "nombre": "Dupla del año",
     "tipo": "video",
+    "poster": "/media/dupla-del-ano.jpg",
     "mencion": "Mencion honorifica placeholder para Dupla del año ([EDITAR]).",
     "nominados": [
       {
@@ -1003,6 +1004,7 @@
     "id": "gordiada-del-a-o",
     "nombre": "Gordiada del año",
     "tipo": "story",
+    "poster": "/media/gordiada-del-ano.jpg",
     "mencion": "Mencion honorifica placeholder para Gordiada del año ([EDITAR]).",
     "nominados": [
       {
