@@ -673,61 +673,41 @@
   {
     "id": "secuencia-del-a-o",
     "nombre": "Secuencia del año",
-    "tipo": "story",
+    "tipo": "imagen",
     "poster": "/media/secuencia-del-ano.jpg",
-    "mencion": "Mencion honorifica placeholder para Secuencia del año ([EDITAR]).",
+    "mencion": "",
     "nominados": [
       {
         "id": "n45",
-        "nombre": "Nominado 1",
-        "descripcion": "Mejor momento de Secuencia del año. Placeholder.",
-        "media": "/placeholder.mp4",
+        "nombre": "Evil Pablo",
+        "descripcion": "",
+        "media": "/placeholder-img.jpg",
         "poster": "/placeholder-img.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Secuencia del año."
-          }
-        ]
+        "story": []
       },
       {
         "id": "n46",
-        "nombre": "Nominado 2",
-        "descripcion": "Mejor momento de Secuencia del año. Placeholder.",
-        "media": "/placeholder.mp4",
+        "nombre": "El Pola, Alumni y la Policía",
+        "descripcion": "",
+        "media": "/placeholder-img.jpg",
         "poster": "/placeholder-img.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Secuencia del año."
-          }
-        ]
+        "story": []
       },
       {
         "id": "n47",
-        "nombre": "Nominado 3",
-        "descripcion": "Mejor momento de Secuencia del año. Placeholder.",
-        "media": "/placeholder.mp4",
+        "nombre": "Japón - República Checa en lo de Pad 10, con policía",
+        "descripcion": "",
+        "media": "/placeholder-img.jpg",
         "poster": "/placeholder-img.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Secuencia del año."
-          }
-        ]
+        "story": []
       },
       {
         "id": "n48",
-        "nombre": "Nominado 4",
-        "descripcion": "Mejor momento de Secuencia del año. Placeholder.",
-        "media": "/placeholder.mp4",
+        "nombre": "La Ouija",
+        "descripcion": "",
+        "media": "/placeholder-img.jpg",
         "poster": "/placeholder-img.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Secuencia del año."
-          }
-        ]
+        "story": []
       }
     ]
   },

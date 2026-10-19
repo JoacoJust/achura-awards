@@ -283,13 +283,13 @@ export default function App() {
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={() => setOpenMedia(null)} className="fixed inset-0 z-30 bg-black/90 flex items-center justify-center p-6">
             <div className="max-w-4xl w-full" onClick={(e) => e.stopPropagation()}>
               <button className="absolute top-4 right-6 text-2xl" onClick={() => setOpenMedia(null)}>✕</button>
-              {openMedia.cat.tipo === 'story' ? (
+              {openMedia.nom.mediaTipo === 'video' && openMedia.nom.media ? (
+                <video src={openMedia.nom.media} poster={openMedia.nom.poster} controls autoPlay className="w-full rounded-xl" />
+              ) : openMedia.cat.tipo === 'story' ? (
                 <div className="text-white/90 space-y-4 max-h-[70vh] overflow-auto">
                   <h3 className="font-serif text-2xl">{openMedia.nom.nombre}</h3>
                   {openMedia.nom.story?.map((b, i) => <p key={i}>{b.contenido}</p>)}
                 </div>
-              ) : openMedia.nom.mediaTipo === 'video' && openMedia.nom.media ? (
-                <video src={openMedia.nom.media} poster={openMedia.nom.poster} controls autoPlay className="w-full rounded-xl" />
               ) : (
                 <img src={openMedia.nom.media || openMedia.nom.portada} alt={openMedia.nom.nombre} className="w-full rounded-xl" />
               )}
