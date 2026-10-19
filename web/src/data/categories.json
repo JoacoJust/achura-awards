@@ -946,59 +946,39 @@
     "nombre": "Gordiada del año",
     "tipo": "story",
     "poster": "/media/gordiada-del-ano.jpg",
-    "mencion": "Mencion honorifica placeholder para Gordiada del año ([EDITAR]).",
+    "mencion": "",
     "nominados": [
       {
         "id": "n69",
-        "nombre": "Nominado 1",
-        "descripcion": "Mejor momento de Gordiada del año. Placeholder.",
+        "nombre": "Mateo Guagliardi",
+        "descripcion": "",
         "media": "/placeholder.mp4",
         "poster": "/placeholder-img.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Gordiada del año."
-          }
-        ]
+        "story": []
       },
       {
         "id": "n70",
-        "nombre": "Nominado 2",
-        "descripcion": "Mejor momento de Gordiada del año. Placeholder.",
+        "nombre": "Ramiro Domínguez",
+        "descripcion": "",
         "media": "/placeholder.mp4",
         "poster": "/placeholder-img.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Gordiada del año."
-          }
-        ]
+        "story": []
       },
       {
         "id": "n71",
-        "nombre": "Nominado 3",
-        "descripcion": "Mejor momento de Gordiada del año. Placeholder.",
+        "nombre": "Franco Bernardi",
+        "descripcion": "",
         "media": "/placeholder.mp4",
         "poster": "/placeholder-img.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Gordiada del año."
-          }
-        ]
+        "story": []
       },
       {
         "id": "n72",
-        "nombre": "Nominado 4",
-        "descripcion": "Mejor momento de Gordiada del año. Placeholder.",
+        "nombre": "Joaquín Just",
+        "descripcion": "",
         "media": "/placeholder.mp4",
         "poster": "/placeholder-img.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Gordiada del año."
-          }
-        ]
+        "story": []
       }
     ]
   },
