@@ -807,10 +807,10 @@
       },
       {
         "id": "n55",
-        "nombre": "Nominado 3",
+        "nombre": "Mateo Guagliardi",
         "descripcion": "",
-        "media": "/placeholder.mp4",
-        "poster": "/placeholder-img.jpg",
+        "media": "/media/fail-ano-mateo-guagliardi.jpg",
+        "poster": "/media/fail-ano-mateo-guagliardi.jpg",
         "story": [
           {
             "tipo": "texto",
