@@ -54,8 +54,14 @@ const CATEGORIES_JSON = path.join(__dirname, '../web/src/data/categories.json');
 
       op.nombre = n.nombre;
       op.descripcion = n.descripcion || '';
-      op.imagen_url = cat.tipo_media === 'video' ? n.poster || n.media || null : n.media || null;
-      op.video_url = cat.tipo_media === 'video' ? n.media || null : null;
+      // El tipo real de cada opción se decide por el archivo, no por la terna:
+      // si el media es un video de verdad se guarda como video; si es una foto, como imagen.
+      // (El placeholder .mp4 no cuenta como video: así las fotos no se muestran con ▶)
+      const media = n.media || '';
+      const esVideo = /\.(mp4|webm|mov|m4v|ogv)$/i.test(media) && !/placeholder/i.test(media);
+      const esImagen = /\.(jpe?g|png|webp|gif|avif)$/i.test(media);
+      op.imagen_url = esVideo ? n.poster || null : esImagen ? media : n.poster || media || null;
+      op.video_url = esVideo ? media : null;
       op.poster_url = n.poster || null;
       op.story = (n.story || []).map((b) => ({ tipo: b.tipo || 'texto', contenido: b.contenido || '' }));
       op.posicion = j + 1;

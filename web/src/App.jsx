@@ -246,7 +246,7 @@ export default function App() {
                       ) : (
                         <span className="rounded-lg w-full h-40 bg-white/5 flex items-center justify-center text-3xl">📷</span>
                       )}
-                      {(cat.tipo === 'video' || n.mediaTipo === 'video') && (
+                      {n.mediaTipo === 'video' && (
                         <span className="absolute inset-0 flex items-center justify-center">
                           <span className="bg-black/60 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm">▶</span>
                         </span>
@@ -257,7 +257,7 @@ export default function App() {
                     </button>
                     <h3 className="font-semibold text-center">{n.nombre}</h3>
                     <p className="text-xs text-white/60 text-center line-clamp-2">{n.descripcion}</p>
-                    {!cat.votable || (cat.nominados.length === 1 && cat.tipo === 'video') ? (
+                    {!cat.votable || (cat.nominados.length === 1 && n.mediaTipo === 'video') ? (
                       <button onClick={() => setOpenMedia({ cat, nom: n })} className="mt-auto bg-white/10 border border-white/30 text-white px-5 py-2 rounded-full font-semibold">▶ Reproducir</button>
                     ) : null}
                     {cat.votable && (
@@ -283,15 +283,15 @@ export default function App() {
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={() => setOpenMedia(null)} className="fixed inset-0 z-30 bg-black/90 flex items-center justify-center p-6">
             <div className="max-w-4xl w-full" onClick={(e) => e.stopPropagation()}>
               <button className="absolute top-4 right-6 text-2xl" onClick={() => setOpenMedia(null)}>✕</button>
-              {openMedia.cat.tipo === 'video' && <video src={openMedia.nom.media} poster={openMedia.nom.poster} controls autoPlay className="w-full rounded-xl" />}
-              {openMedia.cat.tipo === 'imagen' && (openMedia.nom.mediaTipo === 'video'
-                ? <video src={openMedia.nom.media} poster={openMedia.nom.poster} controls autoPlay className="w-full rounded-xl" />
-                : <img src={openMedia.nom.media} alt={openMedia.nom.nombre} className="w-full rounded-xl" />)}
-              {openMedia.cat.tipo === 'story' && (
+              {openMedia.cat.tipo === 'story' ? (
                 <div className="text-white/90 space-y-4 max-h-[70vh] overflow-auto">
                   <h3 className="font-serif text-2xl">{openMedia.nom.nombre}</h3>
                   {openMedia.nom.story?.map((b, i) => <p key={i}>{b.contenido}</p>)}
                 </div>
+              ) : openMedia.nom.mediaTipo === 'video' && openMedia.nom.media ? (
+                <video src={openMedia.nom.media} poster={openMedia.nom.poster} controls autoPlay className="w-full rounded-xl" />
+              ) : (
+                <img src={openMedia.nom.media || openMedia.nom.portada} alt={openMedia.nom.nombre} className="w-full rounded-xl" />
               )}
               {openMedia.cat.votable && <button onClick={() => { setConfirm({ catId: openMedia.cat.id, nom: openMedia.nom }); setOpenMedia(null) }} className="mt-4 bg-gold text-black px-6 py-3 rounded-full font-semibold">VOTAR</button>}
             </div>
