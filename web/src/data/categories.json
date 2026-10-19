@@ -885,14 +885,14 @@
     "id": "cumplea-os-del-a-o",
     "nombre": "Cumpleaños del año",
     "tipo": "imagen",
-    "mencion": "Mencion honorifica placeholder para Cumpleaños del año ([EDITAR]).",
+    "mencion": "",
     "nominados": [
       {
         "id": "n61",
-        "nombre": "Nominado 1",
-        "descripcion": "Mejor momento de Cumpleaños del año. Placeholder.",
-        "media": "/placeholder-img.jpg",
-        "poster": "/placeholder-img.jpg",
+        "nombre": "Juan Martín Leyes",
+        "descripcion": "",
+        "media": "/media/achura-revelacion-juan-martin-leyes.jpg",
+        "poster": "/media/achura-revelacion-juan-martin-leyes.jpg",
         "story": [
           {
             "tipo": "texto",
@@ -902,10 +902,10 @@
       },
       {
         "id": "n62",
-        "nombre": "Nominado 2",
-        "descripcion": "Mejor momento de Cumpleaños del año. Placeholder.",
-        "media": "/placeholder-img.jpg",
-        "poster": "/placeholder-img.jpg",
+        "nombre": "Guido Olmo",
+        "descripcion": "",
+        "media": "/media/achura-del-ano-guido-olmo.jpg",
+        "poster": "/media/achura-del-ano-guido-olmo.jpg",
         "story": [
           {
             "tipo": "texto",
@@ -915,10 +915,10 @@
       },
       {
         "id": "n63",
-        "nombre": "Nominado 3",
-        "descripcion": "Mejor momento de Cumpleaños del año. Placeholder.",
-        "media": "/placeholder-img.jpg",
-        "poster": "/placeholder-img.jpg",
+        "nombre": "Jesús Quiero",
+        "descripcion": "",
+        "media": "/media/achura-del-ano-jesus-quiero.jpg",
+        "poster": "/media/achura-del-ano-jesus-quiero.jpg",
         "story": [
           {
             "tipo": "texto",
@@ -928,10 +928,10 @@
       },
       {
         "id": "n64",
-        "nombre": "Nominado 4",
-        "descripcion": "Mejor momento de Cumpleaños del año. Placeholder.",
-        "media": "/placeholder-img.jpg",
-        "poster": "/placeholder-img.jpg",
+        "nombre": "Franco Da Resurreicao",
+        "descripcion": "",
+        "media": "/media/franco-bernardi.jpg",
+        "poster": "/media/franco-bernardi.jpg",
         "story": [
           {
             "tipo": "texto",
