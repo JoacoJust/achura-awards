@@ -431,14 +431,14 @@
     "nombre": "Mejor outfit del Año (con foto)",
     "tipo": "imagen",
     "poster": "/media/outfit-del-ano.jpg",
-    "mencion": "Mencion honorifica placeholder para Mejor outfit del Año (con foto) ([EDITAR]).",
+    "mencion": "",
     "nominados": [
       {
         "id": "n29",
-        "nombre": "Nominado 1",
-        "descripcion": "Mejor momento de Mejor outfit del Año (con foto). Placeholder.",
-        "media": "/placeholder-img.jpg",
-        "poster": "/placeholder-img.jpg",
+        "nombre": "Jesús Quiero",
+        "descripcion": "",
+        "media": "/media/outfit-ano-jesus-quiero.jpg",
+        "poster": "/media/outfit-ano-jesus-quiero.jpg",
         "story": [
           {
             "tipo": "texto",
