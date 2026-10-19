@@ -4,12 +4,12 @@
     "nombre": "Achura del año",
     "tipo": "imagen",
     "poster": "/media/grupo-achura.jpg",
-    "mencion": "Mencion honorifica placeholder para Achura del año ([EDITAR]).",
+    "mencion": "",
     "nominados": [
       {
         "id": "n1",
-        "nombre": "Nominado 1",
-        "descripcion": "Mejor momento de Achura del año. Placeholder.",
+        "nombre": "Mateo Guagliardi",
+        "descripcion": "",
         "media": "/placeholder-img.jpg",
         "poster": "/placeholder-img.jpg",
         "story": [
@@ -21,8 +21,8 @@
       },
       {
         "id": "n2",
-        "nombre": "Nominado 2",
-        "descripcion": "Mejor momento de Achura del año. Placeholder.",
+        "nombre": "Guido Olmo",
+        "descripcion": "",
         "media": "/placeholder-img.jpg",
         "poster": "/placeholder-img.jpg",
         "story": [
@@ -34,8 +34,8 @@
       },
       {
         "id": "n3",
-        "nombre": "Nominado 3",
-        "descripcion": "Mejor momento de Achura del año. Placeholder.",
+        "nombre": "Jesús Quiero",
+        "descripcion": "",
         "media": "/placeholder-img.jpg",
         "poster": "/placeholder-img.jpg",
         "story": [
@@ -47,8 +47,8 @@
       },
       {
         "id": "n4",
-        "nombre": "Nominado 4",
-        "descripcion": "Mejor momento de Achura del año. Placeholder.",
+        "nombre": "Joaquín Just",
+        "descripcion": "",
         "media": "/placeholder-img.jpg",
         "poster": "/placeholder-img.jpg",
         "story": [
