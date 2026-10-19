@@ -714,16 +714,16 @@
   {
     "id": "achura-mas-quebrado",
     "nombre": "Achura mas quebrado",
-    "tipo": "video",
+    "tipo": "imagen",
     "poster": "/media/quebrado-del-ano.jpg",
-    "mencion": "Mencion honorifica placeholder para Achura mas quebrado ([EDITAR]).",
+    "mencion": "",
     "nominados": [
       {
         "id": "n49",
-        "nombre": "Nominado 1",
-        "descripcion": "Mejor momento de Achura mas quebrado. Placeholder.",
-        "media": "/placeholder.mp4",
-        "poster": "/placeholder-img.jpg",
+        "nombre": "Jesús Quiero",
+        "descripcion": "",
+        "media": "/media/achura-del-ano-jesus-quiero.jpg",
+        "poster": "/media/achura-del-ano-jesus-quiero.jpg",
         "story": [
           {
             "tipo": "texto",
@@ -733,10 +733,10 @@
       },
       {
         "id": "n50",
-        "nombre": "Nominado 2",
-        "descripcion": "Mejor momento de Achura mas quebrado. Placeholder.",
-        "media": "/placeholder.mp4",
-        "poster": "/placeholder-img.jpg",
+        "nombre": "Pablo Agustín Damino",
+        "descripcion": "",
+        "media": "/media/outfit-ano-pablo-damino.jpg",
+        "poster": "/media/outfit-ano-pablo-damino.jpg",
         "story": [
           {
             "tipo": "texto",
@@ -746,10 +746,10 @@
       },
       {
         "id": "n51",
-        "nombre": "Nominado 3",
-        "descripcion": "Mejor momento de Achura mas quebrado. Placeholder.",
-        "media": "/placeholder.mp4",
-        "poster": "/placeholder-img.jpg",
+        "nombre": "Franco Bernardi",
+        "descripcion": "",
+        "media": "/media/franco-bernardi.jpg",
+        "poster": "/media/franco-bernardi.jpg",
         "story": [
           {
             "tipo": "texto",
@@ -759,10 +759,10 @@
       },
       {
         "id": "n52",
-        "nombre": "Nominado 4",
-        "descripcion": "Mejor momento de Achura mas quebrado. Placeholder.",
-        "media": "/placeholder.mp4",
-        "poster": "/placeholder-img.jpg",
+        "nombre": "Jesús Quiero",
+        "descripcion": "",
+        "media": "/media/achura-del-ano-jesus-quiero.jpg",
+        "poster": "/media/achura-del-ano-jesus-quiero.jpg",
         "story": [
           {
             "tipo": "texto",
