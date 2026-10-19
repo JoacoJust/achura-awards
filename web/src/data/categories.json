@@ -942,41 +942,6 @@
     ]
   },
   {
-    "id": "menci-n-honorificas",
-    "nombre": "Mención Honorificas",
-    "tipo": "imagen",
-    "poster": "/media/mencion-honorifica.jpg",
-    "mencion": "El tute por la idea. Pablo por desaparecido.",
-    "nominados": [
-      {
-        "id": "n_m1",
-        "nombre": "El tute por la idea",
-        "descripcion": "Mención honorífica.",
-        "media": "/placeholder-img.jpg",
-        "poster": "/placeholder-img.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Mención honorífica: El tute por la idea."
-          }
-        ]
-      },
-      {
-        "id": "n_m2",
-        "nombre": "Pablo por desaparecido",
-        "descripcion": "Mención honorífica.",
-        "media": "/placeholder-img.jpg",
-        "poster": "/placeholder-img.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Mención honorífica: Pablo por desaparecido."
-          }
-        ]
-      }
-    ]
-  },
-  {
     "id": "gordiada-del-a-o",
     "nombre": "Gordiada del año",
     "tipo": "story",
