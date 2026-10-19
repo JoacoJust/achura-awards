@@ -987,59 +987,39 @@
     "nombre": "Mejor momento MDT",
     "tipo": "story",
     "poster": "/media/momento-mdt.png",
-    "mencion": "Mencion honorifica placeholder para Mejor momento MDT ([EDITAR]).",
+    "mencion": "",
     "nominados": [
       {
         "id": "n73",
-        "nombre": "Nominado 1",
-        "descripcion": "Mejor momento de Mejor momento MDT. Placeholder.",
+        "nombre": "Guido Olmo",
+        "descripcion": "",
         "media": "/placeholder.mp4",
         "poster": "/placeholder-img.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Mejor momento MDT."
-          }
-        ]
+        "story": []
       },
       {
         "id": "n74",
-        "nombre": "Nominado 2",
-        "descripcion": "Mejor momento de Mejor momento MDT. Placeholder.",
+        "nombre": "Franco Bernardi",
+        "descripcion": "",
         "media": "/placeholder.mp4",
         "poster": "/placeholder-img.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Mejor momento MDT."
-          }
-        ]
+        "story": []
       },
       {
         "id": "n75",
-        "nombre": "Nominado 3",
-        "descripcion": "Mejor momento de Mejor momento MDT. Placeholder.",
+        "nombre": "Pablo Agustín Damino",
+        "descripcion": "",
         "media": "/placeholder.mp4",
         "poster": "/placeholder-img.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Mejor momento MDT."
-          }
-        ]
+        "story": []
       },
       {
         "id": "n76",
-        "nombre": "Nominado 4",
-        "descripcion": "Mejor momento de Mejor momento MDT. Placeholder.",
+        "nombre": "Nicolás Tiscornia",
+        "descripcion": "",
         "media": "/placeholder.mp4",
         "poster": "/placeholder-img.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Mejor momento MDT."
-          }
-        ]
+        "story": []
       }
     ]
   },
