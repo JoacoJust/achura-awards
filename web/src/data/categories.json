@@ -1022,22 +1022,5 @@
         "story": []
       }
     ]
-  },
-  {
-    "id": "mejor-momento-pad-10",
-    "nombre": "Mejor momento PAD",
-    "tipo": "video",
-    "permite_votar": false,
-    "mencion": "Mencion honorifica placeholder para Mejor momento PAD 10 ([EDITAR]).",
-    "nominados": [
-      {
-        "id": "pad1",
-        "nombre": "Chico durmiendo",
-        "descripcion": "Mejor momento PAD - chico durmiendo",
-        "media": "/media/video-pad.mp4",
-        "poster": "/media/chico-dormiendo.jpg",
-        "story": []
-      }
-    ]
   }
 ]
