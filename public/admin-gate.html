@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Achura Awards — Acceso administrador</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, sans-serif; }
+  body { background: #070d1a; color: #fff; display: flex; align-items: center; justify-content: center; min-height: 100vh; padding: 20px; }
+  .card { background: #111; border: 1px solid #333; border-radius: 16px; padding: 24px; width: 100%; max-width: 380px; }
+  h2 { font-size: 1.1rem; margin-bottom: 6px; }
+  p.sub { color: #8b8b8b; font-size: .88rem; margin-bottom: 14px; }
+  input, button { width: 100%; padding: 14px; margin: 8px 0; border-radius: 10px; border: 1px solid #333; font-size: 1rem; }
+  input { background: #161616; color: #fff; }
+  button { background: #d4af37; color: #000; border: none; font-weight: bold; cursor: pointer; }
+  .err { color: #f87171; min-height: 1.2em; }
+  .verpwd { position: relative; }
+  .verpwd button { position: absolute; right: 6px; top: 8px; width: auto; padding: 8px 12px; background: #333; color: #fff; }
+  .back { text-align: center; margin-top: 16px; }
+  .back a { color: #8b8b8b; font-size: .82rem; text-decoration: underline; }
+  .back a:hover { color: #d4af37; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <h2>🔒 Acceso administrador</h2>
+    <p class="sub">Zona restringida. Ingresá la contraseña para ver el panel.</p>
+    <div class="verpwd">
+      <input id="pass" type="password" placeholder="Contraseña" autocomplete="current-password" />
+      <button type="button" id="toggle">👁️</button>
+    </div>
+    <button id="entrar">Ingresar</button>
+    <p id="err" class="err"></p>
+    <p class="back"><a href="/login">← Volver al inicio</a></p>
+  </div>
+<script>
+document.getElementById('toggle').onclick = () => {
+  const p = document.getElementById('pass');
+  p.type = p.type === 'password' ? 'text' : 'password';
+};
+document.getElementById('pass').addEventListener('keydown', (e) => {
+  if (e.key === 'Enter') document.getElementById('entrar').click();
+});
+document.getElementById('entrar').onclick = async () => {
+  const password = document.getElementById('pass').value;
+  document.getElementById('err').textContent = '';
+  try {
+    const r = await fetch('/admin', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ password }),
+    });
+    const d = await r.json();
+    if (d.ok) location.href = '/admin';
+    else document.getElementById('err').textContent = d.error || 'Error';
+  } catch (e) {
+    document.getElementById('err').textContent = 'No se pudo conectar con el servidor';
+  }
+};
+</script>
+</body>
+</html>

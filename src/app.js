@@ -8,7 +8,9 @@ const authRoutes = require('./routes/authRoutes');
 const votacionRoutes = require('./routes/votacionRoutes');
 const adminRoutes = require('./routes/adminRoutes');
 const Usuario = require('./models/Usuario');
-const { notFoundHandler, errorHandler } = require('./core/errores');
+const Admin = require('./models/Admin');
+const jwt = require('jsonwebtoken');
+const { notFoundHandler, errorHandler, asyncHandler, unauthorized } = require('./core/errores');
 const { globalLimiter } = require('./middlewares/rateLimits');
 
 const app = express();
@@ -61,9 +63,44 @@ app.get('/api/me', (req, res) => {
   Usuario.findById(req.session.userId).then((u) => res.json({ nombre: u.nombre, email: u.email })).catch(() => res.status(401).json({}));
 });
 
-// Panel de admin (login propio): visible sin necesidad de iniciar sesión como votante
+// --- Panel de admin: protegido con contraseña (nadie ve el form sin la clave) ---
 const adminHtml = path.join(__dirname, '../public/admin.html');
-app.get(['/admin', '/admin/', '/admin.html', '/AchuraAwards/admin'], (req, res) => res.sendFile(adminHtml));
+const adminGateHtml = path.join(__dirname, '../public/admin-gate.html');
+
+async function passwordAdminOk(password) {
+  if (!password) return false;
+  // 1) clave por env (ADMIN_PASSWORD)
+  if (password === (process.env.ADMIN_PASSWORD || 'achura2026')) return true;
+  // 2) o la clave real del usuario admin en la DB
+  try {
+    const email = (process.env.ADMIN_EMAIL || 'admin@achura.com').toLowerCase();
+    const admin = await Admin.findOne({ email, activo: true });
+    if (admin && admin.password_hash && (await bcrypt.compare(password, admin.password_hash))) return true;
+  } catch (e) { /* sin DB seguimos con el chequeo por env */ }
+  return false;
+}
+
+app.get(['/admin', '/admin/', '/admin.html', '/AchuraAwards/admin'], (req, res) => {
+  res.sendFile(req.session.admin_ok ? adminHtml : adminGateHtml);
+});
+
+app.post('/admin', rateLimit({ windowMs: 15 * 60 * 1000, max: 10, message: { error: 'Demasiados intentos' } }), asyncHandler(async (req, res) => {
+  const password = String(req.body.password || '');
+  if (!(await passwordAdminOk(password))) throw unauthorized('Contraseña incorrecta');
+  req.session.admin_ok = true;
+  req.session.save(() => res.json({ ok: true }));
+}));
+
+// El panel pide el token por sesión después de pasar la contraseña
+app.get('/api/admin/session', asyncHandler(async (req, res) => {
+  if (!req.session.admin_ok) throw unauthorized('Ingresá la contraseña de admin');
+  const email = (process.env.ADMIN_EMAIL || 'admin@achura.com').toLowerCase();
+  const admin = await Admin.findOne({ email, activo: true });
+  if (!admin) throw unauthorized('Admin no encontrado');
+  const token = jwt.sign({ id: admin._id, email: admin.email, rol: 'admin' }, process.env.JWT_SECRET, { expiresIn: process.env.JWT_EXPIRATION || '24h' });
+  res.json({ success: true, token, admin: { id: admin._id, email: admin.email, nombre: admin.nombre, rol: admin.rol } });
+}));
+
 // Logo y assets del panel de admin
 app.use('/img', express.static(path.join(__dirname, '../public/img')));
 

@@ -113,6 +113,22 @@ function mostrarPanel() { el('login').style.display = 'none'; el('panel').style.
 
 async function cargarTodo() {
   const d = await (await fetch('/api/admin/dashboard', { headers: H() })).json();
+  if (!d.success) { // token vencido o sin permiso: volvemos a pedir la contraseña
+    localStorage.removeItem('achura_admin_token');
+    token = null;
+    const intentos = Number(sessionStorage.getItem('admin_reintentos') || 0);
+    if (intentos >= 2) {
+      sessionStorage.removeItem('admin_reintentos');
+      el('panel').style.display = 'none';
+      el('login').style.display = 'block';
+      el('lerr').textContent = 'No se pudo validar la sesión. Volvé a ingresar la contraseña.';
+      return;
+    }
+    sessionStorage.setItem('admin_reintentos', String(intentos + 1));
+    location.href = '/admin';
+    return;
+  }
+  sessionStorage.removeItem('admin_reintentos');
   el('metricas').innerHTML = `
     <div class="metrica"><b>${d.data.total_votos}</b>Total votos</div>
     <div class="metrica"><b>${d.data.total_votantes}</b>Votantes</div>
@@ -187,7 +203,20 @@ async function descargar() {
   a.download = 'achura_reporte.csv';
   a.click();
 }
-if (token) mostrarPanel();
+// Si ya pasaste la contraseña en esta sesión, el servidor te da el token directo
+async function init() {
+  if (token) return mostrarPanel();
+  try {
+    const d = await (await fetch('/api/admin/session')).json();
+    if (d.success && d.token) {
+      token = d.token;
+      localStorage.setItem('achura_admin_token', token);
+      return mostrarPanel();
+    }
+  } catch (e) {}
+  if (location.pathname !== '/admin') location.href = '/admin'; // sin clave no hay panel
+}
+init();
 </script>
 </body>
 </html>
