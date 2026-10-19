@@ -67,6 +67,17 @@ const CATEGORIES_JSON = path.join(__dirname, '../web/src/data/categories.json');
       op.posicion = j + 1;
       await op.save();
     }
+    // Las opciones que ya no están en el JSON se borran (salvo que ya tengan votos)
+    const idsOpciones = (c.nominados || []).map((n) => n.id);
+    const sobrantes = await Opcion.find({ categoria: cat._id, id_web: { $nin: idsOpciones } });
+    for (const s of sobrantes) {
+      if (s.votos > 0) {
+        console.log(`  ⚠ ${c.nombre}: "${s.nombre}" ya no está en el JSON pero tiene ${s.votos} voto(s); no se borra`);
+      } else {
+        await Opcion.deleteOne({ _id: s._id });
+        console.log(`  🗑 Borrada opción que ya no está en el JSON: ${c.nombre} / ${s.nombre}`);
+      }
+    }
     console.log(`  ✔ ${c.nombre} (${(c.nominados || []).length} nominados)`);
   }
 
