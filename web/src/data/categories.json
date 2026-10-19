@@ -553,12 +553,12 @@
     "nombre": "Dupla del año",
     "tipo": "video",
     "poster": "/media/dupla-del-ano.jpg",
-    "mencion": "Mencion honorifica placeholder para Dupla del año ([EDITAR]).",
+    "mencion": "",
     "nominados": [
       {
         "id": "n37",
-        "nombre": "Nominado 1",
-        "descripcion": "Mejor momento de Dupla del año. Placeholder.",
+        "nombre": "Guido Olmo y Mateo Guagliardi",
+        "descripcion": "",
         "media": "/placeholder.mp4",
         "poster": "/placeholder-img.jpg",
         "story": [
@@ -570,8 +570,8 @@
       },
       {
         "id": "n38",
-        "nombre": "Nominado 2",
-        "descripcion": "Mejor momento de Dupla del año. Placeholder.",
+        "nombre": "Franco Bernardi y Pablo Agustín Damino",
+        "descripcion": "",
         "media": "/placeholder.mp4",
         "poster": "/placeholder-img.jpg",
         "story": [
@@ -583,8 +583,8 @@
       },
       {
         "id": "n39",
-        "nombre": "Nominado 3",
-        "descripcion": "Mejor momento de Dupla del año. Placeholder.",
+        "nombre": "Franco Bernardi y Nicolás Tiscornia",
+        "descripcion": "",
         "media": "/placeholder.mp4",
         "poster": "/placeholder-img.jpg",
         "story": [
@@ -596,8 +596,8 @@
       },
       {
         "id": "n40",
-        "nombre": "Nominado 4",
-        "descripcion": "Mejor momento de Dupla del año. Placeholder.",
+        "nombre": "Joaquín Just y Nicolás Tiscornia",
+        "descripcion": "",
         "media": "/placeholder.mp4",
         "poster": "/placeholder-img.jpg",
         "story": [
