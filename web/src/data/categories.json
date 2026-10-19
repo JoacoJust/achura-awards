@@ -777,14 +777,14 @@
     "nombre": "Fail del año",
     "tipo": "video",
     "poster": "/media/fail-del-ano.jpg",
-    "mencion": "Mencion honorifica placeholder para Fail del año ([EDITAR]).",
+    "mencion": "",
     "nominados": [
       {
         "id": "n53",
-        "nombre": "Nominado 1",
-        "descripcion": "Mejor momento de Fail del año. Placeholder.",
-        "media": "/placeholder.mp4",
-        "poster": "/placeholder-img.jpg",
+        "nombre": "Jesús Quiero",
+        "descripcion": "",
+        "media": "/media/fail-ano-jesus-quiero.mp4",
+        "poster": "/media/fail-ano-jesus-quiero.jpg",
         "story": [
           {
             "tipo": "texto",
@@ -795,7 +795,7 @@
       {
         "id": "n54",
         "nombre": "Nominado 2",
-        "descripcion": "Mejor momento de Fail del año. Placeholder.",
+        "descripcion": "",
         "media": "/placeholder.mp4",
         "poster": "/placeholder-img.jpg",
         "story": [
@@ -808,7 +808,7 @@
       {
         "id": "n55",
         "nombre": "Nominado 3",
-        "descripcion": "Mejor momento de Fail del año. Placeholder.",
+        "descripcion": "",
         "media": "/placeholder.mp4",
         "poster": "/placeholder-img.jpg",
         "story": [
@@ -821,7 +821,7 @@
       {
         "id": "n56",
         "nombre": "Nominado 4",
-        "descripcion": "Mejor momento de Fail del año. Placeholder.",
+        "descripcion": "",
         "media": "/placeholder.mp4",
         "poster": "/placeholder-img.jpg",
         "story": [
