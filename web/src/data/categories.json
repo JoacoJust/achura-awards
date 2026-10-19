@@ -126,12 +126,12 @@
     "nombre": "Achura promesa (fuera de Achura)",
     "tipo": "imagen",
     "poster": "/media/achura-promesa.jpg",
-    "mencion": "Mencion honorifica placeholder para Achura promesa (fuera de Achura) ([EDITAR]).",
+    "mencion": "",
     "nominados": [
       {
         "id": "n9",
-        "nombre": "Nominado 1",
-        "descripcion": "Mejor momento de Achura promesa (fuera de Achura). Placeholder.",
+        "nombre": "Ignacio Guagliardi",
+        "descripcion": "",
         "media": "/placeholder-img.jpg",
         "poster": "/placeholder-img.jpg",
         "story": [
@@ -143,8 +143,8 @@
       },
       {
         "id": "n10",
-        "nombre": "Nominado 2",
-        "descripcion": "Mejor momento de Achura promesa (fuera de Achura). Placeholder.",
+        "nombre": "Francisco Estigarribia",
+        "descripcion": "",
         "media": "/placeholder-img.jpg",
         "poster": "/placeholder-img.jpg",
         "story": [
@@ -156,8 +156,8 @@
       },
       {
         "id": "n11",
-        "nombre": "Nominado 3",
-        "descripcion": "Mejor momento de Achura promesa (fuera de Achura). Placeholder.",
+        "nombre": "Nazareno Borda",
+        "descripcion": "",
         "media": "/placeholder-img.jpg",
         "poster": "/placeholder-img.jpg",
         "story": [
@@ -169,8 +169,8 @@
       },
       {
         "id": "n12",
-        "nombre": "Nominado 4",
-        "descripcion": "Mejor momento de Achura promesa (fuera de Achura). Placeholder.",
+        "nombre": "Delfina Scoccimarro",
+        "descripcion": "",
         "media": "/placeholder-img.jpg",
         "poster": "/placeholder-img.jpg",
         "story": [
