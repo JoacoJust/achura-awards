@@ -194,7 +194,7 @@
         "nombre": "Marto",
         "descripcion": "",
         "media": "/placeholder.mp4",
-        "poster": "/placeholder-img.jpg",
+        "poster": "/media/achura-revelacion-juan-martin-leyes.jpg",
         "story": [
           {
             "tipo": "texto",
@@ -207,7 +207,7 @@
         "nombre": "Jesús Quiero",
         "descripcion": "",
         "media": "/placeholder.mp4",
-        "poster": "/placeholder-img.jpg",
+        "poster": "/media/achura-del-ano-jesus-quiero.jpg",
         "story": [
           {
             "tipo": "texto",
@@ -233,7 +233,7 @@
         "nombre": "Franco Bernardi",
         "descripcion": "",
         "media": "/placeholder.mp4",
-        "poster": "/placeholder-img.jpg",
+        "poster": "/media/achura-gamer-franco-bernardi.jpg",
         "story": [
           {
             "tipo": "texto",
