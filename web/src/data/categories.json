@@ -309,14 +309,14 @@
     "nombre": "Achura mas gay del año",
     "tipo": "imagen",
     "poster": "/media/bandera-gay.png",
-    "mencion": "Mencion honorifica placeholder para Achura mas gay del año ([EDITAR]).",
+    "mencion": "",
     "nominados": [
       {
         "id": "n21",
-        "nombre": "Nominado 1",
-        "descripcion": "Mejor momento de Achura mas gay del año.",
-        "media": "/media/gay-del-ano.jpg",
-        "poster": "/media/gay-del-ano.jpg",
+        "nombre": "Ramiro Domínguez",
+        "descripcion": "",
+        "media": "/media/achura-revelacion-ramiro-dominguez.jpg",
+        "poster": "/media/achura-revelacion-ramiro-dominguez.jpg",
         "story": [
           {
             "tipo": "texto",
@@ -326,10 +326,10 @@
       },
       {
         "id": "n22",
-        "nombre": "Nominado 2",
-        "descripcion": "Mejor momento de Achura mas gay del año.",
-        "media": "/media/gay-del-ano.jpg",
-        "poster": "/media/gay-del-ano.jpg",
+        "nombre": "Franco Bernardi",
+        "descripcion": "",
+        "media": "/media/achura-gamer-franco-bernardi.jpg",
+        "poster": "/media/achura-gamer-franco-bernardi.jpg",
         "story": [
           {
             "tipo": "texto",
@@ -339,10 +339,10 @@
       },
       {
         "id": "n23",
-        "nombre": "Nominado 3",
-        "descripcion": "Mejor momento de Achura mas gay del año.",
-        "media": "/media/gay-del-ano.jpg",
-        "poster": "/media/gay-del-ano.jpg",
+        "nombre": "Joaquín Just",
+        "descripcion": "",
+        "media": "/media/achura-del-ano-joaquin-just.jpg",
+        "poster": "/media/achura-del-ano-joaquin-just.jpg",
         "story": [
           {
             "tipo": "texto",
@@ -352,10 +352,10 @@
       },
       {
         "id": "n24",
-        "nombre": "Nominado 4",
-        "descripcion": "Mejor momento de Achura mas gay del año.",
-        "media": "/media/gay-del-ano.jpg",
-        "poster": "/media/gay-del-ano.jpg",
+        "nombre": "Jesús Quiero",
+        "descripcion": "",
+        "media": "/media/achura-del-ano-jesus-quiero.jpg",
+        "poster": "/media/achura-del-ano-jesus-quiero.jpg",
         "story": [
           {
             "tipo": "texto",
