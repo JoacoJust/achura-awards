@@ -26,11 +26,15 @@ app.use(session({
   cookie: { httpOnly: true, sameSite: 'lax', secure: 'auto' },
 }));
 
-// Guard: todo requiere sesión salvo /login, /logout, /api/admin auth, /uploads estáticos de login
+// Guard: todo requiere sesión salvo login, panel de admin y media pública.
 app.use((req, res, next) => {
-  const exentas = ['/login', '/logout', '/api/me', '/api/auth/enviar-codigo', '/api/auth/verificar-codigo', '/media'];
+  const exentas = ['/login', '/logout', '/api/me', '/api/auth/enviar-codigo', '/api/auth/verificar-codigo'];
   if (exentas.includes(req.path)) return next();
+  // El panel de admin tiene su propio login (JWT) y no depende de la sesión de votante
+  if (req.path.startsWith('/admin') || req.path === '/AchuraAwards/admin') return next();
   if (req.path.startsWith('/api/admin')) return next(); // admin usa JWT propio
+  // Media pública: fotos de ternas, logo y archivos subidos desde el admin
+  if (req.path.startsWith('/media/') || req.path.startsWith('/img/') || req.path.startsWith('/uploads/')) return next();
   if (!req.session.userId) {
     if (req.path.startsWith('/api/')) return res.status(401).json({ error: 'Iniciá sesión' });
     return res.redirect('/login');
@@ -57,13 +61,17 @@ app.get('/api/me', (req, res) => {
   Usuario.findById(req.session.userId).then((u) => res.json({ nombre: u.nombre, email: u.email })).catch(() => res.status(401).json({}));
 });
 
+// Panel de admin (login propio): visible sin necesidad de iniciar sesión como votante
+const adminHtml = path.join(__dirname, '../public/admin.html');
+app.get(['/admin', '/admin/', '/admin.html', '/AchuraAwards/admin'], (req, res) => res.sendFile(adminHtml));
+// Logo y assets del panel de admin
+app.use('/img', express.static(path.join(__dirname, '../public/img')));
+
 // Serve frontend React (protegido por el guard)
 app.use(express.static(path.join(__dirname, '../web/dist')));
 // Multimedia subida desde el admin (multer la guarda en public/uploads)
 app.use('/uploads', express.static(path.join(__dirname, '../public/uploads')));
 app.get('/AchuraAwards', (req, res) => res.sendFile(path.join(__dirname, '../web/dist/index.html')));
-app.use('/admin', express.static(path.join(__dirname, '../public')));
-app.get('/AchuraAwards/admin', (req, res) => res.sendFile(path.join(__dirname, '../public/admin.html')));
 
 app.use('/api/auth', authRoutes);
 app.use('/api', votacionRoutes);

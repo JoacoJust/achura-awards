@@ -60,20 +60,44 @@ exports.resultados = asyncHandler(async (req, res) => {
 exports.votantes = asyncHandler(async (req, res) => {
   const page = Math.max(1, parseInt(req.query.page || '1'));
   const limit = Math.min(100, Math.max(1, parseInt(req.query.limit || '50')));
+  // Por defecto sólo quienes ya votaron; ?todos=1 lista a todos los usuarios
+  const filtro = req.query.todos === '1' ? {} : { has_votado: true };
   const [usuarios, total] = await Promise.all([
-    Usuario.find({ codigo_verificado: true }).sort('-createdAt').skip((page - 1) * limit).limit(limit).lean(),
-    Usuario.countDocuments({ codigo_verificado: true }),
+    Usuario.find(filtro).sort('-has_votado -createdAt').skip((page - 1) * limit).limit(limit).lean(),
+    Usuario.countDocuments(filtro),
   ]);
-  const data = await Promise.all(
-    usuarios.map(async (u) => ({
+
+  const votos = await Voto.find({ usuario: { $in: usuarios.map((u) => u._id) } })
+    .populate('categoria', 'nombre')
+    .populate('opcion', 'nombre')
+    .sort('fecha_voto')
+    .lean();
+
+  const porUsuario = new Map();
+  for (const v of votos) {
+    const key = String(v.usuario);
+    if (!porUsuario.has(key)) porUsuario.set(key, []);
+    porUsuario.get(key).push({
+      categoria: v.categoria ? v.categoria.nombre : null,
+      opcion: v.opcion ? v.opcion.nombre : null,
+      fecha: v.fecha_voto,
+      ip: v.ip_address || null,
+    });
+  }
+
+  const data = usuarios.map((u) => {
+    const propios = porUsuario.get(String(u._id)) || [];
+    return {
       id: u._id,
+      nombre: u.nombre,
       email: u.email,
-      fecha_verificacion: u.fecha_verificacion,
       fecha_primer_voto: u.fecha_primer_voto,
-      ip_address: u.ip_address,
-      total_votos: await Voto.countDocuments({ usuario: u._id }),
-    }))
-  );
+      total_votos: propios.length,
+      ultimo_voto: propios.length ? propios[propios.length - 1].fecha : null,
+      votos: propios,
+    };
+  });
+
   res.json({ success: true, data, pagination: { page, limit, total, pages: Math.ceil(total / limit) } });
 });
 

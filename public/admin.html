@@ -67,6 +67,16 @@
       <div style="overflow-x:auto"><table id="votantes"></table></div>
     </div>
 
+    <div id="modal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.75);z-index:50;align-items:center;justify-content:center;padding:20px">
+      <div class="card" style="max-width:680px;width:100%;max-height:80vh;overflow:auto;margin:0">
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:8px">
+          <h3 id="modal-title" style="margin:0">Votos</h3>
+          <button class="sec" onclick="cerrarModal()">Cerrar</button>
+        </div>
+        <div id="modal-body"></div>
+      </div>
+    </div>
+
     <div class="card">
       <h3>Categorías</h3>
       <input id="cn" placeholder="Nombre categoría" /><input id="cd" placeholder="Descripción" /><input id="cp" type="number" placeholder="Posición" />
@@ -118,9 +128,17 @@ async function cargarTodo() {
         </div>`).join('')}
     </div><hr />`).join('');
 
-  const v = await (await fetch('/api/admin/votantes?page=1&limit=50', { headers: H() })).json();
-  el('votantes').innerHTML = '<tr><th>Email</th><th>Verificado</th><th>IP</th><th>Votos</th></tr>' +
-    v.data.map(u => `<tr><td>${u.email}</td><td>${u.fecha_verificacion ? new Date(u.fecha_verificacion).toLocaleString() : '-'}</td><td>${u.ip_address || '-'}</td><td>${u.total_votos}</td></tr>`).join('');
+  const v = await (await fetch('/api/admin/votantes?page=1&limit=100', { headers: H() })).json();
+  window._votantes = v.data || [];
+  el('votantes').innerHTML = '<tr><th>Nombre</th><th>Email</th><th>Votos</th><th>Último voto</th><th></th></tr>' +
+    window._votantes.map((u, i) => `<tr>
+      <td>${u.nombre || '-'}</td>
+      <td>${u.email}</td>
+      <td><b>${u.total_votos}</b></td>
+      <td>${u.ultimo_voto ? new Date(u.ultimo_voto).toLocaleString() : '-'}</td>
+      <td><button class="sec" onclick="verVotos(${i})">Ver votos</button></td>
+    </tr>`).join('');
+  if (!window._votantes.length) el('votantes').innerHTML += '<tr><td colspan="5"><small>Todavía no hay votos registrados.</small></td></tr>';
 
   el('lista-cats').innerHTML = r.data.map(c => `
     <div style="margin:8px 0;display:flex;align-items:center;gap:8px;flex-wrap:wrap">
@@ -128,6 +146,19 @@ async function cargarTodo() {
       <button class="sec" onclick="toggleCat('${c.categoria_id}', ${!c.activa})">${c.activa ? 'Desactivar' : 'Activar'}</button>
     </div>`).join('');
 }
+
+function verVotos(i) {
+  const u = (window._votantes || [])[i];
+  if (!u) return;
+  el('modal-title').textContent = `Votos de ${u.nombre || u.email}`;
+  el('modal-body').innerHTML = (u.votos && u.votos.length)
+    ? '<table><tr><th>Categoría</th><th>Opción votada</th><th>Fecha</th></tr>' +
+      u.votos.map(v => `<tr><td>${v.categoria || '-'}</td><td>${v.opcion || '-'}</td><td>${v.fecha ? new Date(v.fecha).toLocaleString() : '-'}</td></tr>`).join('') +
+      '</table>'
+    : '<p><small>Sin votos registrados.</small></p>';
+  el('modal').style.display = 'flex';
+}
+function cerrarModal() { el('modal').style.display = 'none'; }
 
 async function crearCategoria() {
   const r = await fetch('/api/admin/categorias', { method: 'POST', headers: H(), body: JSON.stringify({ nombre: el('cn').value, descripcion: el('cd').value, posicion: Number(el('cp').value) }) });

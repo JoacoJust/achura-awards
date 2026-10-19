@@ -14,6 +14,9 @@
   .err { color: #f87171; }
   .verpwd { position: relative; }
   .verpwd button { position: absolute; right: 6px; top: 6px; width: auto; padding: 8px 12px; background: #333; color: #fff; }
+  .admin-link { text-align: center; margin-top: 16px; }
+  .admin-link a { color: #8b8b8b; font-size: .82rem; text-decoration: underline; }
+  .admin-link a:hover { color: #d4af37; }
 </style>
 </head>
 <body>
@@ -26,6 +29,7 @@
     </div>
     <button id="entrar">Entrar</button>
     <p id="err" class="err"></p>
+    <p class="admin-link"><a href="/admin">Acceso administrador</a></p>
   </div>
 <script>
 document.getElementById('toggle').onclick = () => {
