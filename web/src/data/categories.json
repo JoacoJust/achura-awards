@@ -838,12 +838,12 @@
     "nombre": "Achura mas gobernado",
     "tipo": "imagen",
     "poster": "/media/achura-mas-gobernado.webp",
-    "mencion": "Mencion honorifica placeholder para Achura mas gobernado ([EDITAR]).",
+    "mencion": "",
     "nominados": [
       {
         "id": "n57",
-        "nombre": "Nominado 1",
-        "descripcion": "Mejor momento de Achura mas gobernado. Placeholder.",
+        "nombre": "Juan Martín Leyes y Catalina Bogo",
+        "descripcion": "",
         "media": "/placeholder-img.jpg",
         "poster": "/placeholder-img.jpg",
         "story": [
@@ -855,8 +855,8 @@
       },
       {
         "id": "n58",
-        "nombre": "Nominado 2",
-        "descripcion": "Mejor momento de Achura mas gobernado. Placeholder.",
+        "nombre": "Jesús Quiero y Guadalupe Pedernera",
+        "descripcion": "",
         "media": "/placeholder-img.jpg",
         "poster": "/placeholder-img.jpg",
         "story": [
@@ -868,21 +868,8 @@
       },
       {
         "id": "n59",
-        "nombre": "Nominado 3",
-        "descripcion": "Mejor momento de Achura mas gobernado. Placeholder.",
-        "media": "/placeholder-img.jpg",
-        "poster": "/placeholder-img.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Achura mas gobernado."
-          }
-        ]
-      },
-      {
-        "id": "n60",
-        "nombre": "Nominado 4",
-        "descripcion": "Mejor momento de Achura mas gobernado. Placeholder.",
+        "nombre": "Pablo Agustín Damino y Sofía Cevasco",
+        "descripcion": "",
         "media": "/placeholder-img.jpg",
         "poster": "/placeholder-img.jpg",
         "story": [
