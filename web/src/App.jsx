@@ -278,11 +278,13 @@ export default function App() {
               </div>
             )}
 
-            {/* Mención honorífica de la terna */}
-            <div className="mt-10 bg-white/5 border border-gold/40 rounded-xl p-5 max-w-3xl mx-auto">
-              <h3 className="font-serif text-lg text-gold text-center">🎖 Mención honorífica</h3>
-              <p className="text-sm text-white/70 mt-2 text-center">{cat.mencion || 'No hay mención honorífica cargada para esta terna.'}</p>
-            </div>
+            {/* Mención honorífica: solo en las ternas que tienen texto cargado */}
+            {cat.mencion?.trim() ? (
+              <div className="mt-10 bg-white/5 border border-gold/40 rounded-xl p-5 max-w-3xl mx-auto">
+                <h3 className="font-serif text-lg text-gold text-center">🎖 Mención honorífica</h3>
+                <p className="text-sm text-white/70 mt-2 text-center">{cat.mencion}</p>
+              </div>
+            ) : null}
           </motion.div>
         )}
       </AnimatePresence>
