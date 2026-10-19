@@ -65,12 +65,12 @@
     "nombre": "Achura revelacion",
     "tipo": "imagen",
     "poster": "/media/achura-revelacion.jpg",
-    "mencion": "Mencion honorifica placeholder para Achura revelacion ([EDITAR]).",
+    "mencion": "",
     "nominados": [
       {
         "id": "n5",
-        "nombre": "Nominado 1",
-        "descripcion": "Mejor momento de Achura revelacion. Placeholder.",
+        "nombre": "Ramiro Domínguez",
+        "descripcion": "",
         "media": "/placeholder-img.jpg",
         "poster": "/placeholder-img.jpg",
         "story": [
@@ -82,8 +82,8 @@
       },
       {
         "id": "n6",
-        "nombre": "Nominado 2",
-        "descripcion": "Mejor momento de Achura revelacion. Placeholder.",
+        "nombre": "Joaquín Just",
+        "descripcion": "",
         "media": "/placeholder-img.jpg",
         "poster": "/placeholder-img.jpg",
         "story": [
@@ -95,8 +95,8 @@
       },
       {
         "id": "n7",
-        "nombre": "Nominado 3",
-        "descripcion": "Mejor momento de Achura revelacion. Placeholder.",
+        "nombre": "Juan Martín Leyes",
+        "descripcion": "",
         "media": "/placeholder-img.jpg",
         "poster": "/placeholder-img.jpg",
         "story": [
@@ -108,8 +108,8 @@
       },
       {
         "id": "n8",
-        "nombre": "Nominado 4",
-        "descripcion": "Mejor momento de Achura revelacion. Placeholder.",
+        "nombre": "Mateo Guagliardi",
+        "descripcion": "",
         "media": "/placeholder-img.jpg",
         "poster": "/placeholder-img.jpg",
         "story": [
