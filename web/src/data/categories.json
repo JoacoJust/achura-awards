@@ -794,10 +794,10 @@
       },
       {
         "id": "n54",
-        "nombre": "Nominado 2",
+        "nombre": "Franco Da Resurreicao",
         "descripcion": "",
-        "media": "/placeholder.mp4",
-        "poster": "/placeholder-img.jpg",
+        "media": "/media/fail-ano-franco-da-resurreicao.mp4",
+        "poster": "/media/fail-ano-franco-da-resurreicao.jpg",
         "story": [
           {
             "tipo": "texto",
