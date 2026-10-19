@@ -133,3 +133,26 @@ exports.reporte = asyncHandler(async (req, res) => {
   res.setHeader('Content-Disposition', 'attachment; filename="achura_reporte.csv"');
   res.send(csv);
 });
+
+exports.votosUsuario = asyncHandler(async (req, res) => {
+  const { usuario_id } = req.params;
+  const usuario = await Usuario.findById(usuario_id);
+  if (!usuario) throw notFound('Usuario no encontrado');
+
+  const votos = await Voto.find({ usuario: usuario_id })
+    .populate('categoria', 'nombre')
+    .populate('opcion', 'nombre')
+    .sort('fecha_voto')
+    .lean();
+
+  const data = votos.map(v => ({
+    categoria_id: v.categoria._id,
+    categoria_nombre: v.categoria.nombre,
+    opcion_id: v.opcion._id,
+    opcion_nombre: v.opcion.nombre,
+    fecha_voto: v.fecha_voto,
+    ip_address: v.ip_address,
+  }));
+
+  res.json({ success: true, data, usuario: { id: usuario._id, email: usuario.email } });
+});

@@ -25,5 +25,6 @@ router.post('/opciones', authAdmin, adminController.crearOpcion);
 router.put('/categorias/:id/toggle', authAdmin, adminController.toggleCategoria);
 router.post('/upload-media', authAdmin, upload.single('file'), adminController.uploadMedia);
 router.get('/reporte', authAdmin, adminController.reporte);
+router.get('/votantes/:usuario_id/votos', authAdmin, adminController.votosUsuario);
 
 module.exports = router;

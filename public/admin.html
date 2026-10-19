@@ -532,6 +532,85 @@
       color: var(--gold);
       margin-bottom: 12px;
     }
+
+    /* Modal */
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      z-index: 1000;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .modal.active {
+      display: flex;
+    }
+
+    .modal-content {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 40px;
+      max-width: 600px;
+      width: 100%;
+      max-height: 80vh;
+      overflow-y: auto;
+      position: relative;
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      color: var(--text-primary);
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+    }
+
+    .modal-close:hover {
+      border-color: var(--gold);
+      color: var(--gold);
+    }
+
+    .voto-item {
+      padding: 16px;
+      border-radius: 12px;
+      background: var(--bg-secondary);
+      margin-bottom: 12px;
+      border: 1px solid var(--border);
+    }
+
+    .voto-categoria {
+      color: var(--gold);
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .voto-opcion {
+      color: var(--text-primary);
+      font-size: 0.95rem;
+    }
+
+    .voto-fecha {
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      margin-top: 8px;
+    }
   </style>
 </head>
 <body>
@@ -573,6 +652,15 @@
         <h3>👥 Votantes</h3>
         <div class="table-container">
           <table id="votantes"></table>
+        </div>
+      </div>
+
+      <!-- Modal para ver votos de un usuario -->
+      <div id="modal-votos" class="modal">
+        <div class="modal-content">
+          <button class="modal-close" onclick="cerrarModal()">×</button>
+          <h3 id="modal-title">Votos del Usuario</h3>
+          <div id="modal-votos-lista"></div>
         </div>
       </div>
 
@@ -674,8 +762,8 @@
         </div>`).join('');
 
       const v = await (await fetch('/api/admin/votantes?page=1&limit=50', { headers: H() })).json();
-      el('votantes').innerHTML = '<tr><th>Email</th><th>Verificado</th><th>IP</th><th>Votos</th></tr>' +
-        v.data.map(u => `<tr><td>${u.email}</td><td>${u.fecha_verificacion ? new Date(u.fecha_verificacion).toLocaleString() : '-'}</td><td>${u.ip_address || '-'}</td><td>${u.total_votos}</td></tr>`).join('');
+      el('votantes').innerHTML = '<tr><th>Email</th><th>Verificado</th><th>IP</th><th>Votos</th><th>Acciones</th></tr>' +
+        v.data.map(u => `<tr><td>${u.email}</td><td>${u.fecha_verificacion ? new Date(u.fecha_verificacion).toLocaleString() : '-'}</td><td>${u.ip_address || '-'}</td><td>${u.total_votos}</td><td><button class="btn btn-secondary btn-small" onclick="verVotos('${u.id}')">Ver Votos</button></td></tr>`).join('');
 
       el('lista-cats').innerHTML = r.data.map(c => `
         <div class="category-item">
@@ -745,6 +833,32 @@
       a.href = URL.createObjectURL(blob);
       a.download = 'achura_reporte.csv';
       a.click();
+    }
+
+    async function verVotos(usuarioId) {
+      const r = await fetch(`/api/admin/votantes/${usuarioId}/votos`, { headers: H() });
+      const d = await r.json();
+      if (d.success) {
+        el('modal-title').textContent = `Votos de ${d.usuario.email}`;
+        if (d.data.length === 0) {
+          el('modal-votos-lista').innerHTML = '<p style="color:var(--text-muted);text-align:center;padding:20px">Este usuario no ha realizado votos aún.</p>';
+        } else {
+          el('modal-votos-lista').innerHTML = d.data.map(v => `
+            <div class="voto-item">
+              <div class="voto-categoria">${v.categoria_nombre}</div>
+              <div class="voto-opcion">✓ ${v.opcion_nombre}</div>
+              <div class="voto-fecha">Fecha: ${new Date(v.fecha_voto).toLocaleString()} ${v.ip_address ? `• IP: ${v.ip_address}` : ''}</div>
+            </div>
+          `).join('');
+        }
+        el('modal-votos').classList.add('active');
+      } else {
+        alert(d.error);
+      }
+    }
+
+    function cerrarModal() {
+      el('modal-votos').classList.remove('active');
     }
 
     if (token) mostrarPanel();
