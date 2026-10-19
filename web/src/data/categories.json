@@ -448,10 +448,10 @@
       },
       {
         "id": "n30",
-        "nombre": "Nominado 2",
-        "descripcion": "Mejor momento de Mejor outfit del Año (con foto). Placeholder.",
-        "media": "/placeholder-img.jpg",
-        "poster": "/placeholder-img.jpg",
+        "nombre": "Ramiro Domínguez",
+        "descripcion": "",
+        "media": "/media/outfit-ano-ramiro-dominguez.jpg",
+        "poster": "/media/outfit-ano-ramiro-dominguez.jpg",
         "story": [
           {
             "tipo": "texto",
