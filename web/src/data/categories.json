@@ -187,12 +187,12 @@
     "nombre": "Achura gamer del año",
     "tipo": "video",
     "poster": "/media/achura-gamer.jpg",
-    "mencion": "Mencion honorifica placeholder para Achura gamer del año ([EDITAR]).",
+    "mencion": "",
     "nominados": [
       {
         "id": "n13",
-        "nombre": "Nominado 1",
-        "descripcion": "Mejor momento de Achura gamer del año. Placeholder.",
+        "nombre": "Marto",
+        "descripcion": "",
         "media": "/placeholder.mp4",
         "poster": "/placeholder-img.jpg",
         "story": [
@@ -204,8 +204,8 @@
       },
       {
         "id": "n14",
-        "nombre": "Nominado 2",
-        "descripcion": "Mejor momento de Achura gamer del año. Placeholder.",
+        "nombre": "Jesús Quiero",
+        "descripcion": "",
         "media": "/placeholder.mp4",
         "poster": "/placeholder-img.jpg",
         "story": [
@@ -217,8 +217,8 @@
       },
       {
         "id": "n15",
-        "nombre": "Nominado 3",
-        "descripcion": "Mejor momento de Achura gamer del año. Placeholder.",
+        "nombre": "Nicolás Tiscornia",
+        "descripcion": "",
         "media": "/placeholder.mp4",
         "poster": "/placeholder-img.jpg",
         "story": [
@@ -230,8 +230,8 @@
       },
       {
         "id": "n16",
-        "nombre": "Nominado 4",
-        "descripcion": "Mejor momento de Achura gamer del año. Placeholder.",
+        "nombre": "Franco Bernardi",
+        "descripcion": "",
         "media": "/placeholder.mp4",
         "poster": "/placeholder-img.jpg",
         "story": [
