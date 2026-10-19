@@ -366,67 +366,6 @@
     ]
   },
   {
-    "id": "mejor-outfit-del-d-a",
-    "nombre": "Mejor outfit del día",
-    "tipo": "imagen",
-    "poster": "/media/outfit-del-dia.jpg",
-    "mencion": "",
-    "nominados": [
-      {
-        "id": "n25",
-        "nombre": "Nominado 1",
-        "descripcion": "Mejor momento de Mejor outfit del día. Placeholder.",
-        "media": "/placeholder-img.jpg",
-        "poster": "/placeholder-img.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Mejor outfit del día."
-          }
-        ]
-      },
-      {
-        "id": "n26",
-        "nombre": "Nominado 2",
-        "descripcion": "Mejor momento de Mejor outfit del día. Placeholder.",
-        "media": "/placeholder-img.jpg",
-        "poster": "/placeholder-img.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Mejor outfit del día."
-          }
-        ]
-      },
-      {
-        "id": "n27",
-        "nombre": "Nominado 3",
-        "descripcion": "Mejor momento de Mejor outfit del día. Placeholder.",
-        "media": "/placeholder-img.jpg",
-        "poster": "/placeholder-img.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Mejor outfit del día."
-          }
-        ]
-      },
-      {
-        "id": "n28",
-        "nombre": "Nominado 4",
-        "descripcion": "Mejor momento de Mejor outfit del día. Placeholder.",
-        "media": "/placeholder-img.jpg",
-        "poster": "/placeholder-img.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Mejor outfit del día."
-          }
-        ]
-      }
-    ]
-  },
-  {
     "id": "mejor-outfit-del-a-o-con-foto-",
     "nombre": "Mejor outfit del Año (con foto)",
     "tipo": "imagen",
