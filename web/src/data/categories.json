@@ -248,14 +248,14 @@
     "nombre": "Jugador de CS del año",
     "tipo": "video",
     "poster": "/media/cs-logo.webp",
-    "mencion": "Mencion honorifica placeholder para Jugador de CS del año ([EDITAR]).",
+    "mencion": "",
     "nominados": [
       {
         "id": "n17",
-        "nombre": "Nominado 1",
-        "descripcion": "Mejor momento de Jugador de CS del año. Placeholder.",
+        "nombre": "Juan Martín Leyes",
+        "descripcion": "",
         "media": "/placeholder.mp4",
-        "poster": "/placeholder-img.jpg",
+        "poster": "/media/achura-revelacion-juan-martin-leyes.jpg",
         "story": [
           {
             "tipo": "texto",
@@ -265,10 +265,10 @@
       },
       {
         "id": "n18",
-        "nombre": "Nominado 2",
-        "descripcion": "Mejor momento de Jugador de CS del año. Placeholder.",
+        "nombre": "Nicolás Tiscornia",
+        "descripcion": "",
         "media": "/placeholder.mp4",
-        "poster": "/placeholder-img.jpg",
+        "poster": "/media/achura-gamer-nicolas-tiscornia.jpg",
         "story": [
           {
             "tipo": "texto",
@@ -278,10 +278,10 @@
       },
       {
         "id": "n19",
-        "nombre": "Nominado 3",
-        "descripcion": "Mejor momento de Jugador de CS del año. Placeholder.",
+        "nombre": "Franco Bernardi",
+        "descripcion": "",
         "media": "/placeholder.mp4",
-        "poster": "/placeholder-img.jpg",
+        "poster": "/media/achura-gamer-franco-bernardi.jpg",
         "story": [
           {
             "tipo": "texto",
@@ -291,10 +291,10 @@
       },
       {
         "id": "n20",
-        "nombre": "Nominado 4",
-        "descripcion": "Mejor momento de Jugador de CS del año. Placeholder.",
+        "nombre": "Jesús Quiero",
+        "descripcion": "",
         "media": "/placeholder.mp4",
-        "poster": "/placeholder-img.jpg",
+        "poster": "/media/achura-del-ano-jesus-quiero.jpg",
         "story": [
           {
             "tipo": "texto",
