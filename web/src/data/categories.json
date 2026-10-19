@@ -71,8 +71,8 @@
         "id": "n5",
         "nombre": "Ramiro Domínguez",
         "descripcion": "",
-        "media": "/placeholder-img.jpg",
-        "poster": "/placeholder-img.jpg",
+        "media": "/media/achura-revelacion-ramiro-dominguez.jpg",
+        "poster": "/media/achura-revelacion-ramiro-dominguez.jpg",
         "story": [
           {
             "tipo": "texto",
@@ -84,8 +84,8 @@
         "id": "n6",
         "nombre": "Joaquín Just",
         "descripcion": "",
-        "media": "/placeholder-img.jpg",
-        "poster": "/placeholder-img.jpg",
+        "media": "/media/achura-del-ano-joaquin-just.jpg",
+        "poster": "/media/achura-del-ano-joaquin-just.jpg",
         "story": [
           {
             "tipo": "texto",
@@ -110,8 +110,8 @@
         "id": "n8",
         "nombre": "Mateo Guagliardi",
         "descripcion": "",
-        "media": "/placeholder-img.jpg",
-        "poster": "/placeholder-img.jpg",
+        "media": "/media/achura-del-ano-mateo-guagliardi.jpg",
+        "poster": "/media/achura-del-ano-mateo-guagliardi.jpg",
         "story": [
           {
             "tipo": "texto",
