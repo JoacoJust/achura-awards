@@ -237,7 +237,17 @@ export default function App() {
             {votos[cat.id] ? (
               <p className="text-gold">✓ Ya votaste en esta terna.</p>
             ) : (
-              <div className={`grid gap-6 ${cat.nominados.length === 1 ? 'grid-cols-1 max-w-md mx-auto' : 'sm:grid-cols-2 lg:grid-cols-4'}`}>
+              <div
+                className={`grid gap-6 ${
+                  cat.nominados.length === 1
+                    ? 'grid-cols-1 max-w-md mx-auto'
+                    : cat.nominados.length === 2
+                      ? 'grid-cols-1 sm:grid-cols-2 max-w-2xl mx-auto'
+                      : cat.nominados.length === 3
+                        ? 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-4xl mx-auto'
+                        : 'sm:grid-cols-2 lg:grid-cols-4'
+                }`}
+              >
                 {cat.nominados.map((n) => (
                   <div key={n.id} className="bg-white/5 border border-white/10 rounded-xl p-4 flex flex-col items-center gap-3">
                     <button onClick={() => setOpenMedia({ cat, nom: n })} aria-label={`Ver ${n.mediaTipo === 'video' ? 'video' : 'foto'} de ${n.nombre}`} className="relative w-full group/foto">
