@@ -58,6 +58,11 @@ function aUI(c) {
   return r
 }
 
+// Los placeholders no existen como archivo: en ese caso mostramos el emblema/emoji, nunca una imagen rota
+const esPlaceholder = (url) => !url || /placeholder/i.test(url)
+// ¿El nominado tiene un relato cargado para leer?
+const tieneHistoria = (nom) => (nom?.story || []).some((b) => (b.contenido || '').trim())
+
 export default function App() {
   const [estado, setEstado] = useState('cargando') // cargando | error | ok | sin-login
   const [categorias, setCategorias] = useState([])
@@ -74,6 +79,12 @@ export default function App() {
   const [sinFoto, setSinFoto] = useState({}) // fotos que no cargaron → mostramos el emblema
 
   const marcarSinFoto = (src) => setSinFoto((f) => ({ ...f, [src]: true }))
+
+  // Qué mostrar en el modal del nominado abierto
+  const nomAbierto = openMedia?.nom
+  const esVideoNom = !!nomAbierto && nomAbierto.mediaTipo === 'video' && !esPlaceholder(nomAbierto.media)
+  const esFotoNom = !!nomAbierto && !!nomAbierto.portada && !esPlaceholder(nomAbierto.portada) && !sinFoto[nomAbierto.portada]
+  const esHistoriaNom = !!nomAbierto && (tieneHistoria(nomAbierto) || openMedia.cat.tipo === 'story')
 
   const cargar = useCallback(async () => {
     setEstado('cargando')
@@ -220,7 +231,7 @@ export default function App() {
                 {categorias.map((c) => (
                   <button key={c.id} onClick={() => setCat(c)} className="group flex flex-col items-center gap-3 text-center focus:outline-none" aria-label={`Abrir ${c.nombre}`}>
                     <span className="relative w-[130px] h-[130px] rounded-full overflow-hidden border-2 border-white/20 group-hover:border-gold transition-all duration-300 group-hover:scale-105 group-hover:drop-shadow-[0_0_18px_rgba(212,175,55,.5)] bg-white/5">
-                      {c.portada && !sinFoto[c.portada] ? (
+                      {c.portada && !esPlaceholder(c.portada) && !sinFoto[c.portada] ? (
                         <img src={c.portada} alt={c.nombre} loading="lazy" className="w-full h-full object-cover" onError={() => marcarSinFoto(c.portada)} />
                       ) : (
                         <span className="flex items-center justify-center w-full h-full"><Emblem size={100} /></span>
@@ -304,24 +315,27 @@ export default function App() {
                     const yaVotado = (votos[cat.id]?.ids || []).includes(n.id)
                     return (
                       <div key={n.id} className="bg-white/5 border border-white/10 rounded-xl p-4 flex flex-col items-center gap-3">
-                        <button onClick={() => setOpenMedia({ cat, nom: n })} aria-label={`Ver ${n.mediaTipo === 'video' ? 'video' : 'foto'} de ${n.nombre}`} className="relative w-full group/foto">
-                          {n.portada && !sinFoto[n.portada] ? (
+                        <button onClick={() => setOpenMedia({ cat, nom: n })} aria-label={`${n.mediaTipo === 'video' && !esPlaceholder(n.media) ? 'Ver el video' : tieneHistoria(n) ? 'Leer la historia' : 'Ver la foto'} de ${n.nombre}`} className="relative w-full group/foto">
+                          {n.portada && !esPlaceholder(n.portada) && !sinFoto[n.portada] ? (
                             <img src={n.portada} alt={n.nombre} loading="lazy" className="rounded-lg w-full h-40 object-cover transition group-hover/foto:opacity-80" onError={() => marcarSinFoto(n.portada)} />
                           ) : (
-                            <span className="rounded-lg w-full h-40 bg-white/5 flex items-center justify-center text-3xl">📷</span>
+                            <span className="rounded-lg w-full h-40 bg-white/5 flex items-center justify-center text-3xl">{(tieneHistoria(n) || cat.tipo === 'story') ? '📖' : '📷'}</span>
                           )}
-                          {n.mediaTipo === 'video' && (
+                          {n.mediaTipo === 'video' && !esPlaceholder(n.media) && (
                             <span className="absolute inset-0 flex items-center justify-center">
                               <span className="bg-black/60 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm">▶</span>
                             </span>
                           )}
-                          {cat.tipo === 'story' && (
+                          {(tieneHistoria(n) || cat.tipo === 'story') && (
                             <span className="absolute bottom-2 right-2 bg-black/70 text-white rounded-full px-2 py-0.5 text-[10px] uppercase">📖 Historia</span>
                           )}
                         </button>
                         <h3 className="font-semibold text-center">{n.nombre}</h3>
                         <p className="text-xs text-white/60 text-center line-clamp-2">{n.descripcion}</p>
                         {yaVotado && <span className="text-gold text-xs">✓ Tu voto</span>}
+                        {tieneHistoria(n) && (
+                          <button onClick={() => setOpenMedia({ cat, nom: n })} className="mt-auto bg-white/10 border border-white/30 text-white px-5 py-2 rounded-full font-semibold">📖 Leer la historia</button>
+                        )}
                         {!cat.votable || (cat.nominados.length === 1 && n.mediaTipo === 'video') ? (
                           <button onClick={() => setOpenMedia({ cat, nom: n })} className="mt-auto bg-white/10 border border-white/30 text-white px-5 py-2 rounded-full font-semibold">▶ Reproducir</button>
                         ) : null}
@@ -355,16 +369,30 @@ export default function App() {
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={() => setOpenMedia(null)} className="fixed inset-0 z-30 bg-black/90 flex items-center justify-center p-6">
             <div className="max-w-4xl w-full" onClick={(e) => e.stopPropagation()}>
               <button className="absolute top-4 right-6 text-2xl" onClick={() => setOpenMedia(null)}>✕</button>
-              {openMedia.nom.mediaTipo === 'video' && openMedia.nom.media ? (
-                <video src={openMedia.nom.media} poster={openMedia.nom.poster} controls autoPlay className="w-full rounded-xl" />
-              ) : openMedia.cat.tipo === 'story' ? (
-                <div className="text-white/90 space-y-4 max-h-[70vh] overflow-auto">
-                  <h3 className="font-serif text-2xl">{openMedia.nom.nombre}</h3>
-                  {openMedia.nom.story?.map((b, i) => <p key={i}>{b.contenido}</p>)}
-                </div>
-              ) : (
-                <img src={openMedia.nom.media || openMedia.nom.portada} alt={openMedia.nom.nombre} className="w-full rounded-xl" />
-              )}
+              <div className="space-y-4 max-h-[78vh] overflow-auto">
+                {esVideoNom ? (
+                  <video src={openMedia.nom.media} poster={openMedia.nom.poster} controls autoPlay className="w-full rounded-xl" />
+                ) : esFotoNom ? (
+                  <img src={openMedia.nom.portada} alt={openMedia.nom.nombre} className="w-full rounded-xl" onError={() => marcarSinFoto(openMedia.nom.portada)} />
+                ) : null}
+
+                {esHistoriaNom && (
+                  <div className="text-white/90 space-y-4">
+                    <h3 className="font-serif text-2xl">{openMedia.nom.nombre}</h3>
+                    {openMedia.nom.story?.map((b, i) =>
+                      b.tipo === 'titulo' ? (
+                        <p key={i} className="font-serif text-xl text-gold">{b.contenido}</p>
+                      ) : (
+                        <p key={i} className="leading-relaxed">{b.contenido}</p>
+                      )
+                    )}
+                  </div>
+                )}
+
+                {!esVideoNom && !esFotoNom && !esHistoriaNom && (
+                  <p className="text-white/60 text-sm text-center py-6">Este nominado todavía no tiene foto, video ni historia cargada.</p>
+                )}
+              </div>
               {openMedia.cat.votable &&
                 !votos[openMedia.cat.id]?.completo &&
                 !(votos[openMedia.cat.id]?.ids || []).includes(openMedia.nom.id) && (
