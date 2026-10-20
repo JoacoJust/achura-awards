@@ -714,27 +714,7 @@
         "story": [
           {
             "tipo": "titulo",
-            "contenido": "PABLO CONVERTIDO EN AGUSTIN ( BONDIOLA, TOP 1 - TOP 0)"
-          },
-          {
-            "tipo": "texto",
-            "contenido": "Nos remontamos al segundo día de achura en el último mdt. Se inició la espera a la mejor comida que alguna vez hicieron en esa casa. La bondiola era un plato que achura jamás podría haber imaginado comer en los viajes anteriores. Luego de una tarde llena de playa, mates y muchos cambios de frentes, achura se vio en la necesidad de aumentar el goce de esa noche. Mateo y Joaquin tuvieron la idea de crear un trago, lleno de sabor frutal y gin"
-          },
-          {
-            "tipo": "texto",
-            "contenido": "El mayor problema de esto es que no fue el trago, sino que los creadores no tenían los utensilios necesarios para poder crearlo. Ya que gastaron todo el paquete de azúcar y jamás se pudo revolver,  entonces fue un gasto enorme por un gusto insignificante. Pero este no era el único trago de la noche. Ya que Paul, Franco y Guido se dieron el gusto de poder comprarse 2 jaggers para esa noche. Aunque la noche ya se tornaba y daba forma para una noche de anécdotas, jamás creímos que desembocará en lo que terminó siendo. A la espera de que la bondiola llegue a desmenuzarse en su disco achura siguió bebiendo. De un momento a otro el jagger se fue terminando. Pero la botella no se fue por sí sola…"
-          },
-          {
-            "tipo": "texto",
-            "contenido": "Empezamos a notar la ausencia de un achura,¿Dónde está Pablo? ¿Alguien lo vio?"
-          },
-          {
-            "tipo": "texto",
-            "contenido": "A lo que chucho recuerda un evento que había pasado hace aproximadamente 30 minutos."
-          },
-          {
-            "tipo": "texto",
-            "contenido": "Lo que pasó es que se dio un encuentro entre 4 miembros de achura que realizaron una medición corporal captada en cámara. Y él nunca había visto bajar a Pablo de esa habitación. Entonces con el sanguche de bondiola que le corresponde a Pablo, sube y se lo pone en la nariz. A lo que paul sin abrir los ojos usa su sentido del olfato y le empieza a dar mordiscos. Chucho no podía creer que estaba viendo la transformación hacia lo que ellos llamaban, “Agustín”"
+            "contenido": "LA CAIDA DE CARA EN LA PLAZA"
           }
         ]
       },
@@ -792,7 +772,32 @@
         "descripcion": "",
         "media": "/placeholder.mp4",
         "poster": "/placeholder-img.jpg",
-        "story": []
+        "story": [
+          {
+            "tipo": "titulo",
+            "contenido": "PABLO CONVERTIDO EN AGUSTIN ( BONDIOLA, TOP 1 - TOP 0)"
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Nos remontamos al segundo día de achura en el último mdt. Se inició la espera a la mejor comida que alguna vez hicieron en esa casa. La bondiola era un plato que achura jamás podría haber imaginado comer en los viajes anteriores. Luego de una tarde llena de playa, mates y muchos cambios de frentes, achura se vio en la necesidad de aumentar el goce de esa noche. Mateo y Joaquin tuvieron la idea de crear un trago, lleno de sabor frutal y gin"
+          },
+          {
+            "tipo": "texto",
+            "contenido": "El mayor problema de esto es que no fue el trago, sino que los creadores no tenían los utensilios necesarios para poder crearlo. Ya que gastaron todo el paquete de azúcar y jamás se pudo revolver,  entonces fue un gasto enorme por un gusto insignificante. Pero este no era el único trago de la noche. Ya que Paul, Franco y Guido se dieron el gusto de poder comprarse 2 jaggers para esa noche. Aunque la noche ya se tornaba y daba forma para una noche de anécdotas, jamás creímos que desembocará en lo que terminó siendo. A la espera de que la bondiola llegue a desmenuzarse en su disco achura siguió bebiendo. De un momento a otro el jagger se fue terminando. Pero la botella no se fue por sí sola…"
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Empezamos a notar la ausencia de un achura,¿Dónde está Pablo? ¿Alguien lo vio?"
+          },
+          {
+            "tipo": "texto",
+            "contenido": "A lo que chucho recuerda un evento que había pasado hace aproximadamente 30 minutos."
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Lo que pasó es que se dio un encuentro entre 4 miembros de achura que realizaron una medición corporal captada en cámara. Y él nunca había visto bajar a Pablo de esa habitación. Entonces con el sanguche de bondiola que le corresponde a Pablo, sube y se lo pone en la nariz. A lo que paul sin abrir los ojos usa su sentido del olfato y le empieza a dar mordiscos. Chucho no podía creer que estaba viendo la transformación hacia lo que ellos llamaban, “Agustín”"
+          }
+        ]
       },
       {
         "id": "n75",
