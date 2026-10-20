@@ -61,7 +61,8 @@ function aUI(c) {
 export default function App() {
   const [estado, setEstado] = useState('cargando') // cargando | error | ok | sin-login
   const [categorias, setCategorias] = useState([])
-  const [votos, setVotos] = useState({}) // { categoriaId: opcionId }
+  // { categoriaId: { hechos, permitidos, peso, ids, completo } }
+  const [votos, setVotos] = useState({})
   const [usuario, setUsuario] = useState(null)
   const [aviso, setAviso] = useState(null)
   const [cat, setCat] = useState(null) // categoría abierta
@@ -85,7 +86,15 @@ export default function App() {
     const d = await r.json()
     const lista = (d.data || []).map(aUI)
     const votosServer = {}
-    ;(d.data || []).forEach((c) => { if (c.ya_voto && c.opcion_elegida) votosServer[c.id] = c.opcion_elegida })
+    ;(d.data || []).forEach((c) => {
+      votosServer[c.id] = {
+        hechos: c.votos_hechos || 0,
+        permitidos: c.votos_permitidos || 1,
+        peso: c.peso_siguiente ?? null,
+        ids: c.opciones_elegidas || [],
+        completo: !!c.completo,
+      }
+    })
     setCategorias(lista)
     setVotos(votosServer)
     setEstado('ok')
@@ -93,15 +102,18 @@ export default function App() {
 
   useEffect(() => { cargar() }, [cargar])
 
-  const votadas = Object.keys(votos).length
-  const total = categorias.filter((c) => c.votable).length
-  const todas = total > 0 && votadas === total
+  const votables = categorias.filter((c) => c.votable)
+  const votadas = votables.filter((c) => votos[c.id]?.hechos > 0).length
+  const total = votables.length
+  // El cierre aparece cuando ya se usaron todos los votos de todas las ternas
+  const todas = total > 0 && votables.every((c) => votos[c.id]?.completo)
 
   const cerrarSesion = async () => {
     await fetch('/logout', { method: 'POST' })
     location.href = '/login'
   }
 
+  // Vota: el 1º voto de cada terna vale 2 puntos y el 2º vale 1 (ver pesos en la API)
   const confirmarVoto = async (catId, nom) => {
     setAviso(null)
     const r = await api('/api/votar', {
@@ -113,13 +125,30 @@ export default function App() {
     if (!r.ok) {
       setConfirm(null)
       setAviso(d.error || 'No se pudo registrar el voto')
-      if (String(d.error || '').toLowerCase().includes('ya has votado')) cargar()
+      if (String(d.error || '').toLowerCase().includes('ya usaste')) cargar()
       return
     }
-    setVotos((v) => ({ ...v, [catId]: nom.id }))
-    setHecho({ catId, nom })
+    const e = d.estado || {}
+    setVotos((v) => ({
+      ...v,
+      [catId]: {
+        hechos: e.votos_hechos || 0,
+        permitidos: e.votos_permitidos || 1,
+        peso: e.peso_siguiente ?? null,
+        ids: e.opciones_elegidas || [],
+        completo: !!e.completo,
+      },
+    }))
+    setHecho({ catId, nom, peso: d.peso || 1, siguiente: e.peso_siguiente ?? null })
     setConfirm(null)
   }
+
+  // Textos de apoyo
+  const votosTexto = (n) => (n === 1 ? '1 voto' : `${n} votos`)
+  const puntosTexto = (n) => (n === 1 ? '1 punto' : `${n} puntos`)
+  const nombresVotados = (c, ids) =>
+    (ids || []).map((id) => c.nominados.find((n) => n.id === id)?.nombre).filter(Boolean)
+  const pesoDelVoto = (catId) => votos[catId]?.peso || 1
 
   if (estado === 'cargando') {
     return (
@@ -198,7 +227,12 @@ export default function App() {
                       )}
                     </span>
                     <span className="font-serif text-sm tracking-widest uppercase">{c.nombre}</span>
-                    {votos[c.id] && <span className="text-gold text-xs">✓ Votado</span>}
+                    {votos[c.id]?.hechos > 0 && (
+                      <span className="text-gold text-xs">
+                        ✓ Votado
+                        {votos[c.id].permitidos > 1 && !votos[c.id].completo ? ` (${votos[c.id].hechos}/${votos[c.id].permitidos})` : ''}
+                      </span>
+                    )}
                     {!c.votable && <span className="text-white/50 text-xs">▶ Solo video</span>}
                   </button>
                 ))}
@@ -234,48 +268,74 @@ export default function App() {
               <h2 className="font-serif text-3xl uppercase tracking-widest">{cat.nombre}</h2>
             </div>
 
-            {votos[cat.id] ? (
-              <p className="text-gold">✓ Ya votaste en esta terna.</p>
-            ) : (
-              <div
-                className={`grid gap-6 ${
-                  cat.nominados.length === 1
-                    ? 'grid-cols-1 max-w-md mx-auto'
-                    : cat.nominados.length === 2
-                      ? 'grid-cols-1 sm:grid-cols-2 max-w-2xl mx-auto'
-                      : cat.nominados.length === 3
-                        ? 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-4xl mx-auto'
-                        : 'sm:grid-cols-2 lg:grid-cols-4'
-                }`}
-              >
-                {cat.nominados.map((n) => (
-                  <div key={n.id} className="bg-white/5 border border-white/10 rounded-xl p-4 flex flex-col items-center gap-3">
-                    <button onClick={() => setOpenMedia({ cat, nom: n })} aria-label={`Ver ${n.mediaTipo === 'video' ? 'video' : 'foto'} de ${n.nombre}`} className="relative w-full group/foto">
-                      {n.portada && !sinFoto[n.portada] ? (
-                        <img src={n.portada} alt={n.nombre} loading="lazy" className="rounded-lg w-full h-40 object-cover transition group-hover/foto:opacity-80" onError={() => marcarSinFoto(n.portada)} />
-                      ) : (
-                        <span className="rounded-lg w-full h-40 bg-white/5 flex items-center justify-center text-3xl">📷</span>
-                      )}
-                      {n.mediaTipo === 'video' && (
-                        <span className="absolute inset-0 flex items-center justify-center">
-                          <span className="bg-black/60 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm">▶</span>
-                        </span>
-                      )}
-                      {cat.tipo === 'story' && (
-                        <span className="absolute bottom-2 right-2 bg-black/70 text-white rounded-full px-2 py-0.5 text-[10px] uppercase">📖 Historia</span>
-                      )}
-                    </button>
-                    <h3 className="font-semibold text-center">{n.nombre}</h3>
-                    <p className="text-xs text-white/60 text-center line-clamp-2">{n.descripcion}</p>
-                    {!cat.votable || (cat.nominados.length === 1 && n.mediaTipo === 'video') ? (
-                      <button onClick={() => setOpenMedia({ cat, nom: n })} className="mt-auto bg-white/10 border border-white/30 text-white px-5 py-2 rounded-full font-semibold">▶ Reproducir</button>
-                    ) : null}
-                    {cat.votable && (
-                      <button onClick={() => setConfirm({ catId: cat.id, nom: n })} className="mt-auto bg-gold text-black px-5 py-2 rounded-full font-semibold">VOTAR</button>
-                    )}
-                  </div>
-                ))}
+            {votos[cat.id]?.completo ? (
+              <div className="bg-white/5 border border-gold/40 rounded-xl p-6 text-center max-w-2xl mx-auto">
+                <p className="text-gold">
+                  ✓ Ya usaste {votos[cat.id].permitidos === 1 ? 'tu voto' : 'tus 2 votos'} en esta terna.
+                </p>
+                {votos[cat.id].permitidos > 1 && nombresVotados(cat, votos[cat.id].ids).length > 0 && (
+                  <p className="text-white/70 text-sm mt-2">
+                    Votaste por {nombresVotados(cat, votos[cat.id].ids).join(' y ')}.
+                  </p>
+                )}
               </div>
+            ) : (
+              <>
+                {votos[cat.id]?.hechos > 0 && (
+                  <div className="bg-gold/10 border border-gold/40 rounded-xl p-4 text-center mb-8 max-w-2xl mx-auto">
+                    <p className="text-gold text-sm">
+                      ✓ Ya registraste tu primer voto. Te queda 1 voto, que vale{' '}
+                      {puntosTexto(votos[cat.id].peso)} — tiene que ser para <b>otro</b> candidato.
+                    </p>
+                  </div>
+                )}
+                <div
+                  className={`grid gap-6 ${
+                    cat.nominados.length === 1
+                      ? 'grid-cols-1 max-w-md mx-auto'
+                      : cat.nominados.length === 2
+                        ? 'grid-cols-1 sm:grid-cols-2 max-w-2xl mx-auto'
+                        : cat.nominados.length === 3
+                          ? 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-4xl mx-auto'
+                          : 'sm:grid-cols-2 lg:grid-cols-4'
+                  }`}
+                >
+                  {cat.nominados.map((n) => {
+                    const yaVotado = (votos[cat.id]?.ids || []).includes(n.id)
+                    return (
+                      <div key={n.id} className="bg-white/5 border border-white/10 rounded-xl p-4 flex flex-col items-center gap-3">
+                        <button onClick={() => setOpenMedia({ cat, nom: n })} aria-label={`Ver ${n.mediaTipo === 'video' ? 'video' : 'foto'} de ${n.nombre}`} className="relative w-full group/foto">
+                          {n.portada && !sinFoto[n.portada] ? (
+                            <img src={n.portada} alt={n.nombre} loading="lazy" className="rounded-lg w-full h-40 object-cover transition group-hover/foto:opacity-80" onError={() => marcarSinFoto(n.portada)} />
+                          ) : (
+                            <span className="rounded-lg w-full h-40 bg-white/5 flex items-center justify-center text-3xl">📷</span>
+                          )}
+                          {n.mediaTipo === 'video' && (
+                            <span className="absolute inset-0 flex items-center justify-center">
+                              <span className="bg-black/60 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm">▶</span>
+                            </span>
+                          )}
+                          {cat.tipo === 'story' && (
+                            <span className="absolute bottom-2 right-2 bg-black/70 text-white rounded-full px-2 py-0.5 text-[10px] uppercase">📖 Historia</span>
+                          )}
+                        </button>
+                        <h3 className="font-semibold text-center">{n.nombre}</h3>
+                        <p className="text-xs text-white/60 text-center line-clamp-2">{n.descripcion}</p>
+                        {yaVotado && <span className="text-gold text-xs">✓ Tu voto</span>}
+                        {!cat.votable || (cat.nominados.length === 1 && n.mediaTipo === 'video') ? (
+                          <button onClick={() => setOpenMedia({ cat, nom: n })} className="mt-auto bg-white/10 border border-white/30 text-white px-5 py-2 rounded-full font-semibold">▶ Reproducir</button>
+                        ) : null}
+                        {cat.votable && !yaVotado && (
+                          <button onClick={() => setConfirm({ catId: cat.id, nom: n })} className="mt-auto bg-gold text-black px-5 py-2 rounded-full font-semibold">VOTAR</button>
+                        )}
+                        {cat.votable && yaVotado && (
+                          <span className="mt-auto border border-gold/60 text-gold px-5 py-2 rounded-full text-sm">✓ Votado</span>
+                        )}
+                      </div>
+                    )
+                  })}
+                </div>
+              </>
             )}
 
             {/* Mención honorífica: solo en las ternas que tienen texto cargado */}
@@ -305,7 +365,11 @@ export default function App() {
               ) : (
                 <img src={openMedia.nom.media || openMedia.nom.portada} alt={openMedia.nom.nombre} className="w-full rounded-xl" />
               )}
-              {openMedia.cat.votable && <button onClick={() => { setConfirm({ catId: openMedia.cat.id, nom: openMedia.nom }); setOpenMedia(null) }} className="mt-4 bg-gold text-black px-6 py-3 rounded-full font-semibold">VOTAR</button>}
+              {openMedia.cat.votable &&
+                !votos[openMedia.cat.id]?.completo &&
+                !(votos[openMedia.cat.id]?.ids || []).includes(openMedia.nom.id) && (
+                  <button onClick={() => { setConfirm({ catId: openMedia.cat.id, nom: openMedia.nom }); setOpenMedia(null) }} className="mt-4 bg-gold text-black px-6 py-3 rounded-full font-semibold">VOTAR</button>
+                )}
             </div>
           </motion.div>
         )}
@@ -338,6 +402,7 @@ export default function App() {
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="fixed inset-0 z-40 bg-black/80 flex items-center justify-center p-6">
             <div className="bg-teal2 border border-white/20 rounded-2xl p-8 max-w-md text-center">
               <p className="text-lg">¿Confirmás tu voto por <b>{confirm.nom.nombre}</b>?</p>
+              <p className="text-gold text-sm mt-2">Este voto vale {puntosTexto(pesoDelVoto(confirm.catId))}.</p>
               <div className="mt-6 flex justify-center gap-4">
                 <button className="px-6 py-3 rounded border border-white/30" onClick={() => setConfirm(null)}>Cancelar</button>
                 <button className="px-6 py-3 rounded bg-gold text-black font-semibold" onClick={() => confirmarVoto(confirm.catId, confirm.nom)}>Confirmar</button>
@@ -353,8 +418,18 @@ export default function App() {
           <motion.div initial={{ opacity: 0, scale: .9 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0 }} className="fixed inset-0 z-40 bg-black/80 flex items-center justify-center p-6" onClick={() => setHecho(null)}>
             <div className="bg-teal2 border border-gold rounded-2xl p-10 text-center max-w-md">
               <p className="font-serif text-3xl mb-2">✨ Tu voto fue registrado</p>
-              <p className="text-white/70">Gracias por participar.</p>
-              <button className="mt-6 bg-gold text-black px-6 py-3 rounded-full font-semibold" onClick={() => { setHecho(null); setCat(null) }}>Volver a las ternas</button>
+              <p className="text-white/70">Le sumaste {puntosTexto(hecho.peso)} a <b>{hecho.nom.nombre}</b>.</p>
+              {hecho.siguiente != null && (
+                <p className="text-gold text-sm mt-3">
+                  Te queda 1 voto ({puntosTexto(hecho.siguiente)}) y tiene que ser para otro candidato.
+                </p>
+              )}
+              <div className="mt-6 flex flex-wrap justify-center gap-3">
+                {hecho.siguiente != null && (
+                  <button className="border border-white/40 px-6 py-3 rounded-full" onClick={() => setHecho(null)}>Seguir en esta terna</button>
+                )}
+                <button className="bg-gold text-black px-6 py-3 rounded-full font-semibold" onClick={() => { setHecho(null); setCat(null) }}>Volver a las ternas</button>
+              </div>
             </div>
           </motion.div>
         )}

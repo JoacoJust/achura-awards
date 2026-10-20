@@ -778,6 +778,7 @@
     "tipo": "imagen",
     "poster": "/media/achura-mas-gobernado.webp",
     "mencion": "",
+    "pesos_voto": [2],
     "nominados": [
       {
         "id": "n57",

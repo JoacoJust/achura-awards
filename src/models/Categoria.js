@@ -10,6 +10,10 @@ const CategoriaSchema = new mongoose.Schema(
     mencion: { type: String, default: '' },
     // permite_votar: false = terna de presentación (video/photo wall) sin votación
     permite_votar: { type: Boolean, default: true },
+    // pesos_voto: cuántos puntos vale cada voto del usuario en esta terna.
+    // Por defecto 2 votos: el primero vale 2 puntos y el segundo 1.
+    // Una terna con un solo voto (p. ej. "Achura más gobernado") usa [2].
+    pesos_voto: { type: [Number], default: [2, 1] },
     // foto de perfil de la terna (círculo de la home); si falta, se usa la del primer nominado
     poster_url: { type: String, default: null },
     activa: { type: Boolean, default: true },

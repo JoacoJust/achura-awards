@@ -80,6 +80,8 @@ exports.votantes = asyncHandler(async (req, res) => {
     porUsuario.get(key).push({
       categoria: v.categoria ? v.categoria.nombre : null,
       opcion: v.opcion ? v.opcion.nombre : null,
+      numero: v.numero || 1,
+      peso: v.peso || 1,
       fecha: v.fecha_voto,
       ip: v.ip_address || null,
     });
@@ -93,6 +95,7 @@ exports.votantes = asyncHandler(async (req, res) => {
       email: u.email,
       fecha_primer_voto: u.fecha_primer_voto,
       total_votos: propios.length,
+      total_puntos: propios.reduce((s, v) => s + (v.peso || 1), 0),
       ultimo_voto: propios.length ? propios[propios.length - 1].fecha : null,
       votos: propios,
     };

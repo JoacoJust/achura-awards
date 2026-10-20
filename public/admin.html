@@ -146,15 +146,16 @@ async function cargarTodo() {
 
   const v = await (await fetch('/api/admin/votantes?page=1&limit=100', { headers: H() })).json();
   window._votantes = v.data || [];
-  el('votantes').innerHTML = '<tr><th>Nombre</th><th>Email</th><th>Votos</th><th>Último voto</th><th></th></tr>' +
+  el('votantes').innerHTML = '<tr><th>Nombre</th><th>Email</th><th>Votos</th><th>Puntos</th><th>Último voto</th><th></th></tr>' +
     window._votantes.map((u, i) => `<tr>
       <td>${u.nombre || '-'}</td>
       <td>${u.email}</td>
       <td><b>${u.total_votos}</b></td>
+      <td>${u.total_puntos ?? u.total_votos}</td>
       <td>${u.ultimo_voto ? new Date(u.ultimo_voto).toLocaleString() : '-'}</td>
       <td><button class="sec" onclick="verVotos(${i})">Ver votos</button></td>
     </tr>`).join('');
-  if (!window._votantes.length) el('votantes').innerHTML += '<tr><td colspan="5"><small>Todavía no hay votos registrados.</small></td></tr>';
+  if (!window._votantes.length) el('votantes').innerHTML += '<tr><td colspan="6"><small>Todavía no hay votos registrados.</small></td></tr>';
 
   el('lista-cats').innerHTML = r.data.map(c => `
     <div style="margin:8px 0;display:flex;align-items:center;gap:8px;flex-wrap:wrap">
@@ -168,8 +169,8 @@ function verVotos(i) {
   if (!u) return;
   el('modal-title').textContent = `Votos de ${u.nombre || u.email}`;
   el('modal-body').innerHTML = (u.votos && u.votos.length)
-    ? '<table><tr><th>Categoría</th><th>Opción votada</th><th>Fecha</th></tr>' +
-      u.votos.map(v => `<tr><td>${v.categoria || '-'}</td><td>${v.opcion || '-'}</td><td>${v.fecha ? new Date(v.fecha).toLocaleString() : '-'}</td></tr>`).join('') +
+    ? '<table><tr><th>Categoría</th><th>Opción votada</th><th>Voto</th><th>Fecha</th></tr>' +
+      u.votos.map(v => `<tr><td>${v.categoria || '-'}</td><td>${v.opcion || '-'}</td><td>${v.numero || 1}º (${v.peso || 1} pt${(v.peso || 1) === 1 ? '' : 's'})</td><td>${v.fecha ? new Date(v.fecha).toLocaleString() : '-'}</td></tr>`).join('') +
       '</table>'
     : '<p><small>Sin votos registrados.</small></p>';
   el('modal').style.display = 'flex';
