@@ -820,9 +820,14 @@
         "id": "n76",
         "nombre": "Nicolás Tiscornia",
         "descripcion": "",
-        "media": "/media/secuencia-ano-nicolas-tiscornia.jpg",
-        "poster": "/media/secuencia-ano-nicolas-tiscornia.jpg",
-        "story": []
+        "media": "/media/mdt-nicolas-tiscornia.mp4",
+        "poster": "/media/mdt-nicolas-tiscornia.jpg",
+        "story": [
+          {
+            "tipo": "titulo",
+            "contenido": "CHARLA SEXUAL MDT"
+          }
+        ]
       }
     ]
   }

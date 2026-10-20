@@ -335,7 +335,7 @@ export default function App() {
                         <p className="text-xs text-white/60 text-center line-clamp-2">{n.descripcion}</p>
                         {yaVotado && <span className="text-gold text-xs">✓ Tu voto</span>}
                         {tieneHistoria(n) && (
-                          <button onClick={() => setOpenMedia({ cat, nom: n })} className="mt-auto bg-white/10 border border-white/30 text-white px-5 py-2 rounded-full font-semibold">📖 Leer la historia</button>
+                          <button onClick={() => setOpenMedia({ cat, nom: n })} className="mt-auto bg-white/10 border border-white/30 text-white px-5 py-2 rounded-full font-semibold">{n.mediaTipo === 'video' && !esPlaceholder(n.media) ? '▶ Ver el video' : '📖 Leer la historia'}</button>
                         )}
                         {!cat.votable || (cat.nominados.length === 1 && n.mediaTipo === 'video') ? (
                           <button onClick={() => setOpenMedia({ cat, nom: n })} className="mt-auto bg-white/10 border border-white/30 text-white px-5 py-2 rounded-full font-semibold">▶ Reproducir</button>
