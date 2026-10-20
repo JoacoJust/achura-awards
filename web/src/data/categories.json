@@ -745,8 +745,8 @@
         "id": "n73",
         "nombre": "Guido Olmo",
         "descripcion": "",
-        "media": "/placeholder.mp4",
-        "poster": "/placeholder-img.jpg",
+        "media": "/media/achura-del-ano-guido-olmo.jpg",
+        "poster": "/media/achura-del-ano-guido-olmo.jpg",
         "story": [
           {
             "tipo": "titulo",
@@ -770,8 +770,8 @@
         "id": "n74",
         "nombre": "Franco Bernardi",
         "descripcion": "",
-        "media": "/placeholder.mp4",
-        "poster": "/placeholder-img.jpg",
+        "media": "/media/franco-bernardi.jpg",
+        "poster": "/media/franco-bernardi.jpg",
         "story": [
           {
             "tipo": "titulo",
@@ -803,16 +803,16 @@
         "id": "n75",
         "nombre": "Pablo Agustín Damino",
         "descripcion": "",
-        "media": "/placeholder.mp4",
-        "poster": "/placeholder-img.jpg",
+        "media": "/media/outfit-ano-pablo-damino.jpg",
+        "poster": "/media/outfit-ano-pablo-damino.jpg",
         "story": []
       },
       {
         "id": "n76",
         "nombre": "Nicolás Tiscornia",
         "descripcion": "",
-        "media": "/placeholder.mp4",
-        "poster": "/placeholder-img.jpg",
+        "media": "/media/secuencia-ano-nicolas-tiscornia.jpg",
+        "poster": "/media/secuencia-ano-nicolas-tiscornia.jpg",
         "story": []
       }
     ]
