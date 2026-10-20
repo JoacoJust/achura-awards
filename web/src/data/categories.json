@@ -952,7 +952,7 @@
     "nombre": "Gordiada del año",
     "tipo": "story",
     "poster": "/media/gordiada-del-ano.jpg",
-    "mencion": "",
+    "mencion": "Este premio sera otorgado por el mismisimo Franco Bernardi al ganador.",
     "nominados": [
       {
         "id": "n69",
@@ -960,7 +960,12 @@
         "descripcion": "",
         "media": "/placeholder.mp4",
         "poster": "/placeholder-img.jpg",
-        "story": []
+        "story": [
+          {
+            "tipo": "titulo",
+            "contenido": "EL GORDI PERDIENDO LOS CELULARES(UNO PRESTADO)"
+          }
+        ]
       },
       {
         "id": "n70",
@@ -968,7 +973,12 @@
         "descripcion": "",
         "media": "/placeholder.mp4",
         "poster": "/placeholder-img.jpg",
-        "story": []
+        "story": [
+          {
+            "tipo": "titulo",
+            "contenido": "EL BERRINCHE EN LA CANCHA DE ITO(SE TIRA Y SE PUTEA CON SU EQUIPO)"
+          }
+        ]
       },
       {
         "id": "n71",
@@ -976,7 +986,12 @@
         "descripcion": "",
         "media": "/placeholder.mp4",
         "poster": "/placeholder-img.jpg",
-        "story": []
+        "story": [
+          {
+            "tipo": "titulo",
+            "contenido": "LA CAIDA DE CARA EN LA PLAZA"
+          }
+        ]
       },
       {
         "id": "n72",
@@ -984,9 +999,15 @@
         "descripcion": "",
         "media": "/placeholder.mp4",
         "poster": "/placeholder-img.jpg",
-        "story": []
+        "story": [
+          {
+            "tipo": "titulo",
+            "contenido": "REMERAS IMPRESAS CON LOS NOMBRES MAL"
+          }
+        ]
       }
-    ]
+    ],
+    "mencion_titulo": ""
   },
   {
     "id": "mejor-momento-mdt",

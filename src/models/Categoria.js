@@ -8,6 +8,8 @@ const CategoriaSchema = new mongoose.Schema(
     descripcion: { type: String, default: '' },
     tipo_media: { type: String, enum: ['video', 'imagen', 'story', 'ambos'], default: 'ambos' },
     mencion: { type: String, default: '' },
+    // mencion_titulo: encabezado del cartel de mención. null = "🎖 Mención honorífica", "" = sin encabezado
+    mencion_titulo: { type: String, default: null },
     // permite_votar: false = terna de presentación (video/photo wall) sin votación
     permite_votar: { type: Boolean, default: true },
     // pesos_voto: cuántos puntos vale cada voto del usuario en esta terna.

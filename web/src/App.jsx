@@ -39,6 +39,7 @@ function aUI(c) {
     nombre: c.nombre,
     tipo: c.tipo === 'ambos' ? 'imagen' : c.tipo,
     mencion: c.mencion,
+    mencion_titulo: c.mencion_titulo,
     votable: c.permite_votar !== false,
     poster_url: c.poster_url || null,
     nominados: c.opciones.map((o) => ({
@@ -352,10 +353,12 @@ export default function App() {
               </>
             )}
 
-            {/* Mención honorífica: solo en las ternas que tienen texto cargado */}
+            {/* Cartel de la terna: mención honorífica u otro texto. El encabezado se puede cambiar u omitir */}
             {cat.mencion?.trim() ? (
               <div className="mt-10 bg-white/5 border border-gold/40 rounded-xl p-5 max-w-3xl mx-auto">
-                <h3 className="font-serif text-lg text-gold text-center">🎖 Mención honorífica</h3>
+                {(cat.mencion_titulo ?? '🎖 Mención honorífica') !== '' && (
+                  <h3 className="font-serif text-lg text-gold text-center">{cat.mencion_titulo || '🎖 Mención honorífica'}</h3>
+                )}
                 <p className="text-sm text-white/70 mt-2 text-center">{cat.mencion}</p>
               </div>
             ) : null}

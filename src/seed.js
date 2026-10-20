@@ -41,6 +41,7 @@ const CATEGORIES_JSON = path.join(__dirname, '../web/src/data/categories.json');
     cat.descripcion = c.descripcion || '';
     cat.tipo_media = c.tipo || 'imagen';
     cat.mencion = c.mencion || '';
+    cat.mencion_titulo = c.mencion_titulo !== undefined ? c.mencion_titulo : null;
     cat.permite_votar = c.permite_votar !== false;
     cat.pesos_voto = Array.isArray(c.pesos_voto) && c.pesos_voto.length ? c.pesos_voto : [2, 1];
     cat.poster_url = c.poster || null;

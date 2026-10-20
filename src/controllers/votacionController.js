@@ -47,6 +47,7 @@ exports.getCategorias = asyncHandler(async (req, res) => {
     posicion: c.posicion,
     tipo: c.tipo_media,
     mencion: c.mencion || '',
+    mencion_titulo: c.mencion_titulo ?? null,
     permite_votar: c.permite_votar !== false,
     poster_url: c.poster_url || null,
     ...estadoVotos(c, votosPorCategoria.get(String(c._id)) || []),
