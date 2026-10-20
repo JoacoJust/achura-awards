@@ -652,11 +652,20 @@
       },
       {
         "id": "n47",
-        "nombre": "Japón - República Checa en lo de Pad 10, con policía",
+        "nombre": "Nicolás Tiscornia",
         "descripcion": "",
         "media": "/placeholder-img.jpg",
         "poster": "/placeholder-img.jpg",
-        "story": []
+        "story": [
+          {
+            "tipo": "titulo",
+            "contenido": "Japón - República Checa en lo de Pad 10, con policía"
+          },
+          {
+            "tipo": "texto",
+            "contenido": "Primer día del mundial,achura completamente manija por cómo iba a ser el desenlace de este evento tan ansiado por achura. Pero no es lo que nos interesa, ya que lo que nos pasó esa noche es el plato fuerte. Luego de vivir uno de los mejores goles del mundial, ya que era un partido entre dos selecciones que tenían mucho para sorprendernos. El partido fue un partido muy parejo, terminando 2-2. Pablo, que ya a esta altura del año estaba queriendo alejarse de lucho. Le cede una tuca que tenía guardada a chucho. Chucho y Guido ya tenían todo un plan en la cabeza. Se comprarían un chocolate y lo comerían re locos en el auto. Pero la vida tenía otros planes para ellos. Cuando estaban saliendo Mateo se logra meter en su auto. Pero en el momento donde Guido, Nico y Chucho  se querían subir a sus autos, aparece un patrullero que los intercepta y les pide su documentación. Los pone contra el capot del patrullero. Les consultan si tienen algo que los comprometa a lo que chucho dice que tiene una tuca y la deja en el capot. Pero el policía no se los había quitado aún la tuca seguía ahí. Mientras seguían haciendo el rastreo de la documentación Guido y Chucho siguen esperanzados de que se lo devuelvan y seguir con su plan. Pero de la nada otro oficial de otro patrullero llega y se la guarda en los bolsillos. Rompiendo no solo las expectativas de la noche, sino también la esperanza de buena fe de esta oficial."
+          }
+        ]
       },
       {
         "id": "n48",
