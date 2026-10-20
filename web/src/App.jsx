@@ -264,7 +264,7 @@ export default function App() {
                           <span key={j} className="border border-white/20 rounded-full px-2 py-0.5 text-[10px] text-white/60 uppercase">{a}</span>
                         ))}
                       </div>
-                      <p className="mt-2 text-xs text-white/70 italic">{m.descripcion}</p>
+                      {m.descripcion?.trim() && <p className="mt-2 text-xs text-white/70 italic">{m.descripcion}</p>}
                     </button>
                   ))}
                 </div>
@@ -417,7 +417,7 @@ export default function App() {
               <div className="flex flex-wrap gap-2 justify-center mt-3">
                 {miembros[achuraOpen].apodos.map((a, j) => <span key={j} className="border border-gold/50 text-gold rounded-full px-3 py-1 text-xs uppercase">{a}</span>)}
               </div>
-              <p className="mt-4 text-white/80">{miembros[achuraOpen].descripcion}</p>
+              {miembros[achuraOpen].descripcion?.trim() && <p className="mt-4 text-white/80">{miembros[achuraOpen].descripcion}</p>}
               <div className="mt-6 flex justify-between">
                 <button className="border border-white/30 px-4 py-2 rounded" onClick={() => setAchuraOpen((i) => (i - 1 + miembros.length) % miembros.length)}>← Anterior</button>
                 <button className="border border-white/30 px-4 py-2 rounded" onClick={() => setAchuraOpen((i) => (i + 1) % miembros.length)}>Siguiente →</button>
