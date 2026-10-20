@@ -12,12 +12,7 @@
         "descripcion": "",
         "media": "/media/achura-del-ano-mateo-guagliardi.jpg",
         "poster": "/media/achura-del-ano-mateo-guagliardi.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Achura del año."
-          }
-        ]
+        "story": []
       },
       {
         "id": "n2",
@@ -25,12 +20,7 @@
         "descripcion": "",
         "media": "/media/achura-del-ano-guido-olmo.jpg",
         "poster": "/media/achura-del-ano-guido-olmo.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Achura del año."
-          }
-        ]
+        "story": []
       },
       {
         "id": "n3",
@@ -38,12 +28,7 @@
         "descripcion": "",
         "media": "/media/achura-del-ano-jesus-quiero.jpg",
         "poster": "/media/achura-del-ano-jesus-quiero.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Achura del año."
-          }
-        ]
+        "story": []
       },
       {
         "id": "n4",
@@ -51,12 +36,7 @@
         "descripcion": "",
         "media": "/media/achura-del-ano-joaquin-just.jpg",
         "poster": "/media/achura-del-ano-joaquin-just.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Achura del año."
-          }
-        ]
+        "story": []
       }
     ]
   },
@@ -73,12 +53,7 @@
         "descripcion": "",
         "media": "/media/achura-revelacion-ramiro-dominguez.jpg",
         "poster": "/media/achura-revelacion-ramiro-dominguez.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Achura revelacion."
-          }
-        ]
+        "story": []
       },
       {
         "id": "n6",
@@ -86,12 +61,7 @@
         "descripcion": "",
         "media": "/media/achura-del-ano-joaquin-just.jpg",
         "poster": "/media/achura-del-ano-joaquin-just.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Achura revelacion."
-          }
-        ]
+        "story": []
       },
       {
         "id": "n7",
@@ -99,12 +69,7 @@
         "descripcion": "",
         "media": "/media/achura-revelacion-juan-martin-leyes.jpg",
         "poster": "/media/achura-revelacion-juan-martin-leyes.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Achura revelacion."
-          }
-        ]
+        "story": []
       },
       {
         "id": "n8",
@@ -112,12 +77,7 @@
         "descripcion": "",
         "media": "/media/achura-del-ano-mateo-guagliardi.jpg",
         "poster": "/media/achura-del-ano-mateo-guagliardi.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Achura revelacion."
-          }
-        ]
+        "story": []
       }
     ]
   },
@@ -134,12 +94,7 @@
         "descripcion": "",
         "media": "/media/promesa-ignacio-guagliardi.jpg",
         "poster": "/media/promesa-ignacio-guagliardi.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Achura promesa (fuera de Achura)."
-          }
-        ]
+        "story": []
       },
       {
         "id": "n10",
@@ -147,12 +102,7 @@
         "descripcion": "",
         "media": "/media/promesa-francisco-estigarribia.jpg",
         "poster": "/media/promesa-francisco-estigarribia.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Achura promesa (fuera de Achura)."
-          }
-        ]
+        "story": []
       },
       {
         "id": "n11",
@@ -160,12 +110,7 @@
         "descripcion": "",
         "media": "/media/promesa-nazareno-borda.jpg",
         "poster": "/media/promesa-nazareno-borda.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Achura promesa (fuera de Achura)."
-          }
-        ]
+        "story": []
       },
       {
         "id": "n12",
@@ -173,12 +118,7 @@
         "descripcion": "",
         "media": "/media/promesa-delfina-scoccimarro.jpg",
         "poster": "/media/promesa-delfina-scoccimarro.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Achura promesa (fuera de Achura)."
-          }
-        ]
+        "story": []
       }
     ]
   },
@@ -195,12 +135,7 @@
         "descripcion": "",
         "media": "/placeholder.mp4",
         "poster": "/media/achura-revelacion-juan-martin-leyes.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Achura gamer del año."
-          }
-        ]
+        "story": []
       },
       {
         "id": "n14",
@@ -208,12 +143,7 @@
         "descripcion": "",
         "media": "/placeholder.mp4",
         "poster": "/media/achura-del-ano-jesus-quiero.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Achura gamer del año."
-          }
-        ]
+        "story": []
       },
       {
         "id": "n15",
@@ -221,12 +151,7 @@
         "descripcion": "",
         "media": "/placeholder.mp4",
         "poster": "/media/achura-gamer-nicolas-tiscornia.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Achura gamer del año."
-          }
-        ]
+        "story": []
       },
       {
         "id": "n16",
@@ -234,12 +159,7 @@
         "descripcion": "",
         "media": "/placeholder.mp4",
         "poster": "/media/franco-bernardi.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Achura gamer del año."
-          }
-        ]
+        "story": []
       }
     ]
   },
@@ -256,12 +176,7 @@
         "descripcion": "",
         "media": "/placeholder.mp4",
         "poster": "/media/achura-revelacion-juan-martin-leyes.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Jugador de CS del año."
-          }
-        ]
+        "story": []
       },
       {
         "id": "n18",
@@ -269,12 +184,7 @@
         "descripcion": "",
         "media": "/placeholder.mp4",
         "poster": "/media/achura-gamer-nicolas-tiscornia.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Jugador de CS del año."
-          }
-        ]
+        "story": []
       },
       {
         "id": "n19",
@@ -282,12 +192,7 @@
         "descripcion": "",
         "media": "/placeholder.mp4",
         "poster": "/media/franco-bernardi.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Jugador de CS del año."
-          }
-        ]
+        "story": []
       },
       {
         "id": "n20",
@@ -295,12 +200,7 @@
         "descripcion": "",
         "media": "/placeholder.mp4",
         "poster": "/media/achura-del-ano-jesus-quiero.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Jugador de CS del año."
-          }
-        ]
+        "story": []
       }
     ]
   },
@@ -317,12 +217,7 @@
         "descripcion": "",
         "media": "/media/achura-revelacion-ramiro-dominguez.jpg",
         "poster": "/media/achura-revelacion-ramiro-dominguez.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia de Achura mas gay del año."
-          }
-        ]
+        "story": []
       },
       {
         "id": "n22",
@@ -330,12 +225,7 @@
         "descripcion": "",
         "media": "/media/franco-bernardi.jpg",
         "poster": "/media/franco-bernardi.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia de Achura mas gay del año."
-          }
-        ]
+        "story": []
       },
       {
         "id": "n23",
@@ -343,12 +233,7 @@
         "descripcion": "",
         "media": "/media/achura-del-ano-joaquin-just.jpg",
         "poster": "/media/achura-del-ano-joaquin-just.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia de Achura mas gay del año."
-          }
-        ]
+        "story": []
       },
       {
         "id": "n24",
@@ -356,12 +241,7 @@
         "descripcion": "",
         "media": "/media/achura-del-ano-jesus-quiero.jpg",
         "poster": "/media/achura-del-ano-jesus-quiero.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia de Achura mas gay del año."
-          }
-        ]
+        "story": []
       }
     ]
   },
@@ -378,12 +258,7 @@
         "descripcion": "",
         "media": "/media/outfit-ano-jesus-quiero.jpg",
         "poster": "/media/outfit-ano-jesus-quiero.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Mejor outfit del Año (con foto)."
-          }
-        ]
+        "story": []
       },
       {
         "id": "n30",
@@ -391,12 +266,7 @@
         "descripcion": "",
         "media": "/media/outfit-ano-ramiro-dominguez.jpg",
         "poster": "/media/outfit-ano-ramiro-dominguez.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Mejor outfit del Año (con foto)."
-          }
-        ]
+        "story": []
       },
       {
         "id": "n31",
@@ -404,12 +274,7 @@
         "descripcion": "",
         "media": "/media/outfit-ano-nicolas-tiscornia.jpg",
         "poster": "/media/outfit-ano-nicolas-tiscornia.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Mejor outfit del Año (con foto)."
-          }
-        ]
+        "story": []
       },
       {
         "id": "n32",
@@ -417,12 +282,7 @@
         "descripcion": "",
         "media": "/media/outfit-ano-pablo-damino.jpg",
         "poster": "/media/outfit-ano-pablo-damino.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Mejor outfit del Año (con foto)."
-          }
-        ]
+        "story": []
       }
     ]
   },
@@ -439,12 +299,7 @@
         "descripcion": "",
         "media": "/media/achura-del-ano-guido-olmo.jpg",
         "poster": "/media/achura-del-ano-guido-olmo.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Achura mas compañero."
-          }
-        ]
+        "story": []
       },
       {
         "id": "n34",
@@ -452,12 +307,7 @@
         "descripcion": "",
         "media": "/media/franco-bernardi.jpg",
         "poster": "/media/franco-bernardi.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Achura mas compañero."
-          }
-        ]
+        "story": []
       },
       {
         "id": "n35",
@@ -465,12 +315,7 @@
         "descripcion": "",
         "media": "/media/achura-del-ano-joaquin-just.jpg",
         "poster": "/media/achura-del-ano-joaquin-just.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Achura mas compañero."
-          }
-        ]
+        "story": []
       },
       {
         "id": "n36",
@@ -478,12 +323,7 @@
         "descripcion": "",
         "media": "/media/achura-del-ano-mateo-guagliardi.jpg",
         "poster": "/media/achura-del-ano-mateo-guagliardi.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Achura mas compañero."
-          }
-        ]
+        "story": []
       }
     ]
   },
@@ -500,12 +340,7 @@
         "descripcion": "",
         "media": "/placeholder.mp4",
         "poster": "/media/dupla-ano-guido-olmo-mateo-guagliardi.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Dupla del año."
-          }
-        ]
+        "story": []
       },
       {
         "id": "n38",
@@ -513,12 +348,7 @@
         "descripcion": "",
         "media": "/placeholder.mp4",
         "poster": "/media/dupla-ano-franco-bernardi-pablo-damino.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Dupla del año."
-          }
-        ]
+        "story": []
       },
       {
         "id": "n39",
@@ -526,12 +356,7 @@
         "descripcion": "",
         "media": "/placeholder.mp4",
         "poster": "/media/dupla-ano-franco-bernardi-nicolas-tiscornia.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Dupla del año."
-          }
-        ]
+        "story": []
       },
       {
         "id": "n40",
@@ -539,12 +364,7 @@
         "descripcion": "",
         "media": "/placeholder.mp4",
         "poster": "/media/dupla-ano-joaquin-just-nicolas-tiscornia.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Dupla del año."
-          }
-        ]
+        "story": []
       }
     ]
   },
@@ -561,12 +381,7 @@
         "descripcion": "",
         "media": "/media/achura-del-ano-guido-olmo.jpg",
         "poster": "/media/achura-del-ano-guido-olmo.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Jugador de futbol del año."
-          }
-        ]
+        "story": []
       },
       {
         "id": "n42",
@@ -574,12 +389,7 @@
         "descripcion": "",
         "media": "/media/achura-revelacion-juan-martin-leyes.jpg",
         "poster": "/media/achura-revelacion-juan-martin-leyes.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Jugador de futbol del año."
-          }
-        ]
+        "story": []
       },
       {
         "id": "n43",
@@ -587,12 +397,7 @@
         "descripcion": "",
         "media": "/media/achura-del-ano-jesus-quiero.jpg",
         "poster": "/media/achura-del-ano-jesus-quiero.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Jugador de futbol del año."
-          }
-        ]
+        "story": []
       },
       {
         "id": "n44",
@@ -600,12 +405,7 @@
         "descripcion": "",
         "media": "/media/achura-del-ano-mateo-guagliardi.jpg",
         "poster": "/media/achura-del-ano-mateo-guagliardi.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Jugador de futbol del año."
-          }
-        ]
+        "story": []
       }
     ]
   },
@@ -727,12 +527,7 @@
         "descripcion": "",
         "media": "/media/achura-del-ano-jesus-quiero.jpg",
         "poster": "/media/achura-del-ano-jesus-quiero.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Achura mas quebrado."
-          }
-        ]
+        "story": []
       },
       {
         "id": "n50",
@@ -740,12 +535,7 @@
         "descripcion": "",
         "media": "/media/outfit-ano-pablo-damino.jpg",
         "poster": "/media/outfit-ano-pablo-damino.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Achura mas quebrado."
-          }
-        ]
+        "story": []
       },
       {
         "id": "n51",
@@ -753,12 +543,7 @@
         "descripcion": "",
         "media": "/media/franco-bernardi.jpg",
         "poster": "/media/franco-bernardi.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Achura mas quebrado."
-          }
-        ]
+        "story": []
       },
       {
         "id": "n52",
@@ -766,12 +551,7 @@
         "descripcion": "",
         "media": "/media/achura-revelacion-juan-martin-leyes.jpg",
         "poster": "/media/achura-revelacion-juan-martin-leyes.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Achura mas quebrado."
-          }
-        ]
+        "story": []
       }
     ]
   },
@@ -788,12 +568,7 @@
         "descripcion": "",
         "media": "/media/fail-ano-jesus-quiero.mp4",
         "poster": "/media/fail-ano-jesus-quiero.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Fail del año."
-          }
-        ]
+        "story": []
       },
       {
         "id": "n54",
@@ -801,12 +576,7 @@
         "descripcion": "",
         "media": "/media/fail-ano-franco-da-resurreicao.mp4",
         "poster": "/media/fail-ano-franco-da-resurreicao.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Fail del año."
-          }
-        ]
+        "story": []
       },
       {
         "id": "n55",
@@ -814,12 +584,7 @@
         "descripcion": "",
         "media": "/media/fail-ano-mateo-guagliardi.jpg",
         "poster": "/media/fail-ano-mateo-guagliardi.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Fail del año."
-          }
-        ]
+        "story": []
       },
       {
         "id": "n56",
@@ -827,12 +592,7 @@
         "descripcion": "",
         "media": "/media/fail-ano-nicolas-tiscornia.jpg",
         "poster": "/media/fail-ano-nicolas-tiscornia.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Fail del año."
-          }
-        ]
+        "story": []
       }
     ]
   },
@@ -852,12 +612,7 @@
         "descripcion": "",
         "media": "/media/gobernado-juan-martin-leyes-catalina-bogo.jpg",
         "poster": "/media/gobernado-juan-martin-leyes-catalina-bogo.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Achura mas gobernado."
-          }
-        ]
+        "story": []
       },
       {
         "id": "n58",
@@ -865,12 +620,7 @@
         "descripcion": "",
         "media": "/media/gobernado-jesus-quiero-guadalupe-pedernera.jpg",
         "poster": "/media/gobernado-jesus-quiero-guadalupe-pedernera.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Achura mas gobernado."
-          }
-        ]
+        "story": []
       },
       {
         "id": "n59",
@@ -878,12 +628,7 @@
         "descripcion": "",
         "media": "/media/gobernado-pablo-damino-sofia-cevasco.jpg",
         "poster": "/media/gobernado-pablo-damino-sofia-cevasco.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Achura mas gobernado."
-          }
-        ]
+        "story": []
       }
     ]
   },
@@ -899,12 +644,7 @@
         "descripcion": "",
         "media": "/media/achura-revelacion-juan-martin-leyes.jpg",
         "poster": "/media/achura-revelacion-juan-martin-leyes.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Cumpleaños del año."
-          }
-        ]
+        "story": []
       },
       {
         "id": "n62",
@@ -912,12 +652,7 @@
         "descripcion": "",
         "media": "/media/achura-del-ano-guido-olmo.jpg",
         "poster": "/media/achura-del-ano-guido-olmo.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Cumpleaños del año."
-          }
-        ]
+        "story": []
       },
       {
         "id": "n63",
@@ -925,12 +660,7 @@
         "descripcion": "",
         "media": "/media/achura-del-ano-jesus-quiero.jpg",
         "poster": "/media/achura-del-ano-jesus-quiero.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Cumpleaños del año."
-          }
-        ]
+        "story": []
       },
       {
         "id": "n64",
@@ -938,12 +668,7 @@
         "descripcion": "",
         "media": "/media/franco-da-resurreicao.jpg",
         "poster": "/media/franco-da-resurreicao.jpg",
-        "story": [
-          {
-            "tipo": "texto",
-            "contenido": "Historia placeholder de Cumpleaños del año."
-          }
-        ]
+        "story": []
       }
     ]
   },
